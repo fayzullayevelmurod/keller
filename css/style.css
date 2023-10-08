@@ -1,1 +1,205 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+@font-face {
+  font-family: "Bahnschrift";
+  src: url("/fonts/Bahnschrift.ttf");
+}
+.main_container {
+  max-width: 1360px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+#features h2 {
+  text-align: center;
+  margin-top: 21px;
+  margin-bottom: 29px;
+  font-size: 37px;
+  font-weight: light;
+  font-family: "Bahnschrift", sans-serif;
+  color: #000;
+}
+#features p {
+  max-width: 1200px;
+  margin: 0 auto 82px auto;
+  text-align: center;
+  font-size: 16px;
+  font-weight: light;
+  font-family: "Bahnschrift", sans-serif;
+  color: #6a6a6a;
+}
+
+#products {
+  background-image: url("../images/block_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#products .products_in {
+  background-color: rgba(19, 14, 14, 0.9);
+  width: 100%;
+  height: 100%;
+}
+#products .products_in .products_wrapper {
+  text-align: center;
+}
+#products .products_in .products_wrapper h2 {
+  padding-top: 85px;
+  margin-bottom: 20px;
+  font-size: 40px;
+  font-weight: 300;
+  font-family: "Bahnschrift", sans-serif;
+  color: #fff;
+}
+#products .products_in .products_wrapper p {
+  margin-bottom: 60px;
+  font-size: 18px;
+  font-weight: light;
+  font-family: "Bahnschrift", sans-serif;
+  color: #fff;
+}
+#products .products_in .products_wrapper button {
+  cursor: pointer;
+  font-family: "Bahnschrift", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  padding: 15px 40px;
+  border: none;
+  background-color: #FB4D00;
+  margin-bottom: 54px;
+}
+
+#dealers {
+  background-color: #F5F5F5;
+  padding-bottom: 130px;
+}
+#dealers .dealers_title {
+  padding-top: 258px;
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  font-family: "Bahnschrift", sans-serif;
+  color: #000;
+  margin-bottom: 88px;
+}
+#dealers .dealers_wrapper {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+#dealers .dealers_wrapper .dealers_left,
+#dealers .dealers_wrapper .dealers_right {
+  cursor: pointer;
+}
+#dealers .dealers_wrapper .dealers_card {
+  flex-basis: 427px;
+  border-radius: 10px;
+  padding: 16px 14px;
+  background-color: #fff;
+}
+#dealers .dealers_wrapper .dealers_card .card_img {
+  height: 177px;
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  align-items: c;
+  background-color: #F5F5F5;
+}
+#dealers .dealers_wrapper .dealers_card .card_img img {
+  padding: 30px 18px;
+  border-radius: 50px;
+  width: 100%;
+}
+#dealers .dealers_wrapper .dealers_card h4 {
+  margin-top: 23px;
+  font-size: 24px;
+  font-weight: 500;
+  font-family: "Bahnschrift", sans-serif;
+  color: #000;
+  margin-bottom: 25px;
+}
+#dealers .dealers_wrapper .dealers_card p {
+  font-family: "Bahnschrift", sans-serif;
+  font-weight: light;
+  max-width: 327px;
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 16px;
+}
+#dealers .dealers_wrapper .dealers_card button {
+  cursor: pointer;
+  font-family: "Bahnschrift", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  padding: 15px 40px;
+  border: none;
+  background-color: #FB4D00;
+  margin-top: 34px;
+  margin-bottom: 21px;
+}
+
+#footer {
+  background-color: #1B1B1B;
+}
+#footer .footer_wrapper {
+  padding-top: 73px;
+  padding-bottom: 142px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+#footer .footer_wrapper .footer_menu {
+  display: flex;
+  gap: 27px;
+  flex-direction: column;
+}
+#footer .footer_wrapper .footer_menu li a {
+  font-weight: 500;
+  font-family: "Bahnschrift", sans-serif;
+  font-size: 21.34px;
+  color: white;
+  text-transform: uppercase;
+}
+#footer .footer_wrapper .footer_links {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+#footer .footer_wrapper .footer_links li {
+  max-width: 260px;
+}
+#footer .footer_wrapper .footer_links li h2 {
+  font-family: "Bahnschrift", sans-serif;
+  color: white;
+  font-size: 21.34px;
+  font-weight: 500;
+  margin-bottom: 13px;
+}
+#footer .footer_wrapper .footer_links li a {
+  font-family: "Bahnschrift", sans-serif;
+  color: #9f9f9f;
+  font-size: 17.34px;
+}
+#footer .footer_bottom {
+  padding-bottom: 22px;
+  border-bottom: 1px solid #2D2D2D;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+#footer .footer_text {
+  padding: 37px 0;
+}
+#footer .footer_text p {
+  font-family: "Bahnschrift", sans-serif;
+  color: #646363;
+  font-size: 16px;
+}/*# sourceMappingURL=style.css.map */

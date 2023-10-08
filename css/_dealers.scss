@@ -1,0 +1,70 @@
+#dealers{
+    background-color: #F5F5F5;
+    padding-bottom: 130px;  
+    .dealers_title{
+        padding-top: 258px;
+        text-align: center;
+        font-size: 36px;
+        font-weight: bold;
+        font-family: $Bahnschrift;
+        color: #000;
+        margin-bottom: 88px;
+    }
+    .dealers_wrapper{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: space-between;
+        .dealers_left,
+        .dealers_right{
+            cursor: pointer;
+        }
+        .dealers_card{
+            flex-basis: 427px;
+            border-radius: 10px;
+            padding: 16px 14px;
+            background-color: #fff;
+            .card_img{
+                height: 177px;
+                border-radius: 15px;
+                overflow: hidden;
+                display: flex;
+                align-items: c;
+                background-color: #F5F5F5;
+                img{
+                    padding: 30px 18px;
+                    border-radius: 50px;
+                    width: 100%;
+                }
+            }
+            h4{
+                margin-top: 23px;
+                font-size: 24px;
+                font-weight: 500;
+                font-family: $Bahnschrift;
+                color: #000;
+                margin-bottom: 25px;
+            }
+            p{
+                font-family: $Bahnschrift;
+                font-weight: light;
+                max-width: 327px;
+                font-size: 16px;
+                color: #000;
+                margin-bottom: 16px;
+            }
+            button{
+                cursor: pointer;
+                font-family: $Bahnschrift;
+                font-size: 14px;
+                font-weight: bold;
+                color: #fff;
+                padding: 15px 40px;
+                border: none;
+                background-color: #FB4D00;
+                margin-top: 34px;
+                margin-bottom: 21px;
+            }
+        }
+    }
+}
