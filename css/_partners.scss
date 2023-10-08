@@ -1,0 +1,40 @@
+#partners{
+    background-image: url('../images/logos_bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    .partners_bg{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(252, 38, 0, 0.7);
+    }
+    h2{
+        padding-top: 357px;
+        text-align: center;
+        font-size: 48px;
+        font-weight: bold;
+        font-family: $Bahnschrift;
+        color: #000;
+        margin-bottom: 30px;
+    }
+    p{
+        text-align: center;
+        font-family: $Bahnschrift;
+        font-weight: light;        
+        font-size: 18px;
+        color: #000;
+        margin-bottom: 78px;
+    }
+    .partners_wrapper{
+        padding-bottom: 220px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .right_btn{
+            transform: rotate(180deg);
+        }
+        .right_btn,
+        .left_btn{
+            cursor: pointer;
+        }
+    }
+}
