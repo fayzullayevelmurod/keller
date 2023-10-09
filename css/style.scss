@@ -16,10 +16,21 @@ $Calibri: 'Calibri',sans-serif;
     padding: 0 10px;
     margin: 0 auto;
 }
-
+#cards_block{
+    position: absolute;
+    width: 100%;
+    bottom: -100px;
+    img{
+        height: 320px;
+        width: 100%;
+        
+    }
+}
 
 
 @import 'header';
+@import 'main';
+@import 'cards';
 @import 'partners';
 @import 'features';
 @import 'product';

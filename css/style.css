@@ -16,78 +16,206 @@
   margin: 0 auto;
 }
 
-#header {
-  padding: 30px 0 20px 0;
-  background-color: #000;
+#cards_block {
+  position: absolute;
+  width: 100%;
+  bottom: -100px;
 }
-#header .header_wrapper {
+#cards_block img {
+  height: 320px;
+  width: 100%;
+}
+
+#main_block {
+  position: relative;
+}
+#main_block #header {
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+  padding: 30px 0 20px 0;
+  background-color: rgba(33, 32, 32, 0.8);
+  -webkit-backdrop-filter: blur(1px);
+          backdrop-filter: blur(1px);
+}
+#main_block #header .header_wrapper {
   display: flex;
   align-items: center;
 }
-#header .header_wrapper .logo {
+#main_block #header .header_wrapper .logo {
   flex: 1;
 }
-#header .header_wrapper .logo a img {
+#main_block #header .header_wrapper .logo a img {
   width: 210px;
 }
-#header .header_wrapper .header_menu {
+#main_block #header .header_wrapper .header_menu {
   flex: 3;
 }
-#header .header_wrapper .header_menu .menu_top {
+#main_block #header .header_wrapper .header_menu .menu_top {
   display: flex;
 }
-#header .header_wrapper .header_menu .menu_top .input_block {
+#main_block #header .header_wrapper .header_menu .menu_top .input_block {
   margin-right: 57px;
   flex-basis: 470px;
   padding-bottom: 3px;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #323232;
+  border-bottom: 1px solid #fff;
 }
-#header .header_wrapper .header_menu .menu_top .input_block label {
+#main_block #header .header_wrapper .header_menu .menu_top .input_block label {
   cursor: pointer;
 }
-#header .header_wrapper .header_menu .menu_top .input_block input {
+#main_block #header .header_wrapper .header_menu .menu_top .input_block input {
   width: 100%;
   background-color: transparent;
   font-family: "Bahnschrift", sans-serif;
   font-weight: light;
   font-size: 18px;
-  color: #323232;
+  color: #fff;
   border: none;
 }
-#header .header_wrapper .header_menu .menu_top .input_block input:focus {
+#main_block #header .header_wrapper .header_menu .menu_top .input_block input:focus {
   outline: none;
 }
-#header .header_wrapper .header_menu .menu_top a {
+#main_block #header .header_wrapper .header_menu .menu_top a {
   margin-right: 15px;
   display: flex;
   align-items: center;
   font-family: "Calibri", sans-serif;
   font-weight: light;
   font-size: 16px;
-  color: #323232;
+  color: #fff;
 }
-#header .header_wrapper .header_menu .menu_top a img {
+#main_block #header .header_wrapper .header_menu .menu_top a img {
   margin-right: 10px;
 }
-#header .header_wrapper .header_menu .menu_bottom {
+#main_block #header .header_wrapper .header_menu .menu_bottom {
   margin-top: 33px;
 }
-#header .header_wrapper .header_menu .menu_bottom ul {
+#main_block #header .header_wrapper .header_menu .menu_bottom ul {
   display: flex;
   align-items: center;
   gap: 44px;
 }
-#header .header_wrapper .header_menu .menu_bottom ul li a {
+#main_block #header .header_wrapper .header_menu .menu_bottom ul li a {
   font-family: "Bahnschrift", sans-serif;
   font-weight: 300;
   font-size: 13px;
-  color: #323232;
+  color: #fff;
 }
-#header .header_wrapper .header_menu .menu_bottom ul li a img {
+#main_block #header .header_wrapper .header_menu .menu_bottom ul li a img {
   margin-left: 8px;
 }
+#main_block #header .header_wrapper .header_end .sign {
+  display: flex;
+  align-items: center;
+}
+#main_block #header .header_wrapper .header_end .sign a {
+  font-family: "Calibri", sans-serif;
+  font-weight: light;
+  font-size: 14px;
+  color: #fff;
+}
+#main_block #header .header_wrapper .header_end .sign span {
+  font-family: "Calibri", sans-serif;
+  font-weight: light;
+  font-size: 14px;
+  color: #fff;
+}
+#main_block #header .header_wrapper .header_end .statistic {
+  margin-top: 33px;
+  display: flex;
+  gap: 15px;
+}
+#main_block #header .header_wrapper .header_end .statistic a {
+  display: flex;
+  align-items: center;
+  font-family: "Calibri", sans-serif;
+  font-weight: light;
+  font-size: 16px;
+  color: #fff;
+}
+#main_block #header .header_wrapper .header_end .statistic a img {
+  margin-right: 7px;
+}
+
+#main_block {
+  background-image: url("../images/main_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#main_block main {
+  padding-top: 236px;
+  padding-bottom: 500px;
+}
+#main_block main h2 {
+  max-width: 784px;
+  font-family: "Calibri", sans-serif;
+  font-weight: bold;
+  font-size: 56px;
+  color: #fff;
+}
+
+#main_block main .main_card_in {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+#main_block main .main_card_in .main_card {
+  position: relative;
+  bottom: 0;
+  height: 517px;
+  border-radius: 5px;
+  overflow: hidden;
+  max-width: 271px;
+  box-shadow: 1px 4px 12px 2px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 4px 12px 2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 4px 12px 2px rgba(0, 0, 0, 0.75);
+}
+#main_block main .main_card_in .main_card .card_top {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  left: 0;
+  z-index: 2;
+  padding: 15px 12px;
+  background-color: #fc4d00;
+}
+#main_block main .main_card_in .main_card .card_top span {
+  font-family: "Calibri", sans-serif;
+  font-weight: light;
+  font-size: 18px;
+  color: #fff;
+}
+#main_block main .main_card_in .main_card img {
+  transition: 0.3s linear;
+  width: 100%;
+  height: 100%;
+}
+#main_block main .main_card_in .main_card .card_btn {
+  opacity: 0;
+  transition: 0.3s linear;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 0%);
+  cursor: pointer;
+  white-space: nowrap;
+  font-family: "Bahnschrift", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  padding: 15px 40px;
+  border: none;
+  background-color: #FB4D00;
+}
+#main_block main .main_card_in .main_card:hover img {
+  transform: scale(1.2);
+}
+#main_block main .main_card_in .main_card:hover .card_btn {
+  opacity: 1;
+}
+
 #partners {
   background-image: url("../images/logos_bg.png");
   background-repeat: no-repeat;

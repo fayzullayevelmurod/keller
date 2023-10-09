@@ -1,0 +1,16 @@
+#main_block{
+    background-image: url('../images/main_bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    main{
+        padding-top: 236px;
+        padding-bottom: 500px;
+        h2{
+            max-width: 784px;
+            font-family: $Calibri;
+            font-weight: bold;        
+            font-size: 56px;
+            color: #fff;
+        }
+    }
+}
