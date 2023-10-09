@@ -1,5 +1,4 @@
 #main_block{
-    main{
         .main_card_in{
             display: flex;
             align-items: center;
@@ -54,11 +53,11 @@
                 }
             }
             .main_card:hover img{
-                transform: scale(1.2);
+                transform: scale(1.1);
             }
             .main_card:hover .card_btn{
                 opacity: 1;
             }
         }
-    }
+    
 }

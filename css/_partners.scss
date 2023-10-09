@@ -1,19 +1,21 @@
 #partners{
-    background-image: url('../images/logos_bg.png');
+    overflow: hidden;
+    background-image: url('../images/logos_bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    .partners_bg{
-        width: 100%;
-        height: 100%;
-        background-color: rgba(252, 38, 0, 0.7);
-    }
+    position: relative;
+    // .elleps{
+    //     position: absolute;
+    //     width: 100%;
+    //     top: 0;
+    // }
     h2{
         padding-top: 357px;
         text-align: center;
         font-size: 48px;
         font-weight: bold;
         font-family: $Bahnschrift;
-        color: #000;
+        color: #fff;
         margin-bottom: 30px;
     }
     p{
@@ -21,7 +23,7 @@
         font-family: $Bahnschrift;
         font-weight: light;        
         font-size: 18px;
-        color: #000;
+        color: #fff;
         margin-bottom: 78px;
     }
     .partners_wrapper{
@@ -32,8 +34,12 @@
         .right_btn{
             transform: rotate(180deg);
         }
+        .logos{
+            width: 95%;
+        }
         .right_btn,
         .left_btn{
+            margin: 10px;
             cursor: pointer;
         }
     }

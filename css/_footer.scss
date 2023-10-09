@@ -47,6 +47,13 @@
         display: flex;
         align-items: center;
         justify-content: end;
+        .payments{
+            display: flex;
+            align-items: center;
+            a:nth-child(2){
+                margin-left: 15px;
+            }
+        }
     }
     .footer_text{
         padding: 37px 0;
