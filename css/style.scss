@@ -320,12 +320,13 @@ $Calibri: 'Calibri', sans-serif;
 
     .about_wrapper {
         position: relative;
+        width: 100%;
 
         .about_top {
             padding-top: 136px;
             padding-bottom: 130px;
             display: flex;
-            gap: 100px;
+            justify-content: space-between;
 
             .about_top_left {
                 h3 {
@@ -450,7 +451,7 @@ $Calibri: 'Calibri', sans-serif;
         }
 
         .logos {
-            width: 95%;
+            width: 90%;
         }
 
         .right_btn,

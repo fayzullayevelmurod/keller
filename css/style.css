@@ -264,12 +264,13 @@
 }
 .about .about_wrapper {
   position: relative;
+  width: 100%;
 }
 .about .about_wrapper .about_top {
   padding-top: 136px;
   padding-bottom: 130px;
   display: flex;
-  gap: 100px;
+  justify-content: space-between;
 }
 .about .about_wrapper .about_top .about_top_left h3 {
   padding-bottom: 16px;
@@ -370,7 +371,7 @@
   transform: rotate(180deg);
 }
 .partners .partners_wrapper .logos {
-  width: 95%;
+  width: 90%;
 }
 .partners .partners_wrapper .right_btn,
 .partners .partners_wrapper .left_btn {
