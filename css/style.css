@@ -10,50 +10,48 @@
   font-family: "Bahnschrift";
   src: url("/fonts/Bahnschrift.ttf");
 }
+.full_page_bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.full_page_bg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.full_page_bg .full_page_bg_after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  transition: 0.4s ease all;
+}
+
+.full_page_bg.active .full_page_bg_after {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+#fullpage .section .item {
+  height: 100%;
+  position: relative;
+}
+
 .main_container {
   max-width: 1360px;
   padding: 0 10px;
   margin: 0 auto;
 }
 
-#main_block {
-  position: relative;
-}
-#main_block .main_white {
-  display: flex;
-  justify-content: end;
-  position: absolute;
-  bottom: -150px;
-  height: 317px;
-  background-image: url("../images/elleps_top_white.png");
-  width: 100%;
-  background-repeat: no-repeat;
-}
-#main_block .main_white .main_card_in {
-  position: relative;
-  z-index: 2;
-  transform: translateY(-350px);
-}
-#main_block .main_white .left_btn {
-  white-space: nowrap;
-  position: absolute;
-  z-index: 1;
-  right: 10px;
-  bottom: 210px;
-}
-#main_block .main_white .left_btn img {
-  width: 30px;
-  height: 100px;
-}
-
-#fullpage .section .item {
-  height: 100%;
-}
-
-#main_block {
-  position: relative;
-}
-#main_block #header {
+#header {
   position: fixed;
   width: 100%;
   z-index: 100;
@@ -62,23 +60,23 @@
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
 }
-#main_block #header .header_wrapper {
+#header .header_wrapper {
   display: flex;
   align-items: center;
 }
-#main_block #header .header_wrapper .logo {
+#header .header_wrapper .logo {
   flex: 1;
 }
-#main_block #header .header_wrapper .logo a img {
+#header .header_wrapper .logo a img {
   width: 210px;
 }
-#main_block #header .header_wrapper .header_menu {
+#header .header_wrapper .header_menu {
   flex: 3;
 }
-#main_block #header .header_wrapper .header_menu .menu_top {
+#header .header_wrapper .header_menu .menu_top {
   display: flex;
 }
-#main_block #header .header_wrapper .header_menu .menu_top .input_block {
+#header .header_wrapper .header_menu .menu_top .input_block {
   margin-right: 57px;
   flex-basis: 470px;
   padding-bottom: 3px;
@@ -86,10 +84,10 @@
   align-items: center;
   border-bottom: 1px solid #fff;
 }
-#main_block #header .header_wrapper .header_menu .menu_top .input_block label {
+#header .header_wrapper .header_menu .menu_top .input_block label {
   cursor: pointer;
 }
-#main_block #header .header_wrapper .header_menu .menu_top .input_block input {
+#header .header_wrapper .header_menu .menu_top .input_block input {
   width: 100%;
   background-color: transparent;
   font-family: "Bahnschrift", sans-serif;
@@ -98,10 +96,10 @@
   color: #fff;
   border: none;
 }
-#main_block #header .header_wrapper .header_menu .menu_top .input_block input:focus {
+#header .header_wrapper .header_menu .menu_top .input_block input:focus {
   outline: none;
 }
-#main_block #header .header_wrapper .header_menu .menu_top a {
+#header .header_wrapper .header_menu .menu_top a {
   margin-right: 15px;
   display: flex;
   align-items: center;
@@ -110,48 +108,48 @@
   font-size: 16px;
   color: #fff;
 }
-#main_block #header .header_wrapper .header_menu .menu_top a img {
+#header .header_wrapper .header_menu .menu_top a img {
   margin-right: 10px;
 }
-#main_block #header .header_wrapper .header_menu .menu_bottom {
+#header .header_wrapper .header_menu .menu_bottom {
   margin-top: 33px;
 }
-#main_block #header .header_wrapper .header_menu .menu_bottom ul {
+#header .header_wrapper .header_menu .menu_bottom ul {
   display: flex;
   align-items: center;
   gap: 44px;
 }
-#main_block #header .header_wrapper .header_menu .menu_bottom ul li a {
+#header .header_wrapper .header_menu .menu_bottom ul li a {
   font-family: "Bahnschrift", sans-serif;
   font-weight: 300;
   font-size: 13px;
   color: #fff;
 }
-#main_block #header .header_wrapper .header_menu .menu_bottom ul li a img {
+#header .header_wrapper .header_menu .menu_bottom ul li a img {
   margin-left: 8px;
 }
-#main_block #header .header_wrapper .header_end .sign {
+#header .header_wrapper .header_end .sign {
   display: flex;
   align-items: center;
 }
-#main_block #header .header_wrapper .header_end .sign a {
+#header .header_wrapper .header_end .sign a {
   font-family: "Calibri", sans-serif;
   font-weight: light;
   font-size: 14px;
   color: #fff;
 }
-#main_block #header .header_wrapper .header_end .sign span {
+#header .header_wrapper .header_end .sign span {
   font-family: "Calibri", sans-serif;
   font-weight: light;
   font-size: 14px;
   color: #fff;
 }
-#main_block #header .header_wrapper .header_end .statistic {
+#header .header_wrapper .header_end .statistic {
   margin-top: 33px;
   display: flex;
   gap: 15px;
 }
-#main_block #header .header_wrapper .header_end .statistic a {
+#header .header_wrapper .header_end .statistic a {
   display: flex;
   align-items: center;
   font-family: "Calibri", sans-serif;
@@ -159,21 +157,16 @@
   font-size: 16px;
   color: #fff;
 }
-#main_block #header .header_wrapper .header_end .statistic a img {
+#header .header_wrapper .header_end .statistic a img {
   margin-right: 7px;
 }
 
-#main_block {
-  background-image: url("../images/main_bg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+.home {
+  height: 100vh;
+  display: flex;
+  align-items: center;
 }
-#main_block main {
-  padding-top: 236px;
-  padding-bottom: 500px;
-}
-#main_block main h2 {
-  padding-bottom: 500px;
+.home h2 {
   max-width: 784px;
   font-family: "Calibri", sans-serif;
   font-weight: bold;
@@ -181,101 +174,30 @@
   color: #fff;
 }
 
-#about {
-  background-image: url("../images/about_fon.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-#about .about_wrapper .about_top {
-  padding-top: 136px;
-  padding-bottom: 130px;
+.cards {
   display: flex;
-  gap: 100px;
+  align-items: center;
 }
-#about .about_wrapper .about_top .about_top_left h3 {
-  padding-bottom: 16px;
-  max-width: 325px;
-  font-size: 48px;
-  font-weight: bold;
-  font-family: "Bahnschrift", sans-serif;
-  color: #fff;
-  margin-bottom: 53px;
-  border-bottom: 4px solid #fc4d00;
-}
-#about .about_wrapper .about_top .about_top_left p {
-  max-width: 790px;
-  font-size: 17px;
-  font-weight: light;
-  font-family: "Bahnschrift", sans-serif;
-  color: #fff;
-  margin-bottom: 30px;
-}
-#about .about_wrapper .about_top .about_top_right img {
+.cards .cards_bg {
+  position: absolute;
+  bottom: 15%;
+  left: 0;
   width: 100%;
+  height: 45%;
 }
-#about .about_wrapper .about_bottom {
-  padding-bottom: 145px;
-  text-align: center;
-}
-#about .about_wrapper .about_bottom h3 {
-  font-size: 49px;
-  font-weight: bold;
-  font-family: "Bahnschrift", sans-serif;
-  color: #fff;
-  max-width: 1200px;
-  margin: 84px auto 120px auto;
-}
-#about .about_wrapper .about_bottom .about_blocks {
-  display: flex;
-  justify-content: space-between;
-  align-items: start;
-}
-#about .about_wrapper .about_bottom .about_blocks .about_block span {
-  font-size: 61px;
-  font-weight: bold;
-  font-family: "Bahnschrift", sans-serif;
-  color: #fc4d00;
-}
-#about .about_wrapper .about_bottom .about_blocks .about_block h4 {
-  max-width: 280px;
-  font-size: 16px;
-  font-weight: bold;
-  font-family: "Bahnschrift", sans-serif;
-  color: #fff;
-}
-#about .about_wrapper .about_down {
-  padding-bottom: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: -50px;
-}
-#about .about_wrapper .about_down a img {
-  transform: rotate(270deg);
-  height: 55px;
-}
-#about .about_wrapper .about_down .down_two {
-  transform: translateY(-30px);
-}
-
-#main_block .main_card_in {
-  display: flex;
-  align-items: center;
-  gap: 13px;
-}
-#main_block .main_card_in .main_card {
+.cards .card_slider .main_card {
   position: relative;
   bottom: 0;
   height: 517px;
   border-radius: 5px;
   overflow: hidden;
-  max-width: 271px;
+  width: 100%;
+  padding: 0;
   box-shadow: 1px 4px 12px 2px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 1px 4px 12px 2px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 1px 4px 12px 2px rgba(0, 0, 0, 0.75);
 }
-#main_block .main_card_in .main_card .card_top {
+.cards .card_slider .main_card .card_top {
   position: absolute;
   top: 0;
   width: 100%;
@@ -284,18 +206,18 @@
   padding: 15px 12px;
   background-color: #fc4d00;
 }
-#main_block .main_card_in .main_card .card_top span {
+.cards .card_slider .main_card .card_top span {
   font-family: "Calibri", sans-serif;
   font-weight: light;
   font-size: 18px;
   color: #fff;
 }
-#main_block .main_card_in .main_card img {
+.cards .card_slider .main_card img {
   transition: 0.3s linear;
   width: 100%;
   height: 100%;
 }
-#main_block .main_card_in .main_card .card_btn {
+.cards .card_slider .main_card .card_btn {
   opacity: 0;
   transition: 0.3s linear;
   position: absolute;
@@ -312,21 +234,116 @@
   border: none;
   background-color: #FB4D00;
 }
-#main_block .main_card_in .main_card:hover img {
+.cards .card_slider .main_card:hover img {
   transform: scale(1.1);
 }
-#main_block .main_card_in .main_card:hover .card_btn {
+.cards .card_slider .main_card:hover .card_btn {
   opacity: 1;
 }
+.cards .left_btn {
+  white-space: nowrap;
+  position: absolute;
+  z-index: 1;
+  right: 100px;
+  top: 50%;
+}
+.cards .left_btn img {
+  height: 100px;
+}
 
-#partners {
+.about {
+  height: 100vh;
+}
+.about .main_container {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+.about .main_container {
+  align-items: flex-end;
+}
+.about .about_wrapper {
+  position: relative;
+}
+.about .about_wrapper .about_top {
+  padding-top: 136px;
+  padding-bottom: 130px;
+  display: flex;
+  gap: 100px;
+}
+.about .about_wrapper .about_top .about_top_left h3 {
+  padding-bottom: 16px;
+  max-width: 325px;
+  font-size: 48px;
+  font-weight: bold;
+  font-family: "Bahnschrift", sans-serif;
+  color: #fff;
+  margin-bottom: 53px;
+  border-bottom: 4px solid #fc4d00;
+}
+.about .about_wrapper .about_top .about_top_left p {
+  max-width: 790px;
+  font-size: 17px;
+  font-weight: light;
+  font-family: "Bahnschrift", sans-serif;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.about .about_wrapper .about_top .about_top_right img {
+  width: 100%;
+}
+.about .about_wrapper .about_bottom {
+  padding-bottom: 145px;
+  text-align: center;
+}
+.about .about_wrapper .about_bottom h3 {
+  font-size: 49px;
+  font-weight: bold;
+  font-family: "Bahnschrift", sans-serif;
+  color: #fff;
+  max-width: 1200px;
+  margin: 84px auto 120px auto;
+}
+.about .about_wrapper .about_bottom .about_blocks {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.about .about_wrapper .about_bottom .about_blocks .about_block span {
+  font-size: 61px;
+  font-weight: bold;
+  font-family: "Bahnschrift", sans-serif;
+  color: #fc4d00;
+}
+.about .about_wrapper .about_bottom .about_blocks .about_block h4 {
+  max-width: 280px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Bahnschrift", sans-serif;
+  color: #fff;
+}
+.about .about_wrapper .about_down {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: -50px;
+}
+.about .about_wrapper .about_down a img {
+  transform: rotate(270deg);
+  height: 55px;
+}
+.about .about_wrapper .about_down .down_two {
+  transform: translateY(-30px);
+}
+
+.partners {
   overflow: hidden;
   background-image: url("../images/logos_bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
 }
-#partners h2 {
+.partners h2 {
   padding-top: 357px;
   text-align: center;
   font-size: 48px;
@@ -335,7 +352,7 @@
   color: #fff;
   margin-bottom: 30px;
 }
-#partners p {
+.partners p {
   text-align: center;
   font-family: "Bahnschrift", sans-serif;
   font-weight: light;
@@ -343,34 +360,42 @@
   color: #fff;
   margin-bottom: 78px;
 }
-#partners .partners_wrapper {
+.partners .partners_wrapper {
   padding-bottom: 220px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-#partners .partners_wrapper .right_btn {
+.partners .partners_wrapper .right_btn {
   transform: rotate(180deg);
 }
-#partners .partners_wrapper .logos {
+.partners .partners_wrapper .logos {
   width: 95%;
 }
-#partners .partners_wrapper .right_btn,
-#partners .partners_wrapper .left_btn {
+.partners .partners_wrapper .right_btn,
+.partners .partners_wrapper .left_btn {
   margin: 10px;
   cursor: pointer;
 }
 
-#features h2 {
+.features {
+  background: white;
+}
+.features .main_container {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+}
+.features h2 {
   text-align: center;
-  margin-top: 100px;
   margin-bottom: 29px;
   font-size: 37px;
   font-weight: light;
   font-family: "Bahnschrift", sans-serif;
   color: #000;
 }
-#features .features_text {
+.features .features_text {
   max-width: 1200px;
   margin: 0 auto 82px auto;
   text-align: center;
@@ -379,33 +404,33 @@
   font-family: "Bahnschrift", sans-serif;
   color: #6a6a6a;
 }
-#features .features_wrapper {
+.features .features_wrapper {
   display: flex;
   justify-content: space-between;
   align-items: start;
 }
-#features .features_block .features_card {
+.features .features_block .features_card {
   display: flex;
   align-items: start;
   margin: 0 10px 90px 10px;
 }
-#features .features_block .features_card .card_img {
+.features .features_block .features_card .card_img {
   margin-right: 10px;
   transform: translateY(-10px);
   width: 55px;
   height: 55px;
 }
-#features .features_block .features_card .card_img img {
+.features .features_block .features_card .card_img img {
   width: 100%;
 }
-#features .features_block .features_card h3 {
+.features .features_block .features_card h3 {
   margin-bottom: 13px;
   font-size: 21px;
   font-weight: light;
   font-family: "Bahnschrift", sans-serif;
   color: #000;
 }
-#features .features_block .features_card p {
+.features .features_block .features_card p {
   max-width: 321px;
   font-size: 16px;
   font-weight: light;
@@ -413,20 +438,23 @@
   color: #6a6a6a;
 }
 
-#products {
+.products {
   background-image: url("../images/block_bg.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: right center;
 }
-#products .products_in {
+.products .products_in {
   background-color: rgba(19, 14, 14, 0.9);
-  width: 100%;
-  height: 100%;
 }
-#products .products_in .products_wrapper {
-  text-align: center;
+.products .products_in .main_container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-#products .products_in .products_wrapper h2 {
+.products .products_in h2 {
   padding-top: 85px;
   margin-bottom: 20px;
   font-size: 40px;
@@ -434,14 +462,14 @@
   font-family: "Bahnschrift", sans-serif;
   color: #fff;
 }
-#products .products_in .products_wrapper p {
+.products .products_in p {
   margin-bottom: 60px;
   font-size: 18px;
   font-weight: light;
   font-family: "Bahnschrift", sans-serif;
   color: #fff;
 }
-#products .products_in .products_wrapper button {
+.products .products_in button {
   cursor: pointer;
   font-family: "Bahnschrift", sans-serif;
   font-size: 14px;
@@ -453,12 +481,17 @@
   margin-bottom: 54px;
 }
 
-#dealers {
+.dealers {
   background-color: #F5F5F5;
-  padding-bottom: 130px;
 }
-#dealers .dealers_title {
-  padding-top: 258px;
+.dealers .main_container {
+  padding-top: 50px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.dealers .dealers_title {
   text-align: center;
   font-size: 36px;
   font-weight: bold;
@@ -466,23 +499,23 @@
   color: #000;
   margin-bottom: 88px;
 }
-#dealers .dealers_wrapper {
+.dealers .dealers_wrapper {
   display: flex;
   gap: 20px;
   align-items: center;
   justify-content: space-between;
 }
-#dealers .dealers_wrapper .dealers_left,
-#dealers .dealers_wrapper .dealers_right {
+.dealers .dealers_wrapper .dealers_left,
+.dealers .dealers_wrapper .dealers_right {
   cursor: pointer;
 }
-#dealers .dealers_wrapper .dealers_card {
-  flex-basis: 427px;
+.dealers .dealers_wrapper .dealers_card {
+  width: 100%;
   border-radius: 10px;
   padding: 16px 14px;
   background-color: #fff;
 }
-#dealers .dealers_wrapper .dealers_card .card_img {
+.dealers .dealers_wrapper .dealers_card .card_img {
   height: 177px;
   border-radius: 15px;
   overflow: hidden;
@@ -490,12 +523,12 @@
   align-items: c;
   background-color: #F5F5F5;
 }
-#dealers .dealers_wrapper .dealers_card .card_img img {
+.dealers .dealers_wrapper .dealers_card .card_img img {
   padding: 30px 18px;
   border-radius: 50px;
   width: 100%;
 }
-#dealers .dealers_wrapper .dealers_card h4 {
+.dealers .dealers_wrapper .dealers_card h4 {
   margin-top: 23px;
   font-size: 24px;
   font-weight: 500;
@@ -503,7 +536,7 @@
   color: #000;
   margin-bottom: 25px;
 }
-#dealers .dealers_wrapper .dealers_card p {
+.dealers .dealers_wrapper .dealers_card p {
   font-family: "Bahnschrift", sans-serif;
   font-weight: light;
   max-width: 327px;
@@ -511,7 +544,7 @@
   color: #000;
   margin-bottom: 16px;
 }
-#dealers .dealers_wrapper .dealers_card button {
+.dealers .dealers_wrapper .dealers_card button {
   cursor: pointer;
   font-family: "Bahnschrift", sans-serif;
   font-size: 14px;
@@ -524,66 +557,73 @@
   margin-bottom: 21px;
 }
 
-#footer {
-  background-color: #1B1B1B;
+.footer {
+  display: flex;
+  align-items: flex-end;
+  background: white;
 }
-#footer .footer_wrapper {
+
+footer {
+  background-color: #1B1B1B;
+  width: 100%;
+}
+footer .footer_wrapper {
   padding-top: 73px;
   padding-bottom: 142px;
   display: flex;
   align-items: start;
   justify-content: space-between;
 }
-#footer .footer_wrapper .footer_menu {
+footer .footer_wrapper .footer_menu {
   display: flex;
   gap: 27px;
   flex-direction: column;
 }
-#footer .footer_wrapper .footer_menu li a {
+footer .footer_wrapper .footer_menu li a {
   font-weight: 500;
   font-family: "Bahnschrift", sans-serif;
   font-size: 21.34px;
   color: white;
   text-transform: uppercase;
 }
-#footer .footer_wrapper .footer_links {
+footer .footer_wrapper .footer_links {
   display: flex;
   flex-direction: column;
   gap: 18px;
 }
-#footer .footer_wrapper .footer_links li {
+footer .footer_wrapper .footer_links li {
   max-width: 260px;
 }
-#footer .footer_wrapper .footer_links li h2 {
+footer .footer_wrapper .footer_links li h2 {
   font-family: "Bahnschrift", sans-serif;
   color: white;
   font-size: 21.34px;
   font-weight: 500;
   margin-bottom: 13px;
 }
-#footer .footer_wrapper .footer_links li a {
+footer .footer_wrapper .footer_links li a {
   font-family: "Bahnschrift", sans-serif;
   color: #9f9f9f;
   font-size: 17.34px;
 }
-#footer .footer_bottom {
+footer .footer_bottom {
   padding-bottom: 22px;
   border-bottom: 1px solid #2D2D2D;
   display: flex;
   align-items: center;
   justify-content: end;
 }
-#footer .footer_bottom .payments {
+footer .footer_bottom .payments {
   display: flex;
   align-items: center;
 }
-#footer .footer_bottom .payments a:nth-child(2) {
+footer .footer_bottom .payments a:nth-child(2) {
   margin-left: 15px;
 }
-#footer .footer_text {
+footer .footer_text {
   padding: 37px 0;
 }
-#footer .footer_text p {
+footer .footer_text p {
   font-family: "Bahnschrift", sans-serif;
   color: #646363;
   font-size: 16px;
