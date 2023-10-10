@@ -1,0 +1,66 @@
+.modal{
+    display: none;
+    max-width: 560px;
+    padding: 60px 45px;
+    background-color: #fff;
+    h2{
+        font-size: 12px;
+        font-family: $Bahnschrift;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        line-height: 1.086;
+        text-align: center;
+        -moz-transform: matrix( 3.85076887384324,0,0,3.85076887384324,0,0);
+        -webkit-transform: matrix( 3.85076887384324,0,0,3.85076887384324,0,0);
+        -ms-transform: matrix( 3.85076887384324,0,0,3.85076887384324,0,0);
+    }
+    .modal_text{
+        padding: 0 10px;
+        margin: 48px 0;
+        font-size: 16px;
+        font-family: $Bahnschrift;
+        color: rgb(5, 5, 5);
+        line-height: 1.2;
+        text-align: center;
+    }
+    form{
+        input{
+            margin-bottom: 25px;
+            font-family: $Bahnschrift;
+            padding: 0 20px;
+            height: 60px;
+            display: block;
+            width: 100%;
+            color: #7F7F7FFF;
+            border: 1px solid #ACACACFF;
+            border-radius: 5px;
+            &:focus{
+                outline: none;
+            }
+        }
+        .form_btn{
+            margin: 0 auto;
+            width: 313px;
+            height: 57px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14.67px;
+            font-family: $Arial;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            line-height: 1.581;
+            text-align: center;
+            background-color: #FB4D00;
+        }
+        p{
+            margin-top: 16px;
+            font-size: 16px;
+            font-family: $Bahnschrift;
+            color: rgb(5, 5, 5);
+            line-height: 1.2;
+            text-align: center;
+            padding: 0 10px;
+        }
+    }
+}
