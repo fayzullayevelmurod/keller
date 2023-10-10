@@ -46,6 +46,14 @@ $Calibri: 'Calibri',sans-serif;
     }
 }
 
+#fullpage {
+    .section {
+        .item {
+            height: 100%;
+        }
+    }
+}
+
 @import 'header';
 @import 'main';
 @import 'about';
