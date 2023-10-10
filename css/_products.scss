@@ -1,0 +1,132 @@
+#products{
+    #header{
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+        padding: 30px 0 20px 0;
+        background-color: #fff;
+        backdrop-filter: blur(10px);
+        .header_wrapper{
+            display: flex;
+            align-items: center;
+            .logo{
+                flex: 1;
+                a{
+                    img{
+                        width: 210px;
+                    }
+                }
+            }
+            .header_menu{
+                flex: 3;
+                .menu_top{
+                    display: flex;
+                    .input_block{
+                        margin-right: 57px;
+                        flex-basis: 470px;
+                        padding-bottom: 3px;
+                        display: flex;
+                        align-items: center;
+                        border-bottom: 1px solid #323232FF;
+                        label{
+                            cursor: pointer;
+                        }
+                        input{
+                            width: 100%;
+                            background-color: transparent;
+                            font-family: $Bahnschrift;
+                            font-weight: light;        
+                            font-size: 18px;
+                            color: #787878FF;
+                            border: none;
+                            &:focus{
+                                outline: none;
+                            }
+                        }
+                    }
+                    a{
+                        margin-right: 15px;
+                        display: flex;
+                        align-items: center;
+                        font-family: $Calibri;
+                        font-weight: light;        
+                        font-size: 16px;
+                        color: #323232;
+                        img{
+                            margin-right: 10px;
+                        }
+                    }
+                }
+                .menu_bottom{
+                    margin-top: 33px;
+                    ul{
+                        display: flex;
+                        align-items: center;
+                        gap: 44px;
+                        li{
+                            a{
+                                display: flex;
+                                align-items: center;
+                                img{
+                                    margin-left: 8px;
+                                }
+                                font-family: $Bahnschrift;
+                                font-weight: 300;        
+                                font-size: 13px;
+                                color: #323232;
+                            }
+                        }
+                    }
+                }
+            }
+            .header_end{
+                .sign{
+                    display: flex;
+                    align-items: center;
+                    a{
+                        font-family: $Calibri;
+                        font-weight: light;        
+                        font-size: 14px;
+                        color: #323232;
+                    }
+                    span{
+                        font-family: $Calibri;
+                        font-weight: light;        
+                        font-size: 14px;
+                        color: #323232;
+                    }
+                }
+                .statistic{
+                    margin-top: 33px;
+                    display: flex;
+                    gap: 15px;
+                    a{
+                        display: flex;
+                        align-items: center;
+                        font-family: $Calibri;
+                        font-weight: light;        
+                        font-size: 16px;
+                        color: #323232;
+                        img{
+                            margin-right: 7px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #product_wrapper{
+        background-color: #E7E7E7FF;
+        .product_link{
+            display: flex;
+            align-items: center;
+            a,span{
+                font-size: 13.333px;
+                font-family: $Bahnschrift;
+                color: rgb(144, 144, 144);
+                line-height: 3.901;
+                text-align: left;
+            }
+        }
+    }
+}

@@ -587,4 +587,130 @@
   font-family: "Bahnschrift", sans-serif;
   color: #646363;
   font-size: 16px;
+}
+
+#products #header {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  padding: 30px 0 20px 0;
+  background-color: #fff;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+#products #header .header_wrapper {
+  display: flex;
+  align-items: center;
+}
+#products #header .header_wrapper .logo {
+  flex: 1;
+}
+#products #header .header_wrapper .logo a img {
+  width: 210px;
+}
+#products #header .header_wrapper .header_menu {
+  flex: 3;
+}
+#products #header .header_wrapper .header_menu .menu_top {
+  display: flex;
+}
+#products #header .header_wrapper .header_menu .menu_top .input_block {
+  margin-right: 57px;
+  flex-basis: 470px;
+  padding-bottom: 3px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #323232;
+}
+#products #header .header_wrapper .header_menu .menu_top .input_block label {
+  cursor: pointer;
+}
+#products #header .header_wrapper .header_menu .menu_top .input_block input {
+  width: 100%;
+  background-color: transparent;
+  font-family: "Bahnschrift", sans-serif;
+  font-weight: light;
+  font-size: 18px;
+  color: #787878;
+  border: none;
+}
+#products #header .header_wrapper .header_menu .menu_top .input_block input:focus {
+  outline: none;
+}
+#products #header .header_wrapper .header_menu .menu_top a {
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  font-family: "Calibri", sans-serif;
+  font-weight: light;
+  font-size: 16px;
+  color: #323232;
+}
+#products #header .header_wrapper .header_menu .menu_top a img {
+  margin-right: 10px;
+}
+#products #header .header_wrapper .header_menu .menu_bottom {
+  margin-top: 33px;
+}
+#products #header .header_wrapper .header_menu .menu_bottom ul {
+  display: flex;
+  align-items: center;
+  gap: 44px;
+}
+#products #header .header_wrapper .header_menu .menu_bottom ul li a {
+  display: flex;
+  align-items: center;
+  font-family: "Bahnschrift", sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  color: #323232;
+}
+#products #header .header_wrapper .header_menu .menu_bottom ul li a img {
+  margin-left: 8px;
+}
+#products #header .header_wrapper .header_end .sign {
+  display: flex;
+  align-items: center;
+}
+#products #header .header_wrapper .header_end .sign a {
+  font-family: "Calibri", sans-serif;
+  font-weight: light;
+  font-size: 14px;
+  color: #323232;
+}
+#products #header .header_wrapper .header_end .sign span {
+  font-family: "Calibri", sans-serif;
+  font-weight: light;
+  font-size: 14px;
+  color: #323232;
+}
+#products #header .header_wrapper .header_end .statistic {
+  margin-top: 33px;
+  display: flex;
+  gap: 15px;
+}
+#products #header .header_wrapper .header_end .statistic a {
+  display: flex;
+  align-items: center;
+  font-family: "Calibri", sans-serif;
+  font-weight: light;
+  font-size: 16px;
+  color: #323232;
+}
+#products #header .header_wrapper .header_end .statistic a img {
+  margin-right: 7px;
+}
+#products #product_wrapper {
+  background-color: #e7e7e7;
+}
+#products #product_wrapper .product_link {
+  display: flex;
+  align-items: center;
+}
+#products #product_wrapper .product_link a, #products #product_wrapper .product_link span {
+  font-size: 13.333px;
+  font-family: "Bahnschrift", sans-serif;
+  color: rgb(144, 144, 144);
+  line-height: 3.901;
+  text-align: left;
 }/*# sourceMappingURL=style.css.map */
