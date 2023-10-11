@@ -169,6 +169,7 @@ body {
             padding: 0 20px;
 
             .accardion {
+                border-bottom: 1px solid #E8E8E8FF;
                 width: 268px;
                 padding: 20px 0;
 
@@ -206,6 +207,9 @@ body {
                 .accardion_body {
                     display: none;
                 }
+            }
+            .accardion:nth-child(5){
+                border-bottom: 1px solid transparent;
             }
         }
 

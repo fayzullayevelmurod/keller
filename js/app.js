@@ -3,3 +3,4 @@ new fullpage('#fullpage', {
     navigation: true,
     sectionsColor: ['red', '#4BBFC3', '#7BAABE'],
 });
+
