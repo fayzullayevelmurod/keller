@@ -55,6 +55,19 @@ $Calibri: 'Calibri', sans-serif;
     }
 }
 
+#fp-nav ul li a span, 
+.fp-slidesNav ul li a span {
+    background: #888 !important;
+}
+
+#fp-nav ul li a.active span, 
+#fp-nav ul li:hover a.active span, 
+.fp-slidesNav ul li a.active span, 
+.fp-slidesNav ul li:hover a.active span {
+    background: #FB4D00 !important;
+}
+
+
 .main_container {
     max-width: 1360px;
     padding: 0 10px;
@@ -195,8 +208,16 @@ $Calibri: 'Calibri', sans-serif;
                     }
                 }
             }
+
+            .bars {
+                display: none;
+            }
         }
     }
+}
+
+.mobile_menues {
+    display: none;
 }
 
 .home {
@@ -221,13 +242,11 @@ $Calibri: 'Calibri', sans-serif;
         position: absolute;
         bottom: 15%;
         left: 0;
-        // transform: translateY(5%);
         width: 100%;
         height: 45%;
     }
 
     .card_slider {
-
         .main_card {
             position: relative;
             bottom: 0;
@@ -358,7 +377,6 @@ $Calibri: 'Calibri', sans-serif;
         }
 
         .about_bottom {
-            padding-bottom: 145px;
             text-align: center;
 
             h3 {
@@ -367,7 +385,7 @@ $Calibri: 'Calibri', sans-serif;
                 font-family: $Bahnschrift;
                 color: #fff;
                 max-width: 1200px;
-                margin: 84px auto 120px auto;
+                margin: 84px auto 120px;
             }
 
             .about_blocks {
@@ -376,6 +394,11 @@ $Calibri: 'Calibri', sans-serif;
                 align-items: start;
 
                 .about_block {
+                    width: calc(100% / 3);
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
                     span {
                         font-size: 61px;
                         font-weight: bold;
@@ -400,11 +423,16 @@ $Calibri: 'Calibri', sans-serif;
             justify-content: center;
             flex-direction: column;
             gap: -50px;
+            position: absolute;
+            left: calc(50% - 53px / 2);
+            bottom: 0px;
+            height: auto;
+            
 
             a {
                 img {
                     transform: rotate(270deg);
-                    height: 55px;
+                    width: 53px;
                 }
             }
 
@@ -412,6 +440,13 @@ $Calibri: 'Calibri', sans-serif;
                 transform: translateY(-30px);
             }
         }
+    }
+
+    .about_wrapper_2 {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }
 
@@ -450,8 +485,12 @@ $Calibri: 'Calibri', sans-serif;
             transform: rotate(180deg);
         }
 
-        .logos {
+        .partners_slider {
             width: 90%;
+        }
+        
+        .logos {
+            width: 100%;
         }
 
         .right_btn,
@@ -670,7 +709,7 @@ $Calibri: 'Calibri', sans-serif;
 .footer {
     display: flex;
     align-items: flex-end;
-    background: white;
+    background-color: #F5F5F5;
 }
 
 footer {
