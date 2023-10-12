@@ -7,10 +7,15 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>KELLER</title>
 
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.3.4/dist/aos.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css">
+    <link rel="stylesheet" href="./css/sal.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="./js/sal.js"></script>
+
 </head>
 
 <body>
@@ -28,7 +33,8 @@
                             <label for="search"><img src="./images/search_icon.svg" alt=""></label>
                         </div>
                         <a href="tel:+78125603443">
-                            <img src="./images/phone_icon.svg" alt=""> +7 (812) 560-34-43
+                            <img src="./images/phone_icon.svg" alt=""> 
+                            +7 (812) 560-34-43
                         </a>
                         <a href="mailto:sales@keller.ru">
                             <img src="./images/mail_icon.svg" alt="">sales@keller.ru
@@ -56,7 +62,10 @@
                         <a href="#"><img src="./images/shop_icon.svg" alt="">пусто</a>
                     </div>
                     <button class="bars">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+                            <path
+                                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+                        </svg>
                     </button>
                 </div>
             </div>
@@ -75,12 +84,12 @@
             </li>
             <li>
                 <a href="tel:+78125603443">
-                <img src="./images/phone_icon.svg" alt=""> +7 (812) 560-34-43
+                    <img src="./images/phone_icon.svg" alt=""> +7 (812) 560-34-43
                 </a>
             </li>
             <li>
                 <a href="mailto:sales@keller.ru">
-                <img src="./images/mail_icon.svg" alt="">sales@keller.ru
+                    <img src="./images/mail_icon.svg" alt="">sales@keller.ru
                 </a>
             </li>
             <li><a href="#">инструменты </a>
@@ -112,7 +121,8 @@
         <div class="section section_home">
             <div class="item">
                 <div class="main_container home">
-                    <h2>Внедряем современные решения в технологические процессы</h2>
+                    <h2 data-aos="fade-right" data-aos-delay="600" data-aos-duration="1000">Внедряем современные
+                        решения в технологические процессы</h2>
                 </div>
             </div>
         </div>
@@ -127,7 +137,7 @@
                     <div class="swiper card_slider">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <div class="main_card">
+                                <div class="main_card" data-sal="slide-up" style="--sal-duration: 1s; --sal-delay: 0s;">
                                     <div class="card_top">
                                         <span>Токарный<br>
                                             инструмент</span>
@@ -137,7 +147,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="main_card">
+                                <div class="main_card" data-sal="slide-up" style="--sal-duration: 1s; --sal-delay: 0.5s;">
                                     <div class="card_top">
                                         <span>Осевой<br>
                                             инструмент</span>
@@ -147,7 +157,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="main_card">
+                                <div class="main_card" data-sal="slide-up" style="--sal-duration: 1s; --sal-delay: 1s;">
                                     <div class="card_top">
                                         <span>Инструмент из<br> сверхтвердых материалов</span>
                                     </div>
@@ -156,7 +166,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="main_card">
+                                <div class="main_card" data-sal="slide-up" style="--sal-duration: 1s; --sal-delay: 1.5s;">
                                     <div class="card_top">
                                         <span>Обработка<br>
                                             резьбы</span>
@@ -166,7 +176,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <div class="main_card">
+                                <div class="main_card" data-sal="slide-up" style="--sal-duration: 1s; --sal-delay: 2s;">
                                     <div class="card_top">
                                         <span>Станочная<br>
                                             оснаска</span>
@@ -181,7 +191,7 @@
                     <div class="main_card_in">
                     </div>
                 </div>
-                <div class="left_btn">
+                <div class="left_btn" data-sal="slide-left" style="--sal-duration: 1s; --sal-delay: 2.5s;">
                     <a href="#">
                         <img src="./images/left_icon.svg" alt="">
                     </a>
@@ -216,7 +226,7 @@
                                     партнеров.
                                 </p>
                             </div>
-                            <div class="about_top_right">
+                            <div class="about_top_right" data-sal="slide-left" style="--sal-duration: 1s; --sal-delay: .5s;">
                                 <img src="./images/about_main.png" alt="">
                             </div>
                         </div>
@@ -235,26 +245,26 @@
                             <div class="about_logo">
                                 <img src="./images/about_logo.png" alt="">
                             </div>
-                            <h3>
+                            <h3 data-sal="slide-up" style="--sal-duration: 1s; --sal-delay: 0.1s;">
                                 профессиональное решение
                                 на рынке металлорежущего инструмента
                             </h3>
                             <div class="about_blocks">
-                                <div class="about_block">
+                                <div class="about_block" data-sal="slide-up" style="--sal-duration: 1s; --sal-delay: 1s;">
                                     <span>203545</span>
                                     <h4>
                                         высококачественных
                                         металлорежущих инструментов
                                     </h4>
                                 </div>
-                                <div class="about_block">
+                                <div class="about_block" data-sal="slide-up" style="--sal-duration: 1s; --sal-delay: 2s;">
                                     <span>567</span>
                                     <h4>
                                         довольных клиентов
                                         и партнеров по всей стране
                                     </h4>
                                 </div>
-                                <div class="about_block">
+                                <div class="about_block" data-sal="slide-up" style="--sal-duration: 1s; --sal-delay: 3s;">
                                     <span>12</span>
                                     <h4>
                                         месяцев гарантии
@@ -263,7 +273,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="about_down">
+                        <div class="about_down" data-sal="slide-up" style="--sal-duration: 1s; --sal-delay: 4s;">
                             <a href="#">
                                 <img src="./images/left_icon.svg" alt="">
                             </a>
@@ -281,21 +291,30 @@
         <div class="section">
             <div class="item partners">
                 <div class="main_container">
-                    <h2>Нас выбирают !</h2>
-                    <p>Keller является поставщиком металлорежущего инструмента для крупнейших компаний России:</p>
-                    <div class="partners_wrapper">
+                    <h2 data-sal="fade" style="--sal-duration: 1s; --sal-delay: 0.1s;">Нас выбирают !</h2>
+                    <p data-sal="fade" style="--sal-duration: 1s; --sal-delay: 0.1s;">Keller является поставщиком металлорежущего инструмента для крупнейших компаний России:</p>
+                    <div class="partners_wrapper" data-sal="fade" style="--sal-duration: 1s; --sal-delay: 1s;">
                         <img class="left_btn" src="./images/logos_left_icon.svg" alt="">
                         <div class="swiper partners_slider">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide"><img class="logos" src="./images/clients_logo.png" alt=""></div>
-                                <div class="swiper-slide"><img class="logos" src="./images/clients_logo.png" alt=""></div>
-                                <div class="swiper-slide"><img class="logos" src="./images/clients_logo.png" alt=""></div>
-                                <div class="swiper-slide"><img class="logos" src="./images/clients_logo.png" alt=""></div>
-                                <div class="swiper-slide"><img class="logos" src="./images/clients_logo.png" alt=""></div>
-                                <div class="swiper-slide"><img class="logos" src="./images/clients_logo.png" alt=""></div>
-                                <div class="swiper-slide"><img class="logos" src="./images/clients_logo.png" alt=""></div>
-                                <div class="swiper-slide"><img class="logos" src="./images/clients_logo.png" alt=""></div>
-                                <div class="swiper-slide"><img class="logos" src="./images/clients_logo.png" alt=""></div>
+                                <div class="swiper-slide"><img class="logos" src="./images/clients_logo.png" alt="">
+                                </div>
+                                <div class="swiper-slide"><img class="logos" src="./images/clients_logo.png" alt="">
+                                </div>
+                                <div class="swiper-slide"><img class="logos" src="./images/clients_logo.png" alt="">
+                                </div>
+                                <div class="swiper-slide"><img class="logos" src="./images/clients_logo.png" alt="">
+                                </div>
+                                <div class="swiper-slide"><img class="logos" src="./images/clients_logo.png" alt="">
+                                </div>
+                                <div class="swiper-slide"><img class="logos" src="./images/clients_logo.png" alt="">
+                                </div>
+                                <div class="swiper-slide"><img class="logos" src="./images/clients_logo.png" alt="">
+                                </div>
+                                <div class="swiper-slide"><img class="logos" src="./images/clients_logo.png" alt="">
+                                </div>
+                                <div class="swiper-slide"><img class="logos" src="./images/clients_logo.png" alt="">
+                                </div>
                             </div>
                         </div>
                         <!-- <img class="logos" src="./images/clients_logo.png" alt=""> -->
@@ -310,12 +329,12 @@
         <div class="section">
             <div class="item features">
                 <div class="main_container">
-                    <h2>Отличительные особенности продукции Keller</h2>
-                    <p class="features_text">Выбирая KELLER, Вы получаете не только высококачественный
+                    <h2 data-sal="fade" style="--sal-duration: 1s; --sal-delay: 0.1s;">Отличительные особенности продукции Keller</h2>
+                    <p class="features_text" data-sal="fade" style="--sal-duration: 1s; --sal-delay: 0.2s;">Выбирая KELLER, Вы получаете не только высококачественный
                         металлорежущий инструмент, но и надежного партнера, готового помочь вам достичь успеха и
                         роста вашего производства. Мы гордимся нашими преимуществами и приглашаем вас присоединиться
                         к нашему кругу довольных клиентов.</p>
-                    <div class="features_wrapper">
+                    <div class="features_wrapper" data-sal="fade" style="--sal-duration: 1s; --sal-delay: 1s;">
                         <div class="features_block">
                             <div class="features_card">
                                 <div class="card_img">
@@ -401,15 +420,15 @@
         <div class="section">
             <div class="item dealers">
                 <div class="main_container">
-                    <h2 class="dealers_title">
+                    <h2 class="dealers_title" data-sal="fade" style="--sal-duration: 1s; --sal-delay: 0.2s;">
                         Официальные дилеры
                     </h2>
                     <div class="dealers_wrapper">
-                        <img class="dealers_left" src="./images/diller_left_icon.svg" alt="">
+                        <img class="dealers_left" src="./images/diller_left_icon.svg" alt="" data-sal="fade" style="--sal-duration: 1s; --sal-delay: 0.8s;">
                         <div class="swiper dealer_slider">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <div class="dealers_card">
+                                    <div class="dealers_card" data-sal="flip-right" style="--sal-duration: 1.5s; --sal-delay: 1s;">
                                         <div class="card_img">
                                             <img src="./images/diller_1.png" alt="">
                                         </div>
@@ -422,7 +441,7 @@
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="dealers_card">
+                                    <div class="dealers_card" data-sal="flip-right" style="--sal-duration: 1.5s; --sal-delay: 2s;">
                                         <div class="card_img">
                                             <img src="./images/diller_2.png" alt="">
                                         </div>
@@ -435,7 +454,7 @@
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="dealers_card">
+                                    <div class="dealers_card" data-sal="flip-right" style="--sal-duration: 1.5s; --sal-delay: 3s;">
                                         <div class="card_img">
                                             <img src="./images/diller3.png" alt="">
                                         </div>
@@ -489,7 +508,7 @@
                             </div>
                             <div class="swiper-pagination"></div>
                         </div>
-                        <img class="dealers_right" src="./images/diller_right_icon.svg" alt="">
+                        <img class="dealers_right" src="./images/diller_right_icon.svg" alt="" data-sal="fade" style="--sal-duration: 1s; --sal-delay: 0.8s;">
                     </div>
                 </div>
             </div>
@@ -573,6 +592,10 @@
         <!-- End footer -->
     </div>
 
+    <script>
+        sal();
+        AOS.init();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="./js/app.js"></script>
 </body>

@@ -134,7 +134,7 @@
 #header .header_wrapper .header_menu .menu_bottom ul li a {
   font-family: "Bahnschrift", sans-serif;
   font-weight: 300;
-  font-size: 13px;
+  font-size: 13.4px;
   color: #fff;
 }
 #header .header_wrapper .header_menu .menu_bottom ul li a img {
@@ -153,7 +153,7 @@
 #header .header_wrapper .header_end .sign span {
   font-family: "Calibri", sans-serif;
   font-weight: light;
-  font-size: 14px;
+  font-size: 13.3px;
   color: #fff;
 }
 #header .header_wrapper .header_end .statistic {
@@ -206,6 +206,7 @@
 }
 .cards .card_slider .main_card {
   position: relative;
+  z-index: 10;
   bottom: 0;
   height: 517px;
   border-radius: 5px;
@@ -265,6 +266,7 @@
   z-index: 1;
   right: 100px;
   top: 50%;
+  display: block;
 }
 .cards .left_btn img {
   height: 100px;
@@ -316,7 +318,7 @@
   text-align: center;
 }
 .about .about_wrapper .about_bottom h3 {
-  font-size: 49px;
+  font-size: 18px;
   font-weight: bold;
   font-family: "Bahnschrift", sans-serif;
   color: #fff;
@@ -335,7 +337,7 @@
   align-items: center;
 }
 .about .about_wrapper .about_bottom .about_blocks .about_block span {
-  font-size: 61px;
+  font-size: 60px;
   font-weight: bold;
   font-family: "Bahnschrift", sans-serif;
   color: #fc4d00;
@@ -531,7 +533,7 @@
 }
 .dealers .dealers_title {
   text-align: center;
-  font-size: 36px;
+  font-size: 46px;
   font-weight: bold;
   font-family: "Bahnschrift", sans-serif;
   color: #000;
@@ -842,6 +844,9 @@ footer .footer_text p {
   }
   .about .about_wrapper_2 .about_down a img {
     width: 40px;
+  }
+  .dealers .dealers_wrapper {
+    padding-right: 30px;
   }
 }
 @media (max-width: 992px) {

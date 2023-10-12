@@ -55,14 +55,14 @@ $Calibri: 'Calibri', sans-serif;
     }
 }
 
-#fp-nav ul li a span, 
+#fp-nav ul li a span,
 .fp-slidesNav ul li a span {
     background: #888 !important;
 }
 
-#fp-nav ul li a.active span, 
-#fp-nav ul li:hover a.active span, 
-.fp-slidesNav ul li a.active span, 
+#fp-nav ul li a.active span,
+#fp-nav ul li:hover a.active span,
+.fp-slidesNav ul li a.active span,
 .fp-slidesNav ul li:hover a.active span {
     background: #FB4D00 !important;
 }
@@ -73,7 +73,6 @@ $Calibri: 'Calibri', sans-serif;
     padding: 0 10px;
     margin: 0 auto;
 }
-
 
 #header {
     position: fixed;
@@ -162,7 +161,7 @@ $Calibri: 'Calibri', sans-serif;
 
                             font-family: $Bahnschrift;
                             font-weight: 300;
-                            font-size: 13px;
+                            font-size: 13.4px;
                             color: #fff;
                         }
                     }
@@ -185,7 +184,7 @@ $Calibri: 'Calibri', sans-serif;
                 span {
                     font-family: $Calibri;
                     font-weight: light;
-                    font-size: 14px;
+                    font-size: 13.3px;
                     color: #fff;
                 }
             }
@@ -249,6 +248,7 @@ $Calibri: 'Calibri', sans-serif;
     .card_slider {
         .main_card {
             position: relative;
+            z-index: 10;
             bottom: 0;
             height: 517px;
             border-radius: 5px;
@@ -317,6 +317,7 @@ $Calibri: 'Calibri', sans-serif;
         z-index: 1;
         right: 100px;
         top: 50%;
+        display: block;
 
         img {
             height: 100px;
@@ -380,7 +381,7 @@ $Calibri: 'Calibri', sans-serif;
             text-align: center;
 
             h3 {
-                font-size: 49px;
+                font-size: 18px;
                 font-weight: bold;
                 font-family: $Bahnschrift;
                 color: #fff;
@@ -400,7 +401,7 @@ $Calibri: 'Calibri', sans-serif;
                     align-items: center;
 
                     span {
-                        font-size: 61px;
+                        font-size: 60px;
                         font-weight: bold;
                         font-family: $Bahnschrift;
                         color: #FC4D00FF;
@@ -427,7 +428,7 @@ $Calibri: 'Calibri', sans-serif;
             left: calc(50% - 53px / 2);
             bottom: 0px;
             height: auto;
-            
+
 
             a {
                 img {
@@ -488,7 +489,7 @@ $Calibri: 'Calibri', sans-serif;
         .partners_slider {
             width: 90%;
         }
-        
+
         .logos {
             width: 100%;
         }
@@ -633,7 +634,7 @@ $Calibri: 'Calibri', sans-serif;
 
     .dealers_title {
         text-align: center;
-        font-size: 36px;
+        font-size: 46px;
         font-weight: bold;
         font-family: $Bahnschrift;
         color: #000;

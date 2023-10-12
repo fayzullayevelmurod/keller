@@ -1,27 +1,28 @@
 let full_page_bg = document.querySelector('.full_page_bg');
 let section_home = document.querySelector('.section_home');
 
-$(document).ready(function () {
-    let card_slider = new Swiper(".card_slider", {
-        slidesPerView: 1,
-        spaceBetween: 13,
-        breakpoints: {
-            1700: {
-                slidesPerView: 5,
-            },
-            768: {
-                slidesPerView: 3
-            },
-            500: {
-                slidesPerView: 2
-            }
+let card_slider = new Swiper(".card_slider", {
+    slidesPerView: 1,
+    spaceBetween: 13,
+    breakpoints: {
+        1300: {
+            slidesPerView: 5,
         },
-        loop: true,
-        navigation: {
-            nextEl: '.cards .left_btn'
+        1000: {
+            slidesPerView: 4,
+        },
+        768: {
+            slidesPerView: 3
+        },
+        500: {
+            slidesPerView: 2
         }
-    });
-})
+    },
+    loop: true,
+    navigation: {
+        nextEl: '.cards .left_btn'
+    }
+});
 
 let dealer_slider = new Swiper(".dealer_slider", {
     slidesPerView: 1,
