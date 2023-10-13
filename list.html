@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./fonts/Arial/stylesheet.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/style.css">
     <title>KELLER</title>
 </head>
@@ -76,7 +78,20 @@
             </div>
             <div class="list_wrapper">
                 <div class="list_slider">
-
+                    <div class="swiper mySwiper listSwiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <img src="./images/list_slider.png" alt="">
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="./images/list_slider.png" alt="">
+                          </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                      </div>
+                    
                 </div>
                 <div class="list_main">
                     <h3>sngx120716t0202on-s000-m3010</h3>
@@ -110,6 +125,14 @@
                         </svg>
                         <span>В наличии</span>
                     </h6>
+                    <div class="shop_number">
+                        <div class="number_btn">
+                            <button class="btn_left">-</button>
+                            <span class="counter_number">10</span>
+                            <button class="btn_right">+</button>
+                        </div>
+                        <span>Заказ по 10 шт.</span>
+                    </div>
                     <div class="list_btns">
                         <button class="btn_shop" type="button" >
                             <svg 
@@ -128,7 +151,7 @@
                 <div class="list_cards">
                     <div class="list_card">
                         <div class="card_img">
-
+                            <img src="" alt="">
                         </div>
                         <div class="card_text">
                             <a href="#">Доставка</a>
@@ -139,7 +162,7 @@
                     </div>
                     <div class="list_card">
                         <div class="card_img">
-
+                            <img src="" alt="">
                         </div>
                         <div class="card_text">
                             <a href="#">Оплата</a>
@@ -150,12 +173,201 @@
                     </div>
                 </div>
             </div>
+            <div class="list_tabs"  id="tabs">
+                <div class="tabs_btns">
+                    <button class="tab whiteborder tab_btn">Описание</button>
+                    <button class="tab tab_btn">Аналоги</button>
+                    <button class="tab tab_btn">Оплата и доставка</button>
+                </div>
+                <p class="tabContent">1<b>Сплав - IP4325</b> - предназначен для получистовой и легкой черновой токарной обработки простой и легированной стали в обычных условиях, в том числе с прерывистой резкой, сплав стойкий к удару.
+                    Сплав на основе карбида вольфрама со сверхтонкими покрытиями карбонитрида титана (MT-TiCN), оксида алюминия (Al2O3) и титан-нитрида (TiN).
+                    Инструмент отличается превосходной стойкостью к абразивному и механическому износу, улучшенной стойкостью к износу по задней поверхности пластины, прочностью и повышенной жесткостью, при этом имеет гладкую поверхность, устойчивую к повышенному нагреву, налипанию стружки и окислению. Инструмент устойчив к лункообразованию.
+                </p>
+                <p class="tabContent">2<b>Сплав - IP4325</b> - предназначен для получистовой и легкой черновой токарной обработки простой и легированной стали в обычных условиях, в том числе с прерывистой резкой, сплав стойкий к удару.
+                    Сплав на основе карбида вольфрама со сверхтонкими покрытиями карбонитрида титана (MT-TiCN), оксида алюминия (Al2O3) и титан-нитрида (TiN).
+                    Инструмент отличается превосходной стойкостью к абразивному и механическому износу, улучшенной стойкостью к износу по задней поверхности пластины, прочностью и повышенной жесткостью, при этом имеет гладкую поверхность, устойчивую к повышенному нагреву, налипанию стружки и окислению. Инструмент устойчив к лункообразованию.
+                </p>
+                <p class="tabContent">3<b>Сплав - IP4325</b> - предназначен для получистовой и легкой черновой токарной обработки простой и легированной стали в обычных условиях, в том числе с прерывистой резкой, сплав стойкий к удару.
+                    Сплав на основе карбида вольфрама со сверхтонкими покрытиями карбонитрида титана (MT-TiCN), оксида алюминия (Al2O3) и титан-нитрида (TiN).
+                    Инструмент отличается превосходной стойкостью к абразивному и механическому износу, улучшенной стойкостью к износу по задней поверхности пластины, прочностью и повышенной жесткостью, при этом имеет гладкую поверхность, устойчивую к повышенному нагреву, налипанию стружки и окислению. Инструмент устойчив к лункообразованию.
+                </p>
+            </div>
+            <div class="info">
+                <h3>Технические характеристики:</h3>
+                <div class="info_wrapper">
+                    <div class="info_block">
+                        <div class="info_left">
+                            <p>Форма пластины</p>
+                        </div>
+                        <div class="line"></div>
+                        <div class="info_right">
+                            <p>S - квадрат</p>
+                        </div>
+                    </div>
+                    <div class="info_block">
+                        <div class="info_left">
+                            <p>Диаметр вписанной окружности</p>
+                        </div>
+                        <div class="line"></div>
+                        <div class="info_right">
+                            <p>12,70 мм</p>
+                        </div>
+                    </div>
+                    <div class="info_block">
+                        <div class="info_left">
+                            <p>Задний (боковой) угол пластины</p>
+                        </div>
+                        <div class="line"></div>
+                        <div class="info_right">
+                            <p>N - без заднего угла</p>
+                        </div>
+                    </div>
+                    <div class="info_block">
+                        <div class="info_left">
+                            <p>Длина режущей кромки</p>
+                        </div>
+                        <div class="line"></div>
+                        <div class="info_right">
+                            <p>12,7 мм</p>
+                        </div>
+                    </div>
+                    <div class="info_block">
+                        <div class="info_left">
+                            <p>Допуски</p>
+                        </div>
+                        <div class="line"></div>
+                        <div class="info_right">
+                            <p>d: +0,025 s: +0,13</p>
+                        </div>
+                    </div>
+                    <div class="info_block">
+                        <div class="info_left">
+                            <p>Артикул</p>
+                        </div>
+                        <div class="line"></div>
+                        <div class="info_right">
+                            <p>14000225</p>
+                        </div>
+                    </div>
+                    <div class="info_block">
+                        <div class="info_left">
+                            <p>Базовая единица</p>
+                        </div>
+                        <div class="line"></div>
+                        <div class="info_right">
+                            <p>шт</p>
+                        </div>
+                    </div>
+                    <div class="info_block">
+                        <div class="info_left">
+                            <p>Картинка галереи</p>
+                        </div>
+                        <div class="line"></div>
+                        <div class="info_right">
+                            <p>Array</p>
+                        </div>
+                    </div>
+                    <div class="info_block">
+                        <div class="info_left">
+                            <p>Тип</p>
+                        </div>
+                        <div class="line"></div>
+                        <div class="info_right">
+                            <p>X - специальная</p>
+                        </div>
+                    </div>
+                    <div class="info_block">
+                        <div class="info_left">
+                            <p>Характеристика сорта</p>
+                        </div>
+                        <div class="line"></div>
+                        <div class="info_right">
+                            <p>AI203 - 65% TIC - 35%</p>
+                        </div>
+                    </div>
+                    <div class="info_block">
+                        <div class="info_left">
+                            <p>Толщина</p>
+                        </div>
+                        <div class="line"></div>
+                        <div class="info_right">
+                            <p>4,76 мм</p>
+                        </div>
+                    </div>
+                    <div class="info_block">
+                        <div class="info_left">
+                            <p>Режимы резания</p>
+                        </div>
+                        <div class="line"></div>
+                        <div class="info_right">
+                            <p>
+                                скорость резания - Vc=20-1200 м/мин; подача - f=0,05-0,50 мм/об; глубина резания - ap=0,10-5,0 мм
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
 
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="./js/app.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          cssMode: true,
+          loop: true,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          pagination: {
+            el: ".swiper-pagination",
+          },
+          mousewheel: true,
+          keyboard: true,
+        });
+
+        var tab; // заголовок вкладки
+        var tabContent; // блок содержащий контент вкладки
+
+
+        window.onload=function() {
+            tabContent=document.getElementsByClassName('tabContent');
+            tab=document.getElementsByClassName('tab');
+            hideTabsContent(1);
+        }
+
+        document.getElementById('tabs').onclick= function (event) {
+            var target=event.target;
+            if (target.className=='tab') {
+            for (var i=0; i<tab.length; i++) {
+                if (target == tab[i]) {
+                    showTabsContent(i);
+                    break;
+                }
+            }
+            }
+        }
+
+        function hideTabsContent(a) {
+            for (var i=a; i<tabContent.length; i++) {
+                tabContent[i].classList.remove('show');
+                tabContent[i].classList.add("hide");
+                tab[i].classList.remove('whiteborder');
+            }
+        }
+
+        function showTabsContent(b){
+            if (tabContent[b].classList.contains('hide')) {
+                hideTabsContent(0);
+                tab[b].classList.add('whiteborder');
+                tabContent[b].classList.remove('hide');
+                tabContent[b].classList.add('show');
+            }
+        }
+      </script>
 </body>
 
 </html>
