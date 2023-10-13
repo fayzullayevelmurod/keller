@@ -358,6 +358,7 @@ $Arial: 'Arial', sans-serif;
                     display: flex;
                     align-items: center;
                     border-bottom: 1px solid #fff;
+                    position: relative;
                     ;
 
                     label {
@@ -382,6 +383,26 @@ $Arial: 'Arial', sans-serif;
                         &:focus {
                             outline: none;
                         }
+                    }
+
+                    .search_result {
+                        position: absolute;
+                        top: 100%;
+                        left: 0;
+                        background: white;
+                        width: 100%;
+                        padding: 20px;
+                        display: none;
+                        flex-direction: column;
+                        gap: 10px;
+
+                        a {
+                            color: black;
+                        }
+                    }
+
+                    input:focus ~ .search_result {
+                        display: flex;
                     }
                 }
 
