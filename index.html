@@ -20,6 +20,21 @@
 
 <body>
 
+    <div class="modal_wrapper">
+        <div class="modal_bg"></div>
+        <div class="modal">
+            <h2>Заказать звонок</h2>
+            <p class="modal_text">Проконсультируем и поможем подобрать инструмент Keller под Ваши задачи!</p>
+            <form>
+                <input type="text" placeholder="Имя">
+                <input type="email" placeholder="E-mail">
+                <input type="tel" placeholder="Телефон">
+                <a class="form_btn" type="submit" href="#">Получить консультацию</a>
+                <p>Нажимая на кнопку, вы соглашаетесь с политикой конфинденциальности</p>
+            </form>
+        </div>
+    </div>
+
     <header id="header">
         <div class="main_container">
             <div class="header_wrapper">
@@ -30,14 +45,17 @@
                     <div class="menu_top">
                         <div class="input_block">
                             <input type="search" id="search" placeholder="Поиск...">
-                            <label for="search"><img src="./images/search_icon.svg" alt=""></label>
+                            <label for="search">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+                            </label>
                         </div>
                         <a href="tel:+78125603443">
-                            <img src="./images/phone_icon.svg" alt=""> 
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
                             +7 (812) 560-34-43
                         </a>
                         <a href="mailto:sales@keller.ru">
-                            <img src="./images/mail_icon.svg" alt="">sales@keller.ru
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"/></svg>
+                            sales@keller.ru
                         </a>
                     </div>
                     <div class="menu_bottom">
@@ -58,8 +76,14 @@
                         <a href="#">РЕГИСТРАЦИЯ</a>
                     </div>
                     <div class="statistic">
-                        <a href="#"><img src="./images/statistic_icon.svg" alt="">(0)</a>
-                        <a href="#"><img src="./images/shop_icon.svg" alt="">пусто</a>
+                        <a href="#">
+                            <svg class="chart" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M160 80c0-26.5 21.5-48 48-48h32c26.5 0 48 21.5 48 48V432c0 26.5-21.5 48-48 48H208c-26.5 0-48-21.5-48-48V80zM0 272c0-26.5 21.5-48 48-48H80c26.5 0 48 21.5 48 48V432c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V272zM368 96h32c26.5 0 48 21.5 48 48V432c0 26.5-21.5 48-48 48H368c-26.5 0-48-21.5-48-48V144c0-26.5 21.5-48 48-48z"/></svg>
+                            (0)
+                        </a>
+                        <a href="#">
+                            <svg width="64px" height="64px" viewBox="-2.4 -2.4 28.80 28.80" fill="none" xmlns="http://www.w3.org/2000/svg" transform="matrix(1, 0, 0, 1, 0, 0)rotate(0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#fffCCCCCC" stroke-width="0.288"></g><g id="SVGRepo_iconCarrier"> <path d="M6.29977 5H21L19 12H7.37671M20 16H8L6 3H3M9 20C9 20.5523 8.55228 21 8 21C7.44772 21 7 20.5523 7 20C7 19.4477 7.44772 19 8 19C8.55228 19 9 19.4477 9 20ZM20 20C20 20.5523 19.5523 21 19 21C18.4477 21 18 20.5523 18 20C18 19.4477 18.4477 19 19 19C19.5523 19 20 19.4477 20 20Z" stroke="#fff" stroke-width="1.008" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                            пусто
+                        </a>
                     </div>
                     <button class="bars">
                         <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
@@ -409,7 +433,7 @@
                     <div class="main_container">
                         <h2>Хотите узнать больше о продукции Keller?</h2>
                         <p>Проконсультируем и поможем подобрать инструмент Keller под Ваши задачи!</p>
-                        <button>Получить консультацию</button>
+                        <button class="open_modal">Получить консультацию</button>
                     </div>
                 </div>
             </div>

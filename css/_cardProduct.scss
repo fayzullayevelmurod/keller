@@ -1,0 +1,513 @@
+#card-product {
+    background-color: #fff;
+    height: 100%;
+    
+    #header {
+        border-bottom: 4px solid #D1D1D1FF;
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+        padding: 30px 0 20px 0;
+        background-color: #F4F4F4FF;
+        backdrop-filter: blur(10px);
+
+        .header_wrapper {
+            // display: flex;
+            // align-items: center;
+
+            // .logo {
+            //     flex: 1;
+
+            //     a {
+            //         img {
+            //             width: 210px;
+            //         }
+            //     }
+            // }
+
+            .header_menu {
+                // flex: 3;
+
+                .menu_top {
+                    // display: flex;
+
+                    .input_block {
+                        // margin-right: 57px;
+                        // flex-basis: 470px;
+                        // padding-bottom: 3px;
+                        // display: flex;
+                        // align-items: center;
+                        border-bottom: 1px solid #323232FF;
+
+                        label {
+                            // cursor: pointer;
+                        }
+
+                        input {
+                            // width: 100%;
+                            // background-color: transparent;
+                            // font-family: $Bahnschrift;
+                            // font-weight: light;
+                            // font-size: 18px;
+                            color: #787878FF;
+                            // border: none;
+
+                            // &:focus {
+                            //     outline: none;
+                            // }
+                        }
+                    }
+
+                    a {
+                        // margin-right: 15px;
+                        // display: flex;
+                        // align-items: center;
+                        // font-family: $Calibri;
+                        // font-weight: light;
+                        // font-size: 16px;
+                        color: #323232;
+
+                        img {
+                            // margin-right: 10px;
+                        }
+                        svg{
+                            color: #fff;
+                            background-color: #fff;
+                        }
+                    }
+                }
+
+                .menu_bottom {
+                    // margin-top: 33px;
+
+                    ul {
+                        // display: flex;
+                        // align-items: center;
+                        // gap: 44px;
+
+                        li {
+                            a {
+                                // display: flex;
+                                // align-items: center;
+
+                                // img {
+                                //     margin-left: 8px;
+                                // }
+
+                                // font-family: $Bahnschrift;
+                                // font-weight: 300;
+                                // font-size: 13px;
+                                color: #323232;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .header_end {
+                .sign {
+                    // display: flex;
+                    // align-items: center;
+
+                    a {
+                        // font-family: $Calibri;
+                        // font-weight: light;
+                        // font-size: 14px;
+                        color: #323232;
+                    }
+
+                    span {
+                        // font-family: $Calibri;
+                        // font-weight: light;
+                        // font-size: 14px;
+                        color: #323232;
+                    }
+                }
+
+                .statistic {
+                    // margin-top: 33px;
+                    // display: flex;
+                    // gap: 15px;
+
+                    a {
+                        // display: flex;
+                        // align-items: center;
+                        // font-family: $Calibri;
+                        // font-weight: light;
+                        // font-size: 16px;
+                        color: #323232;
+
+                        img {
+                            // width: 24px;
+                            // height: 20px;
+                            // margin-right: 7px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .list_link {
+        padding-top: 178px;
+        margin-bottom: 50px;
+        display: flex;
+        align-items: center;
+
+        a,
+        span {
+            margin: 0 2px;
+            font-size: 13.333px;
+            font-family: $Bahnschrift;
+            color: rgb(144, 144, 144);
+            text-align: left;
+        }
+    }
+
+    .list_wrapper{
+        padding-bottom: 110px;
+        display: flex;
+        justify-content: space-between;
+        .list_slider{
+            width: 400px;
+            .listSwiper{
+                .swiper-wrapper{
+                    .swiper-slide{
+                        padding-bottom: 120px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+                .swiper-button-next,
+                .swiper-button-prev{
+                    // width: 12px;
+                    // height: 25px;
+                    top: 80px;
+                    color: #B4B4B4FF;
+                }
+                .swiper-pagination{
+                    // margin-top: 120px;
+                    .swiper-pagination-bullet {
+                        background-color: #B4B4B4FF;
+                    }
+                    .swiper-pagination-bullet-active{
+                        background-color: #EA5E20FF;
+                    }
+                }
+            }
+        }
+        .list_main{
+            h3{
+                font-size: 20px;
+                font-family: $Bahnschrift;
+                color: rgb(38, 38, 38);
+                font-weight: bold;
+                text-transform: uppercase;
+                text-align: left;
+                margin-bottom: 16px;
+            }
+            h4{
+                font-size: 14.667px;
+                font-family: $Bahnschrift;
+                color: rgb(123, 123, 123);
+                text-align: left; 
+                margin-bottom: 42px; 
+            }
+            .share{
+                display: flex;
+                align-items: center;
+                gap: 28px;
+                margin-bottom: 52px;
+                a{
+                    display: flex;
+                    align-items: center;
+                    font-size: 13.333px;
+                    font-family: $Bahnschrift;
+                    color: rgb(0, 0, 0);
+                    text-align: left;
+                    svg{
+                        margin-right: 8px;
+                        transform: translateY(-4px);
+                    }
+                }
+            }
+            h6{
+                display: flex;
+                align-items: center;
+                font-size: 16px;
+                font-family: $Bahnschrift;
+                color: rgb(0, 0, 0);
+                text-align: left;
+                svg{
+                    transform: translateY(-2px);
+                    margin-right: 12px;
+                }
+            }
+            .shop_number{
+                margin-top: 40px;
+                margin-bottom: 50px;
+                display: flex;
+                align-items: center;
+                gap: 30px;
+                .number_btn{
+                    overflow: hidden;
+                    border-radius: 2px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 90px;
+                    height: 32px;
+                    border: 1px solid #ACBDCDFF;
+                    button{
+                        background-color: transparent;
+                        cursor: pointer;
+                        height: 100%;
+                        width: 25px;
+                        border: none;
+                    }
+                    button,span{
+                        font-size: 14.667px;
+                        font-family: $Bahnschrift;
+                        color: rgb(0, 0, 0);
+                    }
+                    .btn_left{
+                        border-right: 1px solid #ACBDCDFF;
+                    }
+                    .btn_right{
+                        border-left: 1px solid #ACBDCDFF;
+                    }
+                }
+                span{
+                    font-size: 14.667px;
+                    font-family: $Bahnschrift;
+                    color: rgb(0, 0, 0);
+                }
+            }
+            .list_btns{
+                display: flex;
+                align-items: center;
+                gap: 16px;
+                .btn_shop{
+                    cursor: pointer;
+                    border: none;
+                    height: 51px;
+                    width: 203px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 14.667px;
+                    font-family: $Arial; 
+                    color: rgb(255, 255, 255);
+                    text-align: center;
+                    background-color: #EA5E20FF !important;
+                    svg{
+                        margin-right: 11px;
+                    }
+                }
+                .btn_cupit{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 51px;
+                    width: 203px;
+                    border: 1px solid #C5C5C5FF;
+                    font-size: 14.667px;
+                    font-family: $Arial;
+                    color: rgb(0, 0, 0);
+                    text-align: center; 
+                }
+            }
+        }
+        .list_cards{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            .list_card{
+                display: flex;
+                align-items: start;
+                gap: 16px;
+                width: 332px;
+                padding: 16px;
+                border-radius: 20px;
+                padding: 15px;
+                border: 1px solid #F1F1F1FF;
+                .card_img{
+                    img{
+                        width: 40px;
+                        height: 31px;
+                        // background-color: red;
+                    }
+                }
+                .card_text{
+                    a{
+                        display: inline-block;
+                        margin-bottom: 16px;
+                        font-size: 14.667px;
+                        font-family: $Bahnschrift;
+                        color: #000;
+                        text-decoration: underline;
+                    }
+                    p{
+                        margin-bottom: 16px;
+                        font-size: 14.667px;
+                        font-family: $Calibri;
+                        color: rgb(101, 99, 99);
+                        text-align: left;   
+                    }
+                }
+            }
+        }
+    }
+
+    .list_tabs{
+        .tabs_btns{
+            padding-bottom: 40px;
+            display: flex;
+            align-items: center;
+            .tab_btn{
+                font-weight: 400;
+                cursor: pointer;
+                border: 1px solid #DEDEDEFF;
+                background-color: #EEEEEEFF;
+                width: 260px;
+                height: 45px;
+                font-size: 14.667px;
+                font-family: $Arial;
+                color: #000;
+            }
+            .whiteborder{
+                font-size: 14.667px;
+                font-family: $Arial;
+                color: rgb(234, 94, 32);
+                font-weight: bold;  
+                border: none;
+                background-color: transparent;
+                border-top: 3px solid rgb(234, 94, 32);
+            }
+        }
+        .tabContent{
+            font-size: 16px;
+            font-family: $Bahnschrift;
+            color: rgb(0, 0, 0);
+            line-height: 1.583; 
+        }
+        .hide {
+            display: none;
+        }
+        .show {
+            display: block;
+        }
+    }
+
+    .info{
+        margin-top: 50px;
+        h3{
+            font-size: 20px;
+            font-family: $Bahnschrift;
+            color: rgb(38, 38, 38);
+            font-weight: bold;
+            text-align: left; 
+            margin-bottom: 28px;
+        }
+        .info_wrapper{
+            max-width: 880px;
+            .info_block{
+                display: flex;
+                align-items: center;
+                .info_left{
+                    width: 35%;
+                    margin-right: 3px;
+                    p{
+                        padding: 10px 30px;
+                        font-size: 14.667px;
+                        font-family: $Calibri;
+                        color: rgb(29, 29, 29); 
+                    }
+                }
+                .line{
+                    width: 2px;
+                    height: 37px;
+                    background-color: #fff;
+                }
+                .info_right{
+                    width: 65%;
+                    p{
+                        padding: 10px 30px;
+                        font-size: 14.667px;
+                        font-family: $Calibri;
+                        color: rgb(29, 29, 29); 
+                    }
+                }
+            }
+            .info_block:nth-child(odd){
+                background-color: #EEEEEEFF;
+            }
+        }
+    }
+}
+@media (max-width: 1180px){
+    #card-product{
+        .list_wrapper{
+            justify-content: start;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    }
+}
+@media (max-width: 785px){
+    #card-product{
+        .list_wrapper{
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            .list_main{
+                .list_btns{
+                    .btn_cupit{
+                        width: 100px;
+                        font-size: 11px;
+                        height: 35px;
+                    }
+                    .btn_shop{
+                        font-size: 11px;
+                        width: 100px;
+                        height: 35px;
+                    }
+                }
+            }
+            .list_slider{
+                width: 300px;
+            }
+            .list_cards{
+                .list_card{
+                    width: 100%;
+                }
+            }
+        }
+        .info{
+            .info_wrapper{
+                .info_block{
+                    overflow: hidden;
+                    position: relative;
+                    .line{
+                        position: absolute;
+                        height: 100px;
+                        top: 0;
+                        left: 35%;
+                        // padding: 50px 0;
+                    }
+                    .info_right {
+                        p{
+                            padding: 10px;
+                        }
+                    }
+                    .info_left {
+                        p{
+                            padding: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

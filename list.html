@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <title>KELLER</title>
+</head>
+
+<body>
+    <section id="list">
+        <header id="header">
+            <div class="main_container">
+                <div class="header_wrapper">
+                    <div class="logo">
+                        <a href="#"><img src="./images/logo.svg" alt=""></a>
+                    </div>
+                    <div class="header_menu">
+                        <div class="menu_top">
+                            <div class="input_block">
+                                <input type="search" id="search" placeholder="Поиск...">
+                                <label for="search"><img src="./images/search_icon.svg" alt=""></label>
+                            </div>
+                            <a href="tel:+78125603443">
+                                <img src="./images/phone_icon.svg" alt=""> 
+                                +7 (812) 560-34-43
+                            </a>
+                            <a href="mailto:sales@keller.ru">
+                                <img src="./images/mail_icon.svg" alt="">sales@keller.ru
+                            </a>
+                        </div>
+                        <div class="menu_bottom">
+                            <ul>
+                                <li><a href="#">инструменты <img src="./images/down_icon.svg" alt=""></a>
+                                </li>
+                                <li><a href="#">о бренде</a></li>
+                                <li><a href="#">комплексные решения</a></li>
+                                <li><a href="#">доставка и оплата</a></li>
+                                <li><a href="#">контакты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header_end">
+                        <div class="sign">
+                            <a href="#">ВХОД</a>
+                            <span>/</span>
+                            <a href="#">РЕГИСТРАЦИЯ</a>
+                        </div>
+                        <div class="statistic">
+                            <a href="#"><img src="./images/statistic_icon.svg" alt="">(0)</a>
+                            <a href="#"><img src="./images/shop_icon.svg" alt="">пусто</a>
+                        </div>
+                        <button class="bars">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">
+                                <path
+                                    d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="mobile_menues">
+            <button class="mobile_menu_close">
+                <span>&times;</span>
+            </button>
+            <ul>
+                <li>
+                    <div class="input_block">
+                        <input type="search" id="search" placeholder="Поиск...">
+                        <label for="search"><img src="./images/search_icon.svg" alt=""></label>
+                    </div>
+                </li>
+                <li>
+                    <a href="tel:+78125603443">
+                        <img src="./images/phone_icon.svg" alt=""> +7 (812) 560-34-43
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:sales@keller.ru">
+                        <img src="./images/mail_icon.svg" alt="">sales@keller.ru
+                    </a>
+                </li>
+                <li><a href="#">инструменты </a>
+                </li>
+                <li><a href="#">о бренде</a></li>
+                <li><a href="#">комплексные решения</a></li>
+                <li><a href="#">доставка и оплата</a></li>
+                <li><a href="#">контакты</a></li>
+                <li class="sign">
+                    <a href="#">ВХОД</a>
+                    <span>/</span>
+                    <a href="#">РЕГИСТРАЦИЯ</a>
+                </li>
+                <li class="statistic">
+                    <a href="#"><img src="./images/statistic_icon.svg" alt="">(0)</a>
+                    <a href="#"><img src="./images/shop_icon.svg" alt="">пусто</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="main_container">
+            <div class="product_link">
+                <a href="./index.html">Главная</a>
+                <span>/</span>
+                <a href="./product.html">Продукция</a>
+                <span>/</span>
+                <a href="#">Пластины из твердого сплава</a>
+                <span>/</span>
+            </div>
+            <div class="product_wrapper">
+                <div class="product_left">
+                    <div class="accardion">
+                        <button class="accardion_head">
+                            <span class="text">
+                                <input type="checkbox">
+                                В наличии
+                            </span>
+                        </button>
+                        <ul class="accardion_body">
+                            <li><a href="#">Link 1</a></li>
+                            <li><a href="#">Link 2</a></li>
+                            <li><a href="#">Link 3</a></li>
+                            <li><a href="#">Link 4</a></li>
+                        </ul>
+                    </div>
+                    <div class="accardion">
+                        <button class="accardion_head">
+                            <span class="text">Радиус при вершине</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+                        </button>
+                        <ul class="accardion_body">
+                            <li><a href="#">Link 1</a></li>
+                            <li><a href="#">Link 2</a></li>
+                            <li><a href="#">Link 3</a></li>
+                            <li><a href="#">Link 4</a></li>
+                        </ul>
+                    </div>
+                    <div class="accardion">
+                        <button class="accardion_head">
+                            <span class="text">Материал</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+                        </button>
+                        <ul class="accardion_body">
+                            <li><a href="#">Link 1</a></li>
+                            <li><a href="#">Link 2</a></li>
+                            <li><a href="#">Link 3</a></li>
+                            <li><a href="#">Link 4</a></li>
+                        </ul>
+                    </div>
+                    <div class="accardion">
+                        <button class="accardion_head">
+                            <span class="text">Размер пластине</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+                        </button>
+                        <ul class="accardion_body">
+                            <li><a href="#">Link 1</a></li>
+                            <li><a href="#">Link 2</a></li>
+                            <li><a href="#">Link 3</a></li>
+                            <li><a href="#">Link 4</a></li>
+                        </ul>
+                    </div>
+                    <div class="accardion">
+                        <button class="accardion_head">
+                            <span class="text">Стружколом</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+                        </button>
+                        <ul class="accardion_body">
+                            <li><a href="#">Link 1</a></li>
+                            <li><a href="#">Link 2</a></li>
+                            <li><a href="#">Link 3</a></li>
+                            <li><a href="#">Link 4</a></li>
+                        </ul>
+                    </div>
+                    <div class="accardion">
+                        <button class="accardion_head">
+                            <span class="text">Розничная сена</span>
+                        </button>
+                        <ul class="accardion_body">
+                            <li><a href="#">Link 1</a></li>
+                            <li><a href="#">Link 2</a></li>
+                            <li><a href="#">Link 3</a></li>
+                            <li><a href="#">Link 4</a></li>
+                        </ul>
+                    </div>
+                    <div class="range-slider">
+                        <span class="rangeValues"></span>
+                        <input value="1039" min="1039" max="2673" step="1" type="range">
+                        <input value="2673" min="1039" max="2673" step="1" type="range">
+                    </div>
+                    <div class="wrapper">
+                        <p>Сбросить фильтры</p>
+                    </div>
+                </div>
+                <div class="product_right">
+                    <h2>Пластины из твердого сплава CN</h2>
+                    <div class="product_cards"> 
+                        <div class="cards_top">
+                            <h4>Наименование</h4>
+                            <h4>Обр. материал</h4>
+                        </div>
+                        <div class="product_card">
+                            <div>
+                                <img src="./images/list_card_img.png" alt="">
+                            </div>
+                            <div class="media_bottom">
+                                <h3>CNMG120412-PP MK6020</h3>
+                                <p>Артикул: 11000041 <span>В наличии</span></p>
+                            </div>
+                            <div>
+                                <svg 
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="35px" height="16px">
+                                    <image  x="0px" y="0px" width="35px" height="16px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAQCAMAAACr6TZoAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAB2lBMVEWz3/NrwOh2xel0xOn5+fn/8y10wOgAhNEDjdQAi9QAjdQAjNT/9C388C0HldgElNcBktYAjdUAj9UAktYFldcDlNf/9S3//y3//i0FlNcAkNYtn9t6wOZ1vuZtuuVSreAbmtkAjtUAk9f/9y3y5ix/eCeOhyj78S398y2Tiyh9difw5CwHlddltOP////9///2+PxZsuICk9f98S3PxCsRDiMbGCPXzSve0ysfHCMQDSPOxCpfsuLH5fU5qd6m1vDV6PYKk9a4rikhHSMjHyOVjSj//y6clCgiHyO1qym12fAAec09otzp8fkZmdmYkCg7NyRnYSZOSSVWUSVgWiU9OCSUjChhs+Lf7/mQyurM5va73PJtZyZNRyW8syksJyTCuSkuKiS0qyloYSZis+L8/f7/+/37+v3B3vMnn9sBk9f+8i3//C1TTSX36yw+OSREPyT37CxVTyVLRSX/+y273/ITltcem9kEj9X88CxAPCRfWCZybCYLByNybCdkXib67ixesuKy2/EAitMCkdb/+i3j2CsSDyKyqSkHBCKDfCcPDCLg1Sv98i1hsuK53fJsZSfHvSrs4CyFfSfJvypsZifi1ysAkdYim9lks+JAp93/9i3/8i377y1YA6rnAAAAAWJLR0QuVNMQhwAAAAd0SU1FB+cKCxAwKzX4cvkAAAFuSURBVCjPY2BgZGKGAyZGBhYWFlY0wMDGzsHJycUNBJycnBzsbBA1PKy8vDCClYGJi49fQFBQUEhYRFSUj4sJrIaHVUxcnIeVR0JcDMhmYOaUlJKWkZWTV1BUEhblZIaYo6yiqqYupqGppa3MClKjw6Wrp6+nZ2AoaARTYyxhYmpmLm5haWUtYQxRY6Nna2ev5+AozA9TI+7k7OLq5u7i4SkOV+Pl7aPn6yclCVfjHxAYJB4cEhoGUxOuFxEZpRetqIQwJyY2Lj4hMSkoGaYmRS81LT0jUygL5p7snNjcvPyC0MKi4hJWmF2lZeUVQgh/iVVWVbvV1Na51ec3iEHUNOo1NbdkZQnD1GS3trWrunV0drh1dfeU9ILV9On1C/ILCyOrmTBRfNLkSeJTpk5rzQaq4Z8+Y+as6cJIanhYZ4u3zhETF5vTKj6blQcSF4pSomCAiIu52cDYYuXJnguKC3CcgiMUOU5R452ItAEAgv5OPQtsTZwAAAAASUVORK5CYII=" />
+                                </svg>
+                            </div>
+                            <div class="product_card_btn">
+                                <button>
+                                    <svg 
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="24px" height="20px">
+                                   <image  x="0px" y="0px" width="24px" height="20px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAUCAQAAAA9vDUIAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfnCgsQDw2/K904AAABfUlEQVQoz4WTSyiEYRSGn3/GNZSiTEpRLFjIrWYhLCzIjg2xUIiyZEOyspXZMGUxGzaS3aQ0SolQbpmUS5KEyMJlYeQyr4Ux/1z8fO/mO2/vc875Fp8hN5W8k8I84wT59xhyksUbTfRSxRWt5PBplcVg3dBP6cfNHGMU8WYBfJBGAfrRpLxCyCbDQqhYR7Yw76MEBxA0e8QIWjgzgR3eqfnzvbk0M28Ct5xQ+yfQyCc+Ewjiw0myZTydDrzc2SKsdTIotQTqcDADkcAF11RbAl0scwkJEdYTWzjJ/TXupIIRiAZglT4WeCUxJi7ymOI4HjjiET8LJMVNeGDz+xINXDNNC34esEf5CZyZ1+jRLu5pI4A9PEUEyCTA6W8AZFNKEvtM8BxybDTQSxcveEMNIpQqj5bUoxW5ZIS8ah1oVMM6VJlQDFCobZUL1WtLqSFvSHNCaFEDQjEr3XDOIB76OQj/ij3a6eSDfDbiV0KFmtWuPHKEHbu6tak1dXzXXwKRyaUFF2ryAAAAAElFTkSuQmCC" />
+                                   </svg>
+                                   В корзину
+                                </button>
+                                <a href="#">
+                                    Дабавить в изобраное
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product_card">
+                            <div>
+                                <img src="./images/list_card_img.png" alt="">
+                            </div>
+                            <div>
+                                <h3>CNMG120412-PP MK6020</h3>
+                                <p>Артикул: 11000041 <span>В наличии</span></p>
+                            </div>
+                            <div>
+                                <svg 
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="35px" height="16px">
+                                    <image  x="0px" y="0px" width="35px" height="16px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAQCAMAAACr6TZoAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAB2lBMVEWz3/NrwOh2xel0xOn5+fn/8y10wOgAhNEDjdQAi9QAjdQAjNT/9C388C0HldgElNcBktYAjdUAj9UAktYFldcDlNf/9S3//y3//i0FlNcAkNYtn9t6wOZ1vuZtuuVSreAbmtkAjtUAk9f/9y3y5ix/eCeOhyj78S398y2Tiyh9difw5CwHlddltOP////9///2+PxZsuICk9f98S3PxCsRDiMbGCPXzSve0ysfHCMQDSPOxCpfsuLH5fU5qd6m1vDV6PYKk9a4rikhHSMjHyOVjSj//y6clCgiHyO1qym12fAAec09otzp8fkZmdmYkCg7NyRnYSZOSSVWUSVgWiU9OCSUjChhs+Lf7/mQyurM5va73PJtZyZNRyW8syksJyTCuSkuKiS0qyloYSZis+L8/f7/+/37+v3B3vMnn9sBk9f+8i3//C1TTSX36yw+OSREPyT37CxVTyVLRSX/+y273/ITltcem9kEj9X88CxAPCRfWCZybCYLByNybCdkXib67ixesuKy2/EAitMCkdb/+i3j2CsSDyKyqSkHBCKDfCcPDCLg1Sv98i1hsuK53fJsZSfHvSrs4CyFfSfJvypsZifi1ysAkdYim9lks+JAp93/9i3/8i377y1YA6rnAAAAAWJLR0QuVNMQhwAAAAd0SU1FB+cKCxAwKzX4cvkAAAFuSURBVCjPY2BgZGKGAyZGBhYWFlY0wMDGzsHJycUNBJycnBzsbBA1PKy8vDCClYGJi49fQFBQUEhYRFSUj4sJrIaHVUxcnIeVR0JcDMhmYOaUlJKWkZWTV1BUEhblZIaYo6yiqqYupqGppa3MClKjw6Wrp6+nZ2AoaARTYyxhYmpmLm5haWUtYQxRY6Nna2ev5+AozA9TI+7k7OLq5u7i4SkOV+Pl7aPn6yclCVfjHxAYJB4cEhoGUxOuFxEZpRetqIQwJyY2Lj4hMSkoGaYmRS81LT0jUygL5p7snNjcvPyC0MKi4hJWmF2lZeUVQgh/iVVWVbvV1Na51ec3iEHUNOo1NbdkZQnD1GS3trWrunV0drh1dfeU9ILV9On1C/ILCyOrmTBRfNLkSeJTpk5rzQaq4Z8+Y+as6cJIanhYZ4u3zhETF5vTKj6blQcSF4pSomCAiIu52cDYYuXJnguKC3CcgiMUOU5R452ItAEAgv5OPQtsTZwAAAAASUVORK5CYII=" />
+                                </svg>
+                            </div>
+                            <div class="product_card_btn">
+                                <button>
+                                    <svg 
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="24px" height="20px">
+                                   <image  x="0px" y="0px" width="24px" height="20px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAUCAQAAAA9vDUIAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfnCgsQDw2/K904AAABfUlEQVQoz4WTSyiEYRSGn3/GNZSiTEpRLFjIrWYhLCzIjg2xUIiyZEOyspXZMGUxGzaS3aQ0SolQbpmUS5KEyMJlYeQyr4Ux/1z8fO/mO2/vc875Fp8hN5W8k8I84wT59xhyksUbTfRSxRWt5PBplcVg3dBP6cfNHGMU8WYBfJBGAfrRpLxCyCbDQqhYR7Yw76MEBxA0e8QIWjgzgR3eqfnzvbk0M28Ct5xQ+yfQyCc+Ewjiw0myZTydDrzc2SKsdTIotQTqcDADkcAF11RbAl0scwkJEdYTWzjJ/TXupIIRiAZglT4WeCUxJi7ymOI4HjjiET8LJMVNeGDz+xINXDNNC34esEf5CZyZ1+jRLu5pI4A9PEUEyCTA6W8AZFNKEvtM8BxybDTQSxcveEMNIpQqj5bUoxW5ZIS8ah1oVMM6VJlQDFCobZUL1WtLqSFvSHNCaFEDQjEr3XDOIB76OQj/ij3a6eSDfDbiV0KFmtWuPHKEHbu6tak1dXzXXwKRyaUFF2ryAAAAAElFTkSuQmCC" />
+                                   </svg>
+                                   В корзину
+                                </button>
+                                <a href="#">
+                                    Дабавить в изобраное
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product_card">
+                            <div>
+                                <img src="./images/list_card_img.png" alt="">
+                            </div>
+                            <div>
+                                <h3>CNMG120412-PP MK6020</h3>
+                                <p>Артикул: 11000041 <span>В наличии</span></p>
+                            </div>
+                            <div>
+                                <svg 
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="35px" height="16px">
+                                    <image  x="0px" y="0px" width="35px" height="16px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAQCAMAAACr6TZoAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAB2lBMVEWz3/NrwOh2xel0xOn5+fn/8y10wOgAhNEDjdQAi9QAjdQAjNT/9C388C0HldgElNcBktYAjdUAj9UAktYFldcDlNf/9S3//y3//i0FlNcAkNYtn9t6wOZ1vuZtuuVSreAbmtkAjtUAk9f/9y3y5ix/eCeOhyj78S398y2Tiyh9difw5CwHlddltOP////9///2+PxZsuICk9f98S3PxCsRDiMbGCPXzSve0ysfHCMQDSPOxCpfsuLH5fU5qd6m1vDV6PYKk9a4rikhHSMjHyOVjSj//y6clCgiHyO1qym12fAAec09otzp8fkZmdmYkCg7NyRnYSZOSSVWUSVgWiU9OCSUjChhs+Lf7/mQyurM5va73PJtZyZNRyW8syksJyTCuSkuKiS0qyloYSZis+L8/f7/+/37+v3B3vMnn9sBk9f+8i3//C1TTSX36yw+OSREPyT37CxVTyVLRSX/+y273/ITltcem9kEj9X88CxAPCRfWCZybCYLByNybCdkXib67ixesuKy2/EAitMCkdb/+i3j2CsSDyKyqSkHBCKDfCcPDCLg1Sv98i1hsuK53fJsZSfHvSrs4CyFfSfJvypsZifi1ysAkdYim9lks+JAp93/9i3/8i377y1YA6rnAAAAAWJLR0QuVNMQhwAAAAd0SU1FB+cKCxAwKzX4cvkAAAFuSURBVCjPY2BgZGKGAyZGBhYWFlY0wMDGzsHJycUNBJycnBzsbBA1PKy8vDCClYGJi49fQFBQUEhYRFSUj4sJrIaHVUxcnIeVR0JcDMhmYOaUlJKWkZWTV1BUEhblZIaYo6yiqqYupqGppa3MClKjw6Wrp6+nZ2AoaARTYyxhYmpmLm5haWUtYQxRY6Nna2ev5+AozA9TI+7k7OLq5u7i4SkOV+Pl7aPn6yclCVfjHxAYJB4cEhoGUxOuFxEZpRetqIQwJyY2Lj4hMSkoGaYmRS81LT0jUygL5p7snNjcvPyC0MKi4hJWmF2lZeUVQgh/iVVWVbvV1Na51ec3iEHUNOo1NbdkZQnD1GS3trWrunV0drh1dfeU9ILV9On1C/ILCyOrmTBRfNLkSeJTpk5rzQaq4Z8+Y+as6cJIanhYZ4u3zhETF5vTKj6blQcSF4pSomCAiIu52cDYYuXJnguKC3CcgiMUOU5R452ItAEAgv5OPQtsTZwAAAAASUVORK5CYII=" />
+                                </svg>
+                            </div>
+                            <div class="product_card_btn">
+                                <button>
+                                    <svg 
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="24px" height="20px">
+                                   <image  x="0px" y="0px" width="24px" height="20px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAUCAQAAAA9vDUIAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfnCgsQDw2/K904AAABfUlEQVQoz4WTSyiEYRSGn3/GNZSiTEpRLFjIrWYhLCzIjg2xUIiyZEOyspXZMGUxGzaS3aQ0SolQbpmUS5KEyMJlYeQyr4Ux/1z8fO/mO2/vc875Fp8hN5W8k8I84wT59xhyksUbTfRSxRWt5PBplcVg3dBP6cfNHGMU8WYBfJBGAfrRpLxCyCbDQqhYR7Yw76MEBxA0e8QIWjgzgR3eqfnzvbk0M28Ct5xQ+yfQyCc+Ewjiw0myZTydDrzc2SKsdTIotQTqcDADkcAF11RbAl0scwkJEdYTWzjJ/TXupIIRiAZglT4WeCUxJi7ymOI4HjjiET8LJMVNeGDz+xINXDNNC34esEf5CZyZ1+jRLu5pI4A9PEUEyCTA6W8AZFNKEvtM8BxybDTQSxcveEMNIpQqj5bUoxW5ZIS8ah1oVMM6VJlQDFCobZUL1WtLqSFvSHNCaFEDQjEr3XDOIB76OQj/ij3a6eSDfDbiV0KFmtWuPHKEHbu6tak1dXzXXwKRyaUFF2ryAAAAAElFTkSuQmCC" />
+                                   </svg>
+                                   В корзину
+                                </button>
+                                <a href="#">
+                                    Дабавить в изобраное
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product_card">
+                            <div>
+                                <img src="./images/list_card_img.png" alt="">
+                            </div>
+                            <div>
+                                <h3>CNMG120412-PP MK6020</h3>
+                                <p>Артикул: 11000041 <span>В наличии</span></p>
+                            </div>
+                            <div>
+                                <svg 
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="35px" height="16px">
+                                    <image  x="0px" y="0px" width="35px" height="16px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAQCAMAAACr6TZoAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAB2lBMVEWz3/NrwOh2xel0xOn5+fn/8y10wOgAhNEDjdQAi9QAjdQAjNT/9C388C0HldgElNcBktYAjdUAj9UAktYFldcDlNf/9S3//y3//i0FlNcAkNYtn9t6wOZ1vuZtuuVSreAbmtkAjtUAk9f/9y3y5ix/eCeOhyj78S398y2Tiyh9difw5CwHlddltOP////9///2+PxZsuICk9f98S3PxCsRDiMbGCPXzSve0ysfHCMQDSPOxCpfsuLH5fU5qd6m1vDV6PYKk9a4rikhHSMjHyOVjSj//y6clCgiHyO1qym12fAAec09otzp8fkZmdmYkCg7NyRnYSZOSSVWUSVgWiU9OCSUjChhs+Lf7/mQyurM5va73PJtZyZNRyW8syksJyTCuSkuKiS0qyloYSZis+L8/f7/+/37+v3B3vMnn9sBk9f+8i3//C1TTSX36yw+OSREPyT37CxVTyVLRSX/+y273/ITltcem9kEj9X88CxAPCRfWCZybCYLByNybCdkXib67ixesuKy2/EAitMCkdb/+i3j2CsSDyKyqSkHBCKDfCcPDCLg1Sv98i1hsuK53fJsZSfHvSrs4CyFfSfJvypsZifi1ysAkdYim9lks+JAp93/9i3/8i377y1YA6rnAAAAAWJLR0QuVNMQhwAAAAd0SU1FB+cKCxAwKzX4cvkAAAFuSURBVCjPY2BgZGKGAyZGBhYWFlY0wMDGzsHJycUNBJycnBzsbBA1PKy8vDCClYGJi49fQFBQUEhYRFSUj4sJrIaHVUxcnIeVR0JcDMhmYOaUlJKWkZWTV1BUEhblZIaYo6yiqqYupqGppa3MClKjw6Wrp6+nZ2AoaARTYyxhYmpmLm5haWUtYQxRY6Nna2ev5+AozA9TI+7k7OLq5u7i4SkOV+Pl7aPn6yclCVfjHxAYJB4cEhoGUxOuFxEZpRetqIQwJyY2Lj4hMSkoGaYmRS81LT0jUygL5p7snNjcvPyC0MKi4hJWmF2lZeUVQgh/iVVWVbvV1Na51ec3iEHUNOo1NbdkZQnD1GS3trWrunV0drh1dfeU9ILV9On1C/ILCyOrmTBRfNLkSeJTpk5rzQaq4Z8+Y+as6cJIanhYZ4u3zhETF5vTKj6blQcSF4pSomCAiIu52cDYYuXJnguKC3CcgiMUOU5R452ItAEAgv5OPQtsTZwAAAAASUVORK5CYII=" />
+                                </svg>
+                            </div>
+                            <div class="product_card_btn">
+                                <button>
+                                    <svg 
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="24px" height="20px">
+                                   <image  x="0px" y="0px" width="24px" height="20px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAUCAQAAAA9vDUIAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfnCgsQDw2/K904AAABfUlEQVQoz4WTSyiEYRSGn3/GNZSiTEpRLFjIrWYhLCzIjg2xUIiyZEOyspXZMGUxGzaS3aQ0SolQbpmUS5KEyMJlYeQyr4Ux/1z8fO/mO2/vc875Fp8hN5W8k8I84wT59xhyksUbTfRSxRWt5PBplcVg3dBP6cfNHGMU8WYBfJBGAfrRpLxCyCbDQqhYR7Yw76MEBxA0e8QIWjgzgR3eqfnzvbk0M28Ct5xQ+yfQyCc+Ewjiw0myZTydDrzc2SKsdTIotQTqcDADkcAF11RbAl0scwkJEdYTWzjJ/TXupIIRiAZglT4WeCUxJi7ymOI4HjjiET8LJMVNeGDz+xINXDNNC34esEf5CZyZ1+jRLu5pI4A9PEUEyCTA6W8AZFNKEvtM8BxybDTQSxcveEMNIpQqj5bUoxW5ZIS8ah1oVMM6VJlQDFCobZUL1WtLqSFvSHNCaFEDQjEr3XDOIB76OQj/ij3a6eSDfDbiV0KFmtWuPHKEHbu6tak1dXzXXwKRyaUFF2ryAAAAAElFTkSuQmCC" />
+                                   </svg>
+                                   В корзину
+                                </button>
+                                <a href="#">
+                                    Дабавить в изобраное
+                                </a>
+                            </div>
+                        </div>
+                        <div class="product_card">
+                            <div>
+                                <img src="./images/list_card_img.png" alt="">
+                            </div>
+                            <div>
+                                <h3>CNMG120412-PP MK6020</h3>
+                                <p>Артикул: 11000041 <span>В наличии</span></p>
+                            </div>
+                            <div>
+                                <svg 
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="35px" height="16px">
+                                    <image  x="0px" y="0px" width="35px" height="16px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAQCAMAAACr6TZoAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAB2lBMVEWz3/NrwOh2xel0xOn5+fn/8y10wOgAhNEDjdQAi9QAjdQAjNT/9C388C0HldgElNcBktYAjdUAj9UAktYFldcDlNf/9S3//y3//i0FlNcAkNYtn9t6wOZ1vuZtuuVSreAbmtkAjtUAk9f/9y3y5ix/eCeOhyj78S398y2Tiyh9difw5CwHlddltOP////9///2+PxZsuICk9f98S3PxCsRDiMbGCPXzSve0ysfHCMQDSPOxCpfsuLH5fU5qd6m1vDV6PYKk9a4rikhHSMjHyOVjSj//y6clCgiHyO1qym12fAAec09otzp8fkZmdmYkCg7NyRnYSZOSSVWUSVgWiU9OCSUjChhs+Lf7/mQyurM5va73PJtZyZNRyW8syksJyTCuSkuKiS0qyloYSZis+L8/f7/+/37+v3B3vMnn9sBk9f+8i3//C1TTSX36yw+OSREPyT37CxVTyVLRSX/+y273/ITltcem9kEj9X88CxAPCRfWCZybCYLByNybCdkXib67ixesuKy2/EAitMCkdb/+i3j2CsSDyKyqSkHBCKDfCcPDCLg1Sv98i1hsuK53fJsZSfHvSrs4CyFfSfJvypsZifi1ysAkdYim9lks+JAp93/9i3/8i377y1YA6rnAAAAAWJLR0QuVNMQhwAAAAd0SU1FB+cKCxAwKzX4cvkAAAFuSURBVCjPY2BgZGKGAyZGBhYWFlY0wMDGzsHJycUNBJycnBzsbBA1PKy8vDCClYGJi49fQFBQUEhYRFSUj4sJrIaHVUxcnIeVR0JcDMhmYOaUlJKWkZWTV1BUEhblZIaYo6yiqqYupqGppa3MClKjw6Wrp6+nZ2AoaARTYyxhYmpmLm5haWUtYQxRY6Nna2ev5+AozA9TI+7k7OLq5u7i4SkOV+Pl7aPn6yclCVfjHxAYJB4cEhoGUxOuFxEZpRetqIQwJyY2Lj4hMSkoGaYmRS81LT0jUygL5p7snNjcvPyC0MKi4hJWmF2lZeUVQgh/iVVWVbvV1Na51ec3iEHUNOo1NbdkZQnD1GS3trWrunV0drh1dfeU9ILV9On1C/ILCyOrmTBRfNLkSeJTpk5rzQaq4Z8+Y+as6cJIanhYZ4u3zhETF5vTKj6blQcSF4pSomCAiIu52cDYYuXJnguKC3CcgiMUOU5R452ItAEAgv5OPQtsTZwAAAAASUVORK5CYII=" />
+                                </svg>
+                            </div>
+                            <div class="product_card_btn">
+                                <button>
+                                    <svg 
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="24px" height="20px">
+                                   <image  x="0px" y="0px" width="24px" height="20px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAUCAQAAAA9vDUIAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfnCgsQDw2/K904AAABfUlEQVQoz4WTSyiEYRSGn3/GNZSiTEpRLFjIrWYhLCzIjg2xUIiyZEOyspXZMGUxGzaS3aQ0SolQbpmUS5KEyMJlYeQyr4Ux/1z8fO/mO2/vc875Fp8hN5W8k8I84wT59xhyksUbTfRSxRWt5PBplcVg3dBP6cfNHGMU8WYBfJBGAfrRpLxCyCbDQqhYR7Yw76MEBxA0e8QIWjgzgR3eqfnzvbk0M28Ct5xQ+yfQyCc+Ewjiw0myZTydDrzc2SKsdTIotQTqcDADkcAF11RbAl0scwkJEdYTWzjJ/TXupIIRiAZglT4WeCUxJi7ymOI4HjjiET8LJMVNeGDz+xINXDNNC34esEf5CZyZ1+jRLu5pI4A9PEUEyCTA6W8AZFNKEvtM8BxybDTQSxcveEMNIpQqj5bUoxW5ZIS8ah1oVMM6VJlQDFCobZUL1WtLqSFvSHNCaFEDQjEr3XDOIB76OQj/ij3a6eSDfDbiV0KFmtWuPHKEHbu6tak1dXzXXwKRyaUFF2ryAAAAAElFTkSuQmCC" />
+                                   </svg>
+                                   В корзину
+                                </button>
+                                <a href="#">
+                                    Дабавить в изобраное
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script>
+        function getVals(){
+        // Get slider values
+        let parent = this.parentNode;
+        let slides = parent.getElementsByTagName("input");
+            let slide1 = parseFloat( slides[0].value );
+            let slide2 = parseFloat( slides[1].value );
+        // Neither slider will clip the other, so make sure we determine which is larger
+        if( slide1 > slide2 ){ let tmp = slide2; slide2 = slide1; slide1 = tmp; }
+        
+        let displayElement = parent.getElementsByClassName("rangeValues")[0];
+            displayElement.innerHTML = `<span>${slide1}</span>  <span class="line">${slide2}</span>`;
+        }
+
+        window.onload = function(){
+        // Initialize Sliders
+        let sliderSections = document.getElementsByClassName("range-slider");
+            for( let x = 0; x < sliderSections.length; x++ ){
+                let sliders = sliderSections[x].getElementsByTagName("input");
+                for( let y = 0; y < sliders.length; y++ ){
+                if( sliders[y].type ==="range" ){
+                    sliders[y].oninput = getVals;
+                    // Manually trigger event first time to display values
+                    sliders[y].oninput();
+                }
+                }
+            }
+        }
+    </script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

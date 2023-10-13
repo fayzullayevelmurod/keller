@@ -14,6 +14,7 @@
 $Bahnschrift: 'Bahnschrift', sans-serif;
 $Calibri: 'Calibri', sans-serif;
 $topCenter: calc(-45vh - (517px / 2));
+$Arial: 'Arial', sans-serif;
 
 .full_page_bg {
     position: fixed;
@@ -192,6 +193,129 @@ $topCenter: calc(-45vh - (517px / 2));
     background: #FB4D00 !important;
 }
 
+.modal_wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.4);
+    
+    .modal_bg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@keyframes modalActive {
+    0% {
+        opacity: 0;
+        transform: scale(1.3);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.modal_wrapper.active {
+    display: flex;
+    animation: modalActive .2s linear 1
+}
+
+@keyframes modalNoActive {
+    0% {
+        display: flex;
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        display: flex;
+        opacity: 0;
+        transform: scale(1.3);
+    }
+}
+
+.modal_wrapper.noActive {
+    display: none;
+    animation: modalNoActive .2s linear 1
+}
+
+.modal{
+    display: block;
+    max-width: 560px;
+    padding: 60px 45px;
+    background-color: #fff;
+    position: relative;
+    
+    h2{
+        font-size: 12px;
+        font-family: $Bahnschrift;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        line-height: 1.086;
+        text-align: center;
+        -moz-transform: matrix( 3.85076887384324,0,0,3.85076887384324,0,0);
+        -webkit-transform: matrix( 3.85076887384324,0,0,3.85076887384324,0,0);
+        -ms-transform: matrix( 3.85076887384324,0,0,3.85076887384324,0,0);
+    }
+    .modal_text{
+        padding: 0 10px;
+        margin: 48px 0;
+        font-size: 16px;
+        font-family: $Bahnschrift;
+        color: rgb(5, 5, 5);
+        line-height: 1.2;
+        text-align: center;
+    }
+    form{
+        input{
+            margin-bottom: 25px;
+            font-family: $Bahnschrift;
+            padding: 0 20px;
+            height: 60px;
+            display: block;
+            width: 100%;
+            color: #7F7F7FFF;
+            border: 1px solid #ACACACFF;
+            border-radius: 5px;
+            &:focus{
+                outline: none;
+            }
+        }
+        .form_btn{
+            margin: 0 auto;
+            width: 313px;
+            height: 57px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14.67px;
+            font-family: $Arial;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            line-height: 1.581;
+            text-align: center;
+            background-color: #FB4D00;
+        }
+        p{
+            margin-top: 16px;
+            font-size: 16px;
+            font-family: $Bahnschrift;
+            color: rgb(5, 5, 5);
+            line-height: 1.2;
+            text-align: center;
+            padding: 0 10px;
+        }
+    }
+}
 
 .main_container {
     max-width: 1360px;
@@ -238,6 +362,12 @@ $topCenter: calc(-45vh - (517px / 2));
 
                     label {
                         cursor: pointer;
+
+                        svg {
+                            path {
+                                fill: white;
+                            }
+                        }
                     }
 
                     input {
@@ -264,8 +394,12 @@ $topCenter: calc(-45vh - (517px / 2));
                     font-size: 16px;
                     color: #fff;
 
-                    img {
+                    svg {
                         margin-right: 10px;
+
+                        path {
+                            fill: white;
+                        }
                     }
                 }
             }
@@ -327,8 +461,13 @@ $topCenter: calc(-45vh - (517px / 2));
                     font-size: 16px;
                     color: #fff;
 
-                    img {
+                    svg {
                         margin-right: 7px;
+                        width: 24px;
+
+                        path {
+                            fill: white;
+                        }
                     }
                 }
             }
@@ -954,4 +1093,7 @@ footer {
     }
 }
 
+@import 'cardProduct';
+@import 'list';
+@import 'products';
 @import 'responsive';
