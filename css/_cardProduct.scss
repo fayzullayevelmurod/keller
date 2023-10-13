@@ -365,6 +365,7 @@
             padding-bottom: 40px;
             display: flex;
             align-items: center;
+
             .tab_btn{
                 font-weight: 400;
                 cursor: pointer;
@@ -376,14 +377,15 @@
                 font-family: $Arial;
                 color: #000;
             }
+
             .whiteborder{
-                font-size: 14.667px;
+                font-size: 14.667px !important;
                 font-family: $Arial;
-                color: rgb(234, 94, 32);
-                font-weight: bold;  
-                border: none;
-                background-color: transparent;
-                border-top: 3px solid rgb(234, 94, 32);
+                color: rgb(234, 94, 32) !important;
+                font-weight: bold !important;  
+                border: none !important;
+                background-color: transparent !important;
+                border-top: 3px solid rgb(234, 94, 32) !important;
             }
         }
         .tabContent{
@@ -392,12 +394,12 @@
             color: rgb(0, 0, 0);
             line-height: 1.583; 
         }
-        .hide {
-            display: none;
-        }
-        .show {
-            display: block;
-        }
+        // .hide {
+        //     display: none;
+        // }
+        // .show {
+        //     display: block;
+        // }
     }
 
     .info{

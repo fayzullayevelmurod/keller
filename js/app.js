@@ -145,3 +145,36 @@ if ($('.open_modal').length) {
         $('.modal_wrapper').addClass('noActive')
     })
 }
+
+if ($('.accardion').length) {
+    $('.accardion .accardion_body').slideUp(0);
+
+    $(".accardion").each(function (idx, el) {
+        $(el).find('.accardion_head').click(function () {
+            $(el).find('.accardion_body').slideToggle(300)
+        })
+    })
+}
+
+if ($('.shop_number').length) {
+    let price = $('.shop_number .counter_number')[0];
+    $('.shop_number .btn_left').click(function () {
+        if (Number(price.innerText) != 0) {
+            price.innerText = Number(price.innerText) - 1;
+        }
+    })
+
+    $('.shop_number .btn_right').click(function () {
+        price.innerText = Number(price.innerText) + 1;
+    })
+}
+
+if ($('.list_tabs').length) {
+    $('.tab_content').not('.tab_content_1').hide(0);
+    $('.list_tabs .tab_btn').click(function () {
+        $('.tab_content').not(`.tab_content_${$(this).attr('data-index')}`).hide(0);
+        $(`.tab_content_${$(this).attr('data-index')}`).show(0);
+        $('.list_tabs .tab_btn').removeClass('whiteborder');
+        $(this).addClass('whiteborder');
+    })
+}

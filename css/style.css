@@ -1180,25 +1180,19 @@ footer .footer_text p {
   color: #000;
 }
 #card-product .list_tabs .tabs_btns .whiteborder {
-  font-size: 14.667px;
+  font-size: 14.667px !important;
   font-family: "Arial", sans-serif;
-  color: rgb(234, 94, 32);
-  font-weight: bold;
-  border: none;
-  background-color: transparent;
-  border-top: 3px solid rgb(234, 94, 32);
+  color: rgb(234, 94, 32) !important;
+  font-weight: bold !important;
+  border: none !important;
+  background-color: transparent !important;
+  border-top: 3px solid rgb(234, 94, 32) !important;
 }
 #card-product .list_tabs .tabContent {
   font-size: 16px;
   font-family: "Bahnschrift", sans-serif;
   color: rgb(0, 0, 0);
   line-height: 1.583;
-}
-#card-product .list_tabs .hide {
-  display: none;
-}
-#card-product .list_tabs .show {
-  display: block;
 }
 #card-product .info {
   margin-top: 50px;
@@ -1403,7 +1397,16 @@ body {
   border-bottom: 5px solid transparent;
 }
 #list .product_wrapper .product_left .accardion .accardion_body {
-  display: none;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+#list .product_wrapper .product_left .accardion .accardion_body li a {
+  font-size: 16px;
+  font-family: "Calibri", sans-serif;
+  color: rgb(55, 58, 59);
+  font-weight: 500;
 }
 #list .product_wrapper .product_left .accardion:nth-child(6) {
   border-bottom: none;
@@ -1748,7 +1751,16 @@ body {
   border-bottom: 5px solid transparent;
 }
 #product .product_wrapper .product_left .accardion .accardion_body {
-  display: none;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+#product .product_wrapper .product_left .accardion .accardion_body li a {
+  font-size: 16px;
+  font-family: "Calibri", sans-serif;
+  color: rgb(55, 58, 59);
+  font-weight: 500;
 }
 #product .product_wrapper .product_left .accardion:nth-child(5) {
   border-bottom: 1px solid transparent;
