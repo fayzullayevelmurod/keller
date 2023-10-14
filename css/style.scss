@@ -13,7 +13,7 @@
 
 $Bahnschrift: 'Bahnschrift', sans-serif;
 $Calibri: 'Calibri', sans-serif;
-$topCenter: calc(-45vh - (517px / 2));
+$topCenter: calc(-99vh + 50vh - (517px / 2) + (163px / 2));
 $Arial: 'Arial', sans-serif;
 
 .full_page_bg {
@@ -39,12 +39,13 @@ $Arial: 'Arial', sans-serif;
         height: 100%;
         background: transparent;
         transition: .4s ease all;
+        background: rgba(0, 0, 0, 0.35);
     }
 }
 
 .full_page_bg.active {
     .full_page_bg_after {
-        background: rgba(0, 0, 0, .7);
+        background: rgba(0, 0, 0, .85);
     }
 }
 
@@ -434,7 +435,11 @@ $Arial: 'Arial', sans-serif;
                     gap: 44px;
 
                     li {
-                        a {
+                        position: relative;
+
+                        a, span {
+                            cursor: pointer;
+
                             img {
                                 margin-left: 8px;
                             }
@@ -443,6 +448,70 @@ $Arial: 'Arial', sans-serif;
                             font-weight: 300;
                             font-size: 13.4px;
                             color: #fff;
+                            text-transform: uppercase;
+                        }
+
+                        .menu_bottom_in_wrapper {
+                            position: absolute;
+                            left: -20px;
+                            padding-top: 0;
+                            display: none;
+                            padding-top: 20px;
+                            
+                            ul {
+                                background: black;
+                                flex-direction: column;
+                                gap: 0;
+        
+                                li {
+                                    position: static;
+                                    width: 350px;
+                                    border-bottom: 1px solid rgba(128, 128, 128, 0.568);
+        
+                                    a {
+                                        padding: 10px 20px;
+                                        display: block;
+        
+                                        &:hover {
+                                            color: #fc4d00;
+                                        }
+                                    }
+        
+                                    .menu_child {
+                                        position: absolute;
+                                        right: -100%;
+                                        top: 20px;
+                                        padding-left: 2px;
+                                        display: none;
+
+                                        li {
+                                            a {
+                                                color: white;
+
+                                                &:hover {
+                                                    color: #fc4d00;
+                                                }
+                                            }
+                                        }
+                                    }
+        
+                                    &:hover {
+                                        a {
+                                            color: #fc4d00;
+                                        }
+
+                                        .menu_child {
+                                            display: block;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        &:hover {
+                            .menu_bottom_in_wrapper {
+                                display: block;
+                            }
                         }
                     }
                 }
@@ -450,6 +519,9 @@ $Arial: 'Arial', sans-serif;
         }
 
         .header_end {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
             .sign {
                 display: flex;
                 align-items: center;
@@ -481,8 +553,9 @@ $Arial: 'Arial', sans-serif;
                     font-weight: light;
                     font-size: 16px;
                     color: #fff;
+                    height: auto;
 
-                    svg {
+                    svg, img {
                         margin-right: 7px;
                         width: 24px;
 
@@ -510,19 +583,19 @@ $Arial: 'Arial', sans-serif;
     align-items: center;
 
     h2 {
-        max-width: 784px;
+        max-width: 980px;
         font-family: $Calibri;
         font-weight: bold;
-        font-size: 56px;
+        font-size: 70px;
         color: #fff;
-        transform: translateX(-20%);
+        transform: translateX(-10%);
         opacity: 0;
     }
 
     @keyframes h2Active {
         0% {
             opacity: 0;
-            transform: translateX(-20%);
+            transform: translateX(-10%);
         }
         100% {
             opacity: 1;
@@ -533,7 +606,7 @@ $Arial: 'Arial', sans-serif;
     h2.active {
         opacity: 1;
         transform: translateX(0);
-        animation: h2Active .8s linear 1;
+        animation: h2Active .4s linear 1;
     }
 
     @keyframes h2NoActive {
@@ -543,14 +616,14 @@ $Arial: 'Arial', sans-serif;
         }
         100% {
             opacity: 0;
-            transform: translateX(-20%);
+            transform: translateX(-10%);
         }
     }
 
     h2.noActive {
         opacity: 0;
-        transform: translateX(-20%);
-        animation: h2NoActive .8s linear 1;
+        transform: translateX(-10%);
+        animation: h2NoActive .4s linear 1;
     }
 }
 
@@ -564,6 +637,7 @@ $Arial: 'Arial', sans-serif;
         left: 0;
         width: 100%;
         height: 45%;
+        display: none !important;
     }
 
     .card_slider {
@@ -639,6 +713,7 @@ $Arial: 'Arial', sans-serif;
         right: 100px;
         top: 50%;
         display: block;
+        display: none !important;
 
         img {
             height: 100px;
@@ -651,12 +726,29 @@ $Arial: 'Arial', sans-serif;
 
     .main_container {
         display: flex;
-        align-items: center;
+        align-items: flex-end;
         height: 100vh;
     }
 
-    .main_container {
-        align-items: flex-end;
+    button {
+        background: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        position: absolute;
+        left: calc(50% - (35px / 2));
+        bottom: 10px;
+        display: flex;
+        flex-direction: column;
+
+        img {
+            transform: rotateZ(-90deg);
+            width: 35px;
+        }
+
+        .img_2 {
+            margin-top: -25px;
+        }
     }
 
     .about_wrapper {
@@ -684,10 +776,11 @@ $Arial: 'Arial', sans-serif;
                 p {
                     max-width: 790px;
                     font-size: 17px;
-                    font-weight: light;
+                    font-weight: 400;
                     font-family: $Bahnschrift;
                     color: #fff;
                     margin-bottom: 30px;
+                    opacity: 0.7;
                 }
             }
 
@@ -702,7 +795,8 @@ $Arial: 'Arial', sans-serif;
             text-align: center;
 
             h3 {
-                font-size: 18px;
+                font-size: 49px;
+                text-transform: uppercase;
                 font-weight: bold;
                 font-family: $Bahnschrift;
                 color: #fff;
@@ -734,6 +828,8 @@ $Arial: 'Arial', sans-serif;
                         font-weight: bold;
                         font-family: $Bahnschrift;
                         color: #fff;
+                        text-transform: uppercase;
+                        opacity: 0.85;
                     }
                 }
             }
@@ -797,6 +893,27 @@ $Arial: 'Arial', sans-serif;
         margin-bottom: 78px;
     }
 
+    button {
+        background: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        position: absolute;
+        left: calc(50% - (35px / 2));
+        bottom: 10px;
+        display: flex;
+        flex-direction: column;
+
+        img {
+            transform: rotateZ(-90deg);
+            width: 35px;
+        }
+
+        .img_2 {
+            margin-top: -25px;
+        }
+    }
+
     .partners_wrapper {
         padding-bottom: 220px;
         display: flex;
@@ -831,6 +948,7 @@ $Arial: 'Arial', sans-serif;
         height: 100vh;
         flex-direction: column;
         justify-content: center;
+        padding-top: 128px;
     }
 
     h2 {
@@ -867,8 +985,7 @@ $Arial: 'Arial', sans-serif;
             .card_img {
                 margin-right: 10px;
                 transform: translateY(-10px);
-                width: 55px;
-                height: 55px;
+                width: 110px;
 
                 img {
                     width: 100%;
@@ -895,13 +1012,13 @@ $Arial: 'Arial', sans-serif;
 }
 
 .products {
-    background-image: url('../images/block_bg.png');
+    background-image: url('../images/products_bg.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right center;
 
     .products_in {
-        background-color: rgb(19, 14, 14, 0.9);
+        // background-color: rgb(19, 14, 14, 0.9);
 
         .main_container {
             height: 100vh;
@@ -909,6 +1026,7 @@ $Arial: 'Arial', sans-serif;
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            padding-top: 128px;
         }
 
         h2 {
@@ -946,7 +1064,7 @@ $Arial: 'Arial', sans-serif;
     background-color: #F5F5F5;
 
     .main_container {
-        padding-top: 50px;
+        padding-top: 128px;
         height: 100vh;
         display: flex;
         flex-direction: column;

@@ -34,10 +34,11 @@
   height: 100%;
   background: transparent;
   transition: 0.4s ease all;
+  background: rgba(0, 0, 0, 0.35);
 }
 
 .full_page_bg.active .full_page_bg_after {
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.85);
 }
 
 #fullpage .section .item {
@@ -93,16 +94,16 @@
     transform: translateY(0);
   }
   100% {
-    transform: translateY(calc(-45vh - 258.5px));
+    transform: translateY(calc(-49vh - 258.5px + 81.5px));
   }
 }
 #fullpage .section_2 .cards .card_slider .swiper-slide .main_card.active {
-  transform: translateY(calc(-45vh - 258.5px));
+  transform: translateY(calc(-49vh - 258.5px + 81.5px));
   animation: mainCardActive 0.4s linear 1;
 }
 @keyframes mainCardNoActive {
   0% {
-    transform: translateY(calc(-45vh - 258.5px));
+    transform: translateY(calc(-49vh - 258.5px + 81.5px));
   }
   100% {
     transform: translateY(0);
@@ -375,14 +376,70 @@
   align-items: center;
   gap: 44px;
 }
-#header .header_wrapper .header_menu .menu_bottom ul li a {
+#header .header_wrapper .header_menu .menu_bottom ul li {
+  position: relative;
+}
+#header .header_wrapper .header_menu .menu_bottom ul li a, #header .header_wrapper .header_menu .menu_bottom ul li span {
+  cursor: pointer;
   font-family: "Bahnschrift", sans-serif;
   font-weight: 300;
   font-size: 13.4px;
   color: #fff;
+  text-transform: uppercase;
 }
-#header .header_wrapper .header_menu .menu_bottom ul li a img {
+#header .header_wrapper .header_menu .menu_bottom ul li a img, #header .header_wrapper .header_menu .menu_bottom ul li span img {
   margin-left: 8px;
+}
+#header .header_wrapper .header_menu .menu_bottom ul li .menu_bottom_in_wrapper {
+  position: absolute;
+  left: -20px;
+  padding-top: 0;
+  display: none;
+  padding-top: 20px;
+}
+#header .header_wrapper .header_menu .menu_bottom ul li .menu_bottom_in_wrapper ul {
+  background: black;
+  flex-direction: column;
+  gap: 0;
+}
+#header .header_wrapper .header_menu .menu_bottom ul li .menu_bottom_in_wrapper ul li {
+  position: static;
+  width: 350px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.568);
+}
+#header .header_wrapper .header_menu .menu_bottom ul li .menu_bottom_in_wrapper ul li a {
+  padding: 10px 20px;
+  display: block;
+}
+#header .header_wrapper .header_menu .menu_bottom ul li .menu_bottom_in_wrapper ul li a:hover {
+  color: #fc4d00;
+}
+#header .header_wrapper .header_menu .menu_bottom ul li .menu_bottom_in_wrapper ul li .menu_child {
+  position: absolute;
+  right: -100%;
+  top: 20px;
+  padding-left: 2px;
+  display: none;
+}
+#header .header_wrapper .header_menu .menu_bottom ul li .menu_bottom_in_wrapper ul li .menu_child li a {
+  color: white;
+}
+#header .header_wrapper .header_menu .menu_bottom ul li .menu_bottom_in_wrapper ul li .menu_child li a:hover {
+  color: #fc4d00;
+}
+#header .header_wrapper .header_menu .menu_bottom ul li .menu_bottom_in_wrapper ul li:hover a {
+  color: #fc4d00;
+}
+#header .header_wrapper .header_menu .menu_bottom ul li .menu_bottom_in_wrapper ul li:hover .menu_child {
+  display: block;
+}
+#header .header_wrapper .header_menu .menu_bottom ul li:hover .menu_bottom_in_wrapper {
+  display: block;
+}
+#header .header_wrapper .header_end {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 #header .header_wrapper .header_end .sign {
   display: flex;
@@ -412,12 +469,13 @@
   font-weight: light;
   font-size: 16px;
   color: #fff;
+  height: auto;
 }
-#header .header_wrapper .header_end .statistic a svg {
+#header .header_wrapper .header_end .statistic a svg, #header .header_wrapper .header_end .statistic a img {
   margin-right: 7px;
   width: 24px;
 }
-#header .header_wrapper .header_end .statistic a svg path {
+#header .header_wrapper .header_end .statistic a svg path, #header .header_wrapper .header_end .statistic a img path {
   fill: white;
 }
 #header .header_wrapper .header_end .bars {
@@ -434,18 +492,18 @@
   align-items: center;
 }
 .home h2 {
-  max-width: 784px;
+  max-width: 980px;
   font-family: "Calibri", sans-serif;
   font-weight: bold;
-  font-size: 56px;
+  font-size: 70px;
   color: #fff;
-  transform: translateX(-20%);
+  transform: translateX(-10%);
   opacity: 0;
 }
 @keyframes h2Active {
   0% {
     opacity: 0;
-    transform: translateX(-20%);
+    transform: translateX(-10%);
   }
   100% {
     opacity: 1;
@@ -455,7 +513,7 @@
 .home h2.active {
   opacity: 1;
   transform: translateX(0);
-  animation: h2Active 0.8s linear 1;
+  animation: h2Active 0.4s linear 1;
 }
 @keyframes h2NoActive {
   0% {
@@ -464,13 +522,13 @@
   }
   100% {
     opacity: 0;
-    transform: translateX(-20%);
+    transform: translateX(-10%);
   }
 }
 .home h2.noActive {
   opacity: 0;
-  transform: translateX(-20%);
-  animation: h2NoActive 0.8s linear 1;
+  transform: translateX(-10%);
+  animation: h2NoActive 0.4s linear 1;
 }
 
 .cards {
@@ -483,6 +541,7 @@
   left: 0;
   width: 100%;
   height: 45%;
+  display: none !important;
 }
 .cards .card_slider .main_card {
   position: relative;
@@ -547,6 +606,7 @@
   right: 100px;
   top: 50%;
   display: block;
+  display: none !important;
 }
 .cards .left_btn img {
   height: 100px;
@@ -557,11 +617,26 @@
 }
 .about .main_container {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   height: 100vh;
 }
-.about .main_container {
-  align-items: flex-end;
+.about button {
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+  left: calc(50% - 17.5px);
+  bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.about button img {
+  transform: rotateZ(-90deg);
+  width: 35px;
+}
+.about button .img_2 {
+  margin-top: -25px;
 }
 .about .about_wrapper {
   position: relative;
@@ -586,10 +661,11 @@
 .about .about_wrapper .about_top .about_top_left p {
   max-width: 790px;
   font-size: 17px;
-  font-weight: light;
+  font-weight: 400;
   font-family: "Bahnschrift", sans-serif;
   color: #fff;
   margin-bottom: 30px;
+  opacity: 0.7;
 }
 .about .about_wrapper .about_top .about_top_right img {
   width: 100%;
@@ -598,7 +674,8 @@
   text-align: center;
 }
 .about .about_wrapper .about_bottom h3 {
-  font-size: 18px;
+  font-size: 49px;
+  text-transform: uppercase;
   font-weight: bold;
   font-family: "Bahnschrift", sans-serif;
   color: #fff;
@@ -628,6 +705,8 @@
   font-weight: bold;
   font-family: "Bahnschrift", sans-serif;
   color: #fff;
+  text-transform: uppercase;
+  opacity: 0.85;
 }
 .about .about_wrapper .about_down {
   display: flex;
@@ -677,6 +756,24 @@
   color: #fff;
   margin-bottom: 78px;
 }
+.partners button {
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+  left: calc(50% - 17.5px);
+  bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.partners button img {
+  transform: rotateZ(-90deg);
+  width: 35px;
+}
+.partners button .img_2 {
+  margin-top: -25px;
+}
 .partners .partners_wrapper {
   padding-bottom: 220px;
   display: flex;
@@ -706,6 +803,7 @@
   height: 100vh;
   flex-direction: column;
   justify-content: center;
+  padding-top: 128px;
 }
 .features h2 {
   text-align: center;
@@ -737,8 +835,7 @@
 .features .features_block .features_card .card_img {
   margin-right: 10px;
   transform: translateY(-10px);
-  width: 55px;
-  height: 55px;
+  width: 110px;
 }
 .features .features_block .features_card .card_img img {
   width: 100%;
@@ -759,13 +856,10 @@
 }
 
 .products {
-  background-image: url("../images/block_bg.png");
+  background-image: url("../images/products_bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right center;
-}
-.products .products_in {
-  background-color: rgba(19, 14, 14, 0.9);
 }
 .products .products_in .main_container {
   height: 100vh;
@@ -773,6 +867,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-top: 128px;
 }
 .products .products_in h2 {
   padding-top: 85px;
@@ -805,7 +900,7 @@
   background-color: #F5F5F5;
 }
 .dealers .main_container {
-  padding-top: 50px;
+  padding-top: 128px;
   height: 100vh;
   display: flex;
   flex-direction: column;

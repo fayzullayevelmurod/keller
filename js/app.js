@@ -66,6 +66,7 @@ if ($('#fullpage').length) {
     let fullPage = new fullpage('#fullpage', {
         autoScrolling: true,
         navigation: true,
+        scrollingSpeed: 1400,
         afterLoad: function (origin, destination, direction, trigger) {
             var origin = this.item;
             if (section_2.classList.contains('active')) {
