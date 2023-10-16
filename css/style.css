@@ -354,6 +354,7 @@
   display: flex;
 }
 #header .header_wrapper .header_menu .menu_top a {
+  letter-spacing: 0.8px;
   margin-right: 15px;
   display: flex;
   align-items: center;
@@ -375,6 +376,9 @@
   display: flex;
   align-items: center;
   gap: 44px;
+}
+#header .header_wrapper .header_menu .menu_bottom ul a {
+  letter-spacing: 0.52px;
 }
 #header .header_wrapper .header_menu .menu_bottom ul li {
   position: relative;
@@ -592,6 +596,7 @@
   height: 100%;
 }
 .cards .card_slider .main_card .card_btn {
+  letter-spacing: 0.7px;
   opacity: 0;
   transition: 0.3s linear;
   position: absolute;
@@ -664,6 +669,7 @@
   justify-content: space-between;
 }
 .about .about_wrapper .about_top .about_top_left h3 {
+  letter-spacing: 1.92px;
   padding-bottom: 16px;
   max-width: 325px;
   font-size: 48px;
@@ -674,6 +680,7 @@
   border-bottom: 4px solid #fc4d00;
 }
 .about .about_wrapper .about_top .about_top_left p {
+  letter-spacing: 0.68px;
   max-width: 790px;
   font-size: 17px;
   font-weight: 400;
@@ -709,12 +716,14 @@
   align-items: center;
 }
 .about .about_wrapper .about_bottom .about_blocks .about_block span {
+  letter-spacing: 2.44px;
   font-size: 60px;
   font-weight: bold;
   font-family: "Bahnschrift", sans-serif;
   color: #fc4d00;
 }
 .about .about_wrapper .about_bottom .about_blocks .about_block h4 {
+  letter-spacing: 0.64px;
   max-width: 280px;
   font-size: 16px;
   font-weight: bold;
@@ -755,6 +764,7 @@
   background-size: cover;
 }
 .partners h2 {
+  letter-spacing: 1.92px;
   padding-top: 357px;
   text-align: center;
   font-size: 48px;
@@ -922,6 +932,7 @@
   justify-content: center;
 }
 .dealers .dealers_title {
+  letter-spacing: 1.84px;
   text-align: center;
   font-size: 46px;
   font-weight: bold;
@@ -959,6 +970,7 @@
   width: 100%;
 }
 .dealers .dealers_wrapper .dealers_card h4 {
+  letter-spacing: 0.96px;
   margin-top: 23px;
   font-size: 24px;
   font-weight: 500;
@@ -967,6 +979,7 @@
   margin-bottom: 25px;
 }
 .dealers .dealers_wrapper .dealers_card p {
+  letter-spacing: 0.64px;
   font-family: "Bahnschrift", sans-serif;
   font-weight: light;
   max-width: 327px;
