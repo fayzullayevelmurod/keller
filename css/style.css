@@ -1992,6 +1992,10 @@ body {
   }
   #header .header_wrapper .header_end .statistic {
     margin-top: 0;
+    display: none;
+  }
+  #header .header_wrapper .header_end .sign {
+    display: none;
   }
   #header .header_wrapper .header_end .bars {
     background: transparent;
