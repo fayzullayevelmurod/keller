@@ -68,6 +68,9 @@ if ($('#fullpage').length) {
         autoScrolling: true,
         navigation: true,
         scrollingSpeed: 0,
+        onScrollOverflow: function(section, slide, position, direction){
+            console.log("load ishladi");
+        },
         afterLoad: function (origin, destination, direction, trigger) {
             var origin = this.item;
             if (section_2.classList.contains('active')) {
@@ -95,6 +98,7 @@ if ($('#fullpage').length) {
                 fullPage.setScrollingSpeed(1400)
             } else {
                 setTimeout(() => {
+                    fullPage.setScrollingSpeed(0)
                     $('.section_home h2').removeClass('noActive')
                     $('.section_home h2').addClass('active')
                 }, 1000);
@@ -120,6 +124,7 @@ if ($('#fullpage').length) {
             };
     
         },
+        
     });
 }
 

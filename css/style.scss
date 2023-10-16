@@ -563,6 +563,10 @@ $Arial: 'Arial', sans-serif;
                             fill: white;
                         }
                     }
+
+                    .svg_1 {
+                        width: 18px;
+                    }
                 }
             }
 
@@ -583,10 +587,10 @@ $Arial: 'Arial', sans-serif;
     align-items: center;
 
     h2 {
-        max-width: 1050px;
+        max-width: 980px;
         font-family: $Bahnschrift;
         font-weight: bold;
-        font-size: 65px;
+        font-size: 56px;
         letter-spacing: 7px;
         color: #fff;
         transform: translateX(-10%);

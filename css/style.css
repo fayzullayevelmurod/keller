@@ -478,6 +478,9 @@
 #header .header_wrapper .header_end .statistic a svg path, #header .header_wrapper .header_end .statistic a img path {
   fill: white;
 }
+#header .header_wrapper .header_end .statistic a .svg_1 {
+  width: 18px;
+}
 #header .header_wrapper .header_end .bars {
   display: none;
 }
@@ -492,10 +495,10 @@
   align-items: center;
 }
 .home h2 {
-  max-width: 1050px;
+  max-width: 980px;
   font-family: "Bahnschrift", sans-serif;
   font-weight: bold;
-  font-size: 65px;
+  font-size: 56px;
   letter-spacing: 7px;
   color: #fff;
   transform: translateX(-10%);
