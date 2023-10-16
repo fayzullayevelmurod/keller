@@ -873,9 +873,9 @@
   color: #000;
 }
 .features .features_block .features_card p {
-  max-width: 321px;
+  max-width: 342px;
   font-size: 16px;
-  font-weight: light;
+  font-weight: 300;
   font-family: "Bahnschrift", sans-serif;
   color: #6a6a6a;
 }
