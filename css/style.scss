@@ -39,7 +39,7 @@ $Arial: 'Arial', sans-serif;
         height: 100%;
         background: transparent;
         transition: .4s ease all;
-        background: rgba(0, 0, 0, 0.35);
+        background: rgba(0, 0, 0, 0.4);
     }
 }
 
@@ -583,10 +583,11 @@ $Arial: 'Arial', sans-serif;
     align-items: center;
 
     h2 {
-        max-width: 980px;
-        font-family: $Calibri;
+        max-width: 1050px;
+        font-family: $Arial;
         font-weight: bold;
-        font-size: 70px;
+        font-size: 65px;
+        letter-spacing: 5px;
         color: #fff;
         transform: translateX(-10%);
         opacity: 0;
@@ -636,8 +637,21 @@ $Arial: 'Arial', sans-serif;
         bottom: 15%;
         left: 0;
         width: 100%;
-        height: 45%;
+        height: 45%; 
         display: none !important;
+    }
+
+    .main_container {
+        transition: none;
+    }
+
+    .card_slider {
+        transition: none !important;
+
+        .swiper-wrapper {
+            transition: none !important; 
+            transition-property: none !important;
+        }
     }
 
     .card_slider {

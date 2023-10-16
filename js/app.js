@@ -6,6 +6,7 @@ if ($('.card_slider').length) {
     let card_slider = new Swiper(".card_slider", {
         slidesPerView: 1,
         spaceBetween: 13,
+        speed: 0,
         breakpoints: {
             1300: {
                 slidesPerView: 5,
@@ -66,7 +67,7 @@ if ($('#fullpage').length) {
     let fullPage = new fullpage('#fullpage', {
         autoScrolling: true,
         navigation: true,
-        scrollingSpeed: 1400,
+        scrollingSpeed: 0,
         afterLoad: function (origin, destination, direction, trigger) {
             var origin = this.item;
             if (section_2.classList.contains('active')) {
@@ -91,6 +92,7 @@ if ($('#fullpage').length) {
     
             if (!section_home.classList.contains('active')) {
                 full_page_bg.classList.add('active');
+                fullPage.setScrollingSpeed(1400)
             } else {
                 setTimeout(() => {
                     $('.section_home h2').removeClass('noActive')

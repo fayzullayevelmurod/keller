@@ -34,7 +34,7 @@
   height: 100%;
   background: transparent;
   transition: 0.4s ease all;
-  background: rgba(0, 0, 0, 0.35);
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .full_page_bg.active .full_page_bg_after {
@@ -492,10 +492,11 @@
   align-items: center;
 }
 .home h2 {
-  max-width: 980px;
-  font-family: "Calibri", sans-serif;
+  max-width: 1050px;
+  font-family: "Arial", sans-serif;
   font-weight: bold;
-  font-size: 70px;
+  font-size: 65px;
+  letter-spacing: 5px;
   color: #fff;
   transform: translateX(-10%);
   opacity: 0;
@@ -542,6 +543,16 @@
   width: 100%;
   height: 45%;
   display: none !important;
+}
+.cards .main_container {
+  transition: none;
+}
+.cards .card_slider {
+  transition: none !important;
+}
+.cards .card_slider .swiper-wrapper {
+  transition: none !important;
+  transition-property: none !important;
 }
 .cards .card_slider .main_card {
   position: relative;
