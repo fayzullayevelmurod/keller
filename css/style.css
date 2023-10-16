@@ -493,12 +493,13 @@
 }
 .home h2 {
   max-width: 1050px;
-  font-family: "Arial", sans-serif;
+  font-family: "Bahnschrift", sans-serif;
   font-weight: bold;
   font-size: 65px;
-  letter-spacing: 5px;
+  letter-spacing: 7px;
   color: #fff;
   transform: translateX(-10%);
+  line-height: 1.2;
   opacity: 0;
 }
 @keyframes h2Active {
@@ -1165,7 +1166,12 @@ footer .footer_text p {
 }
 #card-product .list_wrapper .list_main .share a svg {
   margin-right: 8px;
+  width: 31px;
   transform: translateY(-4px);
+}
+#card-product .list_wrapper .list_main .share a .svg_1 {
+  width: 15px;
+  height: auto;
 }
 #card-product .list_wrapper .list_main h6 {
   display: flex;

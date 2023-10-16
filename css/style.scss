@@ -584,12 +584,13 @@ $Arial: 'Arial', sans-serif;
 
     h2 {
         max-width: 1050px;
-        font-family: $Arial;
+        font-family: $Bahnschrift;
         font-weight: bold;
         font-size: 65px;
-        letter-spacing: 5px;
+        letter-spacing: 7px;
         color: #fff;
         transform: translateX(-10%);
+        line-height: 1.2;
         opacity: 0;
     }
 
