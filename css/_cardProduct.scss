@@ -68,6 +68,7 @@
                         color: #323232;
 
                         img {
+                            margin-right: 5px;
                             // margin-right: 10px;
                         }
                         svg{
@@ -84,6 +85,29 @@
                         // display: flex;
                         // align-items: center;
                         // gap: 44px;
+                        .parent{
+                            span{
+                                color: #000;
+                                svg{
+                                    margin-left: 3px;
+                                    transform: translateY(-1px);
+                                }
+                            }
+                            .menu_bottom_in_wrapper{
+                                ul{
+                                    background-color: #fff;
+                                    li{
+                                        a{
+                                            color: #323232;
+                                            transition: .3s linear;
+                                            &:hover{
+                                                color: red;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
 
                         li {
                             a {

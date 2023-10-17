@@ -350,7 +350,22 @@
         }
     }
 }
-
+@media (max-height: 850px){
+    .about{
+        .about_wrapper{
+            .about_bottom {
+                .about_logo{
+                    img{
+                        height: 70px;
+                    }
+                }
+                h3{
+                    margin: 30px auto 40px;
+                }
+            }
+        }
+    }
+}
 @media (max-width: 768px) {
     .features {
         h2 {

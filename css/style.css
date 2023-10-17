@@ -340,6 +340,7 @@
   position: absolute;
   top: 100%;
   left: 0;
+  z-index: 5;
   background: white;
   width: 100%;
   padding: 20px;
@@ -661,10 +662,13 @@
 .about .about_wrapper {
   position: relative;
   width: 100%;
+  padding-top: 128px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
 }
 .about .about_wrapper .about_top {
-  padding-top: 136px;
-  padding-bottom: 130px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
@@ -1095,9 +1099,29 @@ footer .footer_text p {
 #card-product #header .header_wrapper .header_menu .menu_top a {
   color: #323232;
 }
+#card-product #header .header_wrapper .header_menu .menu_top a img {
+  margin-right: 5px;
+}
 #card-product #header .header_wrapper .header_menu .menu_top a svg {
   color: #fff;
   background-color: #fff;
+}
+#card-product #header .header_wrapper .header_menu .menu_bottom ul .parent span {
+  color: #000;
+}
+#card-product #header .header_wrapper .header_menu .menu_bottom ul .parent span svg {
+  margin-left: 3px;
+  transform: translateY(-1px);
+}
+#card-product #header .header_wrapper .header_menu .menu_bottom ul .parent .menu_bottom_in_wrapper ul {
+  background-color: #fff;
+}
+#card-product #header .header_wrapper .header_menu .menu_bottom ul .parent .menu_bottom_in_wrapper ul li a {
+  color: #323232;
+  transition: 0.3s linear;
+}
+#card-product #header .header_wrapper .header_menu .menu_bottom ul .parent .menu_bottom_in_wrapper ul li a:hover {
+  color: red;
 }
 #card-product #header .header_wrapper .header_menu .menu_bottom ul li a {
   color: #323232;
@@ -1465,6 +1489,26 @@ body {
 #list #header .header_wrapper .header_menu .menu_top a {
   color: #323232;
 }
+#list #header .header_wrapper .header_menu .menu_top a img {
+  margin-right: 5px;
+}
+#list #header .header_wrapper .header_menu .menu_bottom ul .parent span {
+  color: #000;
+}
+#list #header .header_wrapper .header_menu .menu_bottom ul .parent span svg {
+  margin-left: 3px;
+  transform: translateY(-1px);
+}
+#list #header .header_wrapper .header_menu .menu_bottom ul .parent .menu_bottom_in_wrapper ul {
+  background-color: #fff;
+}
+#list #header .header_wrapper .header_menu .menu_bottom ul .parent .menu_bottom_in_wrapper ul li a {
+  color: #323232;
+  transition: 0.3s linear;
+}
+#list #header .header_wrapper .header_menu .menu_bottom ul .parent .menu_bottom_in_wrapper ul li a:hover {
+  color: red;
+}
 #list #header .header_wrapper .header_menu .menu_bottom ul li a {
   color: #323232;
 }
@@ -1830,6 +1874,28 @@ body {
 }
 #product #header .header_wrapper .header_menu .menu_top a {
   color: #323232;
+}
+#product #header .header_wrapper .header_menu .menu_top a img {
+  margin-right: 5px;
+}
+#product #header .header_wrapper .header_menu .menu_bottom ul .parent span {
+  display: flex;
+  align-items: center;
+  color: #000;
+}
+#product #header .header_wrapper .header_menu .menu_bottom ul .parent span svg {
+  margin-left: 3px;
+  transform: translateY(-1px);
+}
+#product #header .header_wrapper .header_menu .menu_bottom ul .parent .menu_bottom_in_wrapper ul {
+  background-color: #fff;
+}
+#product #header .header_wrapper .header_menu .menu_bottom ul .parent .menu_bottom_in_wrapper ul li a {
+  color: #323232;
+  transition: 0.3s linear;
+}
+#product #header .header_wrapper .header_menu .menu_bottom ul .parent .menu_bottom_in_wrapper ul li a:hover {
+  color: red;
 }
 #product #header .header_wrapper .header_menu .menu_bottom ul li a {
   color: #323232;
@@ -2248,6 +2314,14 @@ body {
   }
   .footer footer .footer_text {
     padding: 10px 0;
+  }
+}
+@media (max-height: 850px) {
+  .about .about_wrapper .about_bottom .about_logo img {
+    height: 70px;
+  }
+  .about .about_wrapper .about_bottom h3 {
+    margin: 30px auto 40px;
   }
 }
 @media (max-width: 768px) {

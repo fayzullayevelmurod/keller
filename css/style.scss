@@ -390,13 +390,13 @@ $Arial: 'Arial', sans-serif;
                         position: absolute;
                         top: 100%;
                         left: 0;
+                        z-index: 5;
                         background: white;
                         width: 100%;
                         padding: 20px;
                         display: none;
                         flex-direction: column;
                         gap: 10px;
-
                         a {
                             color: black;
                         }
@@ -777,10 +777,15 @@ $Arial: 'Arial', sans-serif;
     .about_wrapper {
         position: relative;
         width: 100%;
+        padding-top: 128px;
+        height: 100vh;
+        display: flex;
+        align-items: center;
 
         .about_top {
-            padding-top: 136px;
-            padding-bottom: 130px;
+            width: 100%;
+            // padding-top: 136px;
+            // padding-bottom: 130px;
             display: flex;
             justify-content: space-between;
 
