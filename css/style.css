@@ -570,7 +570,6 @@
   height: 517px;
   border-radius: 5px;
   overflow: hidden;
-  width: 100%;
   padding: 0;
   box-shadow: 1px 4px 12px 2px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 1px 4px 12px 2px rgba(0, 0, 0, 0.75);
@@ -728,7 +727,6 @@
 }
 .about .about_wrapper .about_bottom .about_blocks .about_block h4 {
   letter-spacing: 0.64px;
-  max-width: 280px;
   font-size: 16px;
   font-weight: bold;
   font-family: "Bahnschrift", sans-serif;
@@ -780,7 +778,7 @@
 .partners p {
   text-align: center;
   font-family: "Bahnschrift", sans-serif;
-  font-weight: light;
+  font-weight: 300;
   font-size: 18px;
   color: #fff;
   margin-bottom: 78px;
@@ -847,7 +845,7 @@
   margin: 0 auto 82px auto;
   text-align: center;
   font-size: 16px;
-  font-weight: light;
+  font-weight: 300;
   font-family: "Bahnschrift", sans-serif;
   color: #6a6a6a;
 }
@@ -889,6 +887,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right center;
+}
+.products .products_in {
+  background-color: rgba(0, 0, 0, 0.78);
 }
 .products .products_in .main_container {
   height: 100vh;
@@ -1076,6 +1077,10 @@ footer .footer_text p {
   font-size: 16px;
 }
 
+.swiper-slide {
+  transition-property: none !important;
+}
+
 #card-product {
   background-color: #fff;
   height: 100%;
@@ -1189,6 +1194,7 @@ footer .footer_text p {
   color: rgb(123, 123, 123);
   text-align: left;
   margin-bottom: 42px;
+  font-weight: 300;
 }
 #card-product .list_wrapper .list_main .share {
   display: flex;
@@ -1363,6 +1369,7 @@ footer .footer_text p {
   font-family: "Bahnschrift", sans-serif;
   color: rgb(0, 0, 0);
   line-height: 1.583;
+  font-weight: 300;
 }
 #card-product .info {
   margin-top: 50px;
@@ -1734,7 +1741,8 @@ body {
   margin-bottom: 1px;
 }
 #list .product_wrapper .product_right .product_cards .cards_top h4 {
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: 800;
   font-family: "Calibri", sans-serif;
   color: rgb(55, 58, 59);
 }
@@ -1760,7 +1768,7 @@ body {
 }
 #list .product_wrapper .product_right .product_cards .product_card h3 {
   margin-bottom: 22px;
-  font-size: 25px;
+  font-size: 22px;
   font-family: "Calibri", sans-serif;
   color: rgb(55, 58, 59);
 }
@@ -1771,6 +1779,7 @@ body {
 }
 #list .product_wrapper .product_right .product_cards .product_card p span {
   color: #40b42d;
+  margin-left: 21px;
 }
 #list .product_wrapper .product_right .product_cards .product_card .product_card_btn {
   display: flex;

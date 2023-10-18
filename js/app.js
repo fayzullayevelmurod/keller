@@ -107,16 +107,14 @@ if ($('#fullpage').length) {
                     $('.card_slider .main_card').each(function (idx, el) {
                         $('.section_2 .cards_bg').removeClass('active');
                         $('.section_2 .cards_bg').addClass('noActive');
-                        setTimeout(() => {
-                            $(el).removeClass('active');
-                            $(el).addClass('noActive')
-                            if (idx + 1 == $('.card_slider .main_card').length) {
-                                setTimeout(() => {
-                                    $('.section_2 .left_btn').removeClass('active');
-                                    $('.section_2 .left_btn').addClass('noActive');
-                                }, idx * 200 + 200);
-                            }
-                        }, idx * 200);
+                        $(el).removeClass('active');
+                        $(el).addClass('noActive')
+                        if (idx + 1 == $('.card_slider .main_card').length) {
+                            setTimeout(() => {
+                                $('.section_2 .left_btn').removeClass('active');
+                                $('.section_2 .left_btn').addClass('noActive');
+                            }, idx * 200 + 200);
+                        }
                     })
                 } else {
                     firstEnter = true;

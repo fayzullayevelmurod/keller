@@ -639,7 +639,7 @@ $Arial: 'Arial', sans-serif;
 .cards {
     display: flex;
     align-items: center;
-
+    
     .cards_bg {
         position: absolute;
         bottom: 15%;
@@ -648,9 +648,9 @@ $Arial: 'Arial', sans-serif;
         height: 45%; 
         display: none !important;
     }
-
+    
     .main_container {
-        transition: none;
+        transition: none; 
     }
 
     .card_slider {
@@ -670,7 +670,6 @@ $Arial: 'Arial', sans-serif;
             height: 517px;
             border-radius: 5px;
             overflow: hidden;
-            width: 100%;
             padding: 0;
             box-shadow: 1px 4px 12px 2px rgba(0, 0, 0, 0.75);
             -webkit-box-shadow: 1px 4px 12px 2px rgba(0, 0, 0, 0.75);
@@ -855,7 +854,6 @@ $Arial: 'Arial', sans-serif;
 
                     h4 {
                         letter-spacing: 0.64px;
-                        max-width: 280px;
                         font-size: 16px;
                         font-weight: bold;
                         font-family: $Bahnschrift;
@@ -920,7 +918,7 @@ $Arial: 'Arial', sans-serif;
     p {
         text-align: center;
         font-family: $Bahnschrift;
-        font-weight: light;
+        font-weight: 300;
         font-size: 18px;
         color: #fff;
         margin-bottom: 78px;
@@ -998,7 +996,7 @@ $Arial: 'Arial', sans-serif;
         margin: 0 auto 82px auto;
         text-align: center;
         font-size: 16px;
-        font-weight: light;
+        font-weight: 300;
         font-family: $Bahnschrift;
         color: #6a6a6a;
     }
@@ -1052,7 +1050,7 @@ $Arial: 'Arial', sans-serif;
     background-position: right center;
 
     .products_in {
-        // background-color: rgb(19, 14, 14, 0.9);
+        background-color: rgba(0, 0, 0, 0.78);
 
         .main_container {
             height: 100vh;
@@ -1267,6 +1265,10 @@ footer {
             font-size: 16px;
         }
     }
+}
+
+.swiper-slide {
+    transition-property: none !important;
 }
 
 @import 'cardProduct';
