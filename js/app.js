@@ -184,3 +184,7 @@ if ($('.list_tabs').length) {
         $(this).addClass('whiteborder');
     })
 }
+
+$(document).ready(function () {
+    $("body").removeClass('active')
+})
