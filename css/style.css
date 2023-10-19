@@ -449,6 +449,7 @@ body.active {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-top: 6px;
 }
 #header .header_wrapper .header_end .sign {
   display: flex;
