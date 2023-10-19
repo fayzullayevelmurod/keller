@@ -16,31 +16,18 @@ $Calibri: 'Calibri', sans-serif;
 $topCenter: calc(-99vh + 50vh - (517px / 2) + (163px / 2));
 $Arial: 'Arial', sans-serif;
 
-body.active {
-    overflow: hidden;
-
-    .full_page_bg {
-        background:rgba(0, 0, 0, .35);
-
-        img {
-            display: none;
-        }
-    }
-}
-
 .full_page_bg {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     z-index: -1;
 
     img {
-        width: 100%;
+        width: 100vw;
         height: 100vh;
         object-fit: cover;
-        object-position: center;
     }
 
     .full_page_bg_after {
@@ -54,6 +41,19 @@ body.active {
         background: rgba(0, 0, 0, 0.4);
     }
 }
+
+body.active {
+    overflow: hidden;
+    
+    .full_page_bg {
+        background:rgba(0, 0, 0, .35);
+
+        img {
+            opacity: 0;
+        }
+    }
+}
+
 
 .full_page_bg.active {
     .full_page_bg_after {

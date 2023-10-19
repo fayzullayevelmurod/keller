@@ -10,31 +10,19 @@
   font-family: "Bahnschrift";
   src: url("/fonts/Bahnschrift.ttf");
 }
-body.active {
-  overflow: hidden;
-}
-body.active .full_page_bg {
-  background: rgba(0, 0, 0, 0.35);
-}
-body.active .full_page_bg img {
-  display: none;
-}
-
 .full_page_bg {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   z-index: -1;
 }
 .full_page_bg img {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
 }
 .full_page_bg .full_page_bg_after {
   position: absolute;
@@ -45,6 +33,16 @@ body.active .full_page_bg img {
   background: transparent;
   transition: 0.4s ease all;
   background: rgba(0, 0, 0, 0.4);
+}
+
+body.active {
+  overflow: hidden;
+}
+body.active .full_page_bg {
+  background: rgba(0, 0, 0, 0.35);
+}
+body.active .full_page_bg img {
+  opacity: 0;
 }
 
 .full_page_bg.active .full_page_bg_after {

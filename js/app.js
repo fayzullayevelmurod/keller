@@ -117,6 +117,10 @@ if ($('#fullpage').length) {
             clearInterval(clear_interval_2);
         }
     }, 100);
+
+    $('.full_page_next_btn').click(function () {
+        fullPage.moveSectionDown();
+    })
 }
 
 
