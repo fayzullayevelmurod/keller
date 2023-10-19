@@ -184,5 +184,7 @@ if ($('.list_tabs').length) {
 }
 
 $(document).ready(function () {
-    $("body").removeClass('active')
+    setTimeout(() => {
+        $("body").removeClass('active')
+    }, 200);
 })
