@@ -69,26 +69,8 @@ if ($('#fullpage').length) {
     let fullPage = new fullpage('#fullpage', {
         autoScrolling: true,
         navigation: true,
-        scrollingSpeed: 0,
-        onScrollOverflow: function(section, slide, position, direction){
-            console.log("load ishladi");
-        },
+        scrollingSpeed: 500,
         afterLoad: function (origin, destination, direction, trigger) {
-            var origin = this.item;
-            if (section_2.classList.contains('active')) {
-                $('.section_home h2').removeClass('active')
-                $('.section_home h2').addClass('noActive')
-                $('.card_slider .main_card').each(function (idx, el) {
-                    timeOutList.push(
-                        setTimeout(() => {
-                            $(el).removeClass('noActive');
-                            $(el).addClass('active')
-                        }, idx * 200)
-                    )
-    
-                })
-            }
-    
             if (!section_home.classList.contains('active')) {
                 full_page_bg.classList.add('active');
                 fullPage.setScrollingSpeed(1400)
@@ -96,16 +78,27 @@ if ($('#fullpage').length) {
             } else {
                 $('.section_home h2').removeClass('noActive')
                 $('.section_home h2').addClass('active')
-
-                setTimeout(() => {
-                    fullPage.setScrollingSpeed(0)
-                }, 100);
             };
-    
         },
     });
     setInterval(() => {
+        if (section_2.classList.contains('active')) {
+            fullPage.setScrollingSpeed(1400)
+            $('.section_home h2').removeClass('active')
+            $('.section_home h2').addClass('noActive')
+            $('.card_slider .main_card').each(function (idx, el) {
+                timeOutList.push(
+                    setTimeout(() => {
+                        $(el).removeClass('noActive');
+                        $(el).addClass('active')
+                    }, idx * 200)
+                )
+
+            })
+        }
+
         if (section_home.classList.contains('active') && firstEnter) {
+            fullPage.setScrollingSpeed(500)
             timeOutList.forEach(item => {
                 clearTimeout(item);
             })
@@ -117,7 +110,6 @@ if ($('#fullpage').length) {
             let clear_interval_2 = setInterval(() => {
             }, 10);
             full_page_bg.classList.remove('active');
-            fullPage.setScrollingSpeed(0)
             $('.section_home h2').removeClass('noActive')
             $('.section_home h2').addClass('active')
             firstEnter = false;

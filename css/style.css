@@ -13,6 +13,12 @@
 body.active {
   overflow: hidden;
 }
+body.active .full_page_bg {
+  background: rgba(0, 0, 0, 0.35);
+}
+body.active .full_page_bg img {
+  display: none;
+}
 
 .full_page_bg {
   position: fixed;
@@ -658,10 +664,10 @@ body.active {
 }
 .about button img {
   transform: rotateZ(-90deg);
-  width: 35px;
+  width: 25px;
 }
 .about button .img_2 {
-  margin-top: -25px;
+  margin-top: -20px;
 }
 .about .about_wrapper {
   position: relative;
@@ -801,10 +807,10 @@ body.active {
 }
 .partners button img {
   transform: rotateZ(-90deg);
-  width: 35px;
+  width: 25px;
 }
 .partners button .img_2 {
-  margin-top: -25px;
+  margin-top: -20px;
 }
 .partners .partners_wrapper {
   padding-bottom: 220px;

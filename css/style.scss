@@ -18,6 +18,14 @@ $Arial: 'Arial', sans-serif;
 
 body.active {
     overflow: hidden;
+
+    .full_page_bg {
+        background:rgba(0, 0, 0, .35);
+
+        img {
+            display: none;
+        }
+    }
 }
 
 .full_page_bg {
@@ -771,11 +779,11 @@ body.active {
 
         img {
             transform: rotateZ(-90deg);
-            width: 35px;
+            width: 25px;
         }
 
         .img_2 {
-            margin-top: -25px;
+            margin-top: -20px;
         }
     }
 
@@ -943,11 +951,11 @@ body.active {
 
         img {
             transform: rotateZ(-90deg);
-            width: 35px;
+            width: 25px;
         }
 
         .img_2 {
-            margin-top: -25px;
+            margin-top: -20px;
         }
     }
 
