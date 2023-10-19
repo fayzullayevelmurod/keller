@@ -588,7 +588,6 @@ body.active .full_page_bg img {
   z-index: 10;
   bottom: 0;
   height: 517px;
-  border-radius: 5px;
   overflow: hidden;
   padding: 0;
   box-shadow: 1px 4px 12px 2px rgba(0, 0, 0, 0.75);
