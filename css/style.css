@@ -2428,30 +2428,40 @@ body {
   }
   .about .about_wrapper {
     padding-top: 64px;
+    position: relative;
   }
   .about .about_wrapper .about_top {
+    position: static;
     padding: 0;
-    height: 100vh;
-    align-items: center;
+    align-items: end;
+    flex-direction: column;
+  }
+  .about .about_wrapper .about_top .about_top_left {
+    position: static;
   }
   .about .about_wrapper .about_top .about_top_left h3 {
-    font-size: 30px;
+    font-size: 50px;
+    padding-bottom: 0;
   }
   .about .about_wrapper .about_top .about_top_left p {
-    font-size: 14px;
+    font-size: 16px;
     padding-right: 15px;
   }
   .about .about_wrapper .about_top .about_top_right {
-    display: none;
+    position: absolute;
+    width: 120px;
+    top: 90%;
+    right: 0;
+    opacity: 1;
   }
   .about .about_wrapper_2 {
     padding-top: 64px;
   }
   .about .about_wrapper_2 .about_bottom .about_logo img {
-    height: 40px;
+    height: 45px;
   }
   .about .about_wrapper_2 .about_bottom h3 {
-    font-size: 16px;
+    font-size: 18px;
     margin: 20px auto 30px;
   }
   .about .about_wrapper_2 .about_bottom .about_blocks {
@@ -2463,10 +2473,10 @@ body {
     width: 100%;
   }
   .about .about_wrapper_2 .about_bottom .about_blocks .about_block span {
-    font-size: 30px;
+    font-size: 33px;
   }
   .about .about_wrapper_2 .about_bottom .about_blocks .about_block h4 {
-    font-size: 12px;
+    font-size: 14px;
   }
   .about .about_wrapper_2 .about_down {
     left: calc(50% - 12.5px);
