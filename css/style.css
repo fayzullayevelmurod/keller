@@ -227,6 +227,17 @@ body.active .full_page_bg img {
   background-color: #fff;
   position: relative;
 }
+.modal .modal_close {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  font-size: 35px;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: "Bahnschrift", sans-serif;
+}
 .modal h2 {
   font-size: 12px;
   font-family: "Bahnschrift", sans-serif;
@@ -774,9 +785,15 @@ body.active .full_page_bg img {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.partners .main_container {
+  height: 100vh;
+  padding-top: 128px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .partners h2 {
   letter-spacing: 1.92px;
-  padding-top: 357px;
   text-align: center;
   font-size: 48px;
   font-weight: bold;
@@ -811,7 +828,6 @@ body.active .full_page_bg img {
   margin-top: -20px;
 }
 .partners .partners_wrapper {
-  padding-bottom: 220px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -2404,24 +2420,40 @@ body {
   }
   .home h2 {
     font-size: 34px;
+    max-width: 100%;
+    width: 100%;
+    letter-spacing: 2px;
   }
   .cards .left_btn a img {
     height: 50px;
+  }
+  .about .about_wrapper {
+    padding-top: 64px;
   }
   .about .about_wrapper .about_top {
     padding: 0;
     height: 100vh;
     align-items: center;
   }
+  .about .about_wrapper .about_top .about_top_left h3 {
+    font-size: 30px;
+  }
+  .about .about_wrapper .about_top .about_top_left p {
+    font-size: 14px;
+    padding-right: 15px;
+  }
   .about .about_wrapper .about_top .about_top_right {
     display: none;
+  }
+  .about .about_wrapper_2 {
+    padding-top: 64px;
   }
   .about .about_wrapper_2 .about_bottom .about_logo img {
     height: 40px;
   }
   .about .about_wrapper_2 .about_bottom h3 {
-    font-size: 25px;
-    margin: 10px auto 30px;
+    font-size: 16px;
+    margin: 20px auto 30px;
   }
   .about .about_wrapper_2 .about_bottom .about_blocks {
     flex-direction: column;
@@ -2435,12 +2467,95 @@ body {
     font-size: 30px;
   }
   .about .about_wrapper_2 .about_bottom .about_blocks .about_block h4 {
-    font-style: 14px;
+    font-size: 12px;
   }
   .about .about_wrapper_2 .about_down {
     left: calc(50% - 12.5px);
   }
   .about .about_wrapper_2 .about_down a img {
     width: 25px;
+  }
+  .partners .main_container {
+    padding-top: 64px;
+  }
+  .partners .main_container h2 {
+    font-size: 30px;
+  }
+  .partners .main_container p {
+    font-size: 14px;
+  }
+  .features .main_container {
+    padding-top: 64px;
+  }
+  .features .main_container h2 {
+    font-size: 20px;
+  }
+  .features .main_container p {
+    font-size: 12px;
+  }
+  .features .main_container .features_wrapper {
+    padding-right: 10px;
+  }
+  .features .main_container .features_wrapper .features_block .features_card p {
+    font-size: 12px;
+  }
+  .products .products_in .main_container {
+    padding-top: 64px;
+    padding-right: 20px;
+  }
+  .products .products_in .main_container h2 {
+    font-size: 30px;
+  }
+  .products .products_in .main_container p {
+    font-size: 14px;
+  }
+  .modal_wrapper .modal {
+    width: 80%;
+    padding: 30px;
+  }
+  .modal_wrapper .modal h2 {
+    font-size: 30px;
+    width: 100%;
+    transform: none;
+  }
+  .modal_wrapper .modal .modal_text {
+    font-size: 12px;
+    margin: 20px 0;
+  }
+  .modal_wrapper .modal form input {
+    height: 40px;
+  }
+  .modal_wrapper .modal form .form_btn {
+    height: 40px;
+    width: 100%;
+  }
+  .modal_wrapper .modal form p {
+    font-size: 12px;
+  }
+  .dealers .main_container {
+    padding-top: 64px;
+  }
+  .dealers .main_container .dealers_title {
+    font-size: 30px;
+  }
+  .dealers .main_container .dealers_wrapper .dealer_slider .swiper-slide .dealers_card .card_img {
+    height: auto;
+  }
+  .dealers .main_container .dealers_wrapper .dealer_slider .swiper-slide .dealers_card .card_img img {
+    height: auto;
+    width: 100%;
+  }
+  .dealers .main_container .dealers_wrapper .dealer_slider .swiper-slide .dealers_card h4 {
+    font-size: 18px;
+  }
+  .dealers .main_container .dealers_wrapper .dealer_slider .swiper-slide .dealers_card p {
+    font-size: 12px;
+  }
+  .dealers .main_container .dealers_wrapper .dealer_slider .swiper-slide .dealers_card button {
+    height: 40px;
+    padding: 0;
+    width: 100%;
+    font-size: 14px;
+    margin: 20px 0;
   }
 }/*# sourceMappingURL=style.css.map */

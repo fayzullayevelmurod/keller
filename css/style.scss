@@ -44,7 +44,7 @@ $Arial: 'Arial', sans-serif;
 
 body.active {
     overflow: hidden;
-    
+
     .full_page_bg {
         background:rgba(0, 0, 0, .35);
 
@@ -267,6 +267,18 @@ body.active {
     padding: 60px 45px;
     background-color: #fff;
     position: relative;
+
+    .modal_close {
+        position: absolute;
+        right: 10px;
+        top: 5px;
+        font-size: 35px;
+        background: none;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-family: $Bahnschrift;
+    }
     
     h2{
         font-size: 12px;
@@ -918,9 +930,16 @@ body.active {
     background-repeat: no-repeat;
     background-size: cover;
 
+    .main_container {
+        height: 100vh;
+        padding-top: 128px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
     h2 {
         letter-spacing: 1.92px;
-        padding-top: 357px;
         text-align: center;
         font-size: 48px;
         font-weight: bold;
@@ -960,7 +979,6 @@ body.active {
     }
 
     .partners_wrapper {
-        padding-bottom: 220px;
         display: flex;
         align-items: center;
         justify-content: space-between;

@@ -461,6 +461,9 @@
     .home {
         h2 {
             font-size: 34px;
+            max-width: 100%;
+            width: 100%;
+            letter-spacing: 2px;
         }
     }
 
@@ -476,10 +479,24 @@
 
     .about {
         .about_wrapper {
+            padding-top: 64px;
+
             .about_top {
                 padding: 0;
                 height: 100vh;
                 align-items: center;
+
+                .about_top_left {
+
+                    h3 {
+                        font-size: 30px;
+                    }
+
+                    p {
+                        font-size: 14px;
+                        padding-right: 15px;
+                    }
+                }
 
                 .about_top_right {
                     display: none;
@@ -488,6 +505,8 @@
         }
 
         .about_wrapper_2 {
+            padding-top: 64px;
+
             .about_bottom {
                 .about_logo {
                     img {
@@ -496,8 +515,8 @@
                 }
 
                 h3 {
-                    font-size: 25px;
-                    margin: 10px auto 30px;
+                    font-size: 16px;
+                    margin: 20px auto 30px;
                 }
 
                 .about_blocks {
@@ -513,7 +532,7 @@
                         }
 
                         h4 {
-                            font-style: 14px;
+                            font-size: 12px;
                         }
                     }
                 }
@@ -525,6 +544,139 @@
                 a {
                     img {
                         width: 25px;
+                    }
+                }
+            }
+        }
+    }
+
+    .partners {
+        .main_container {
+            padding-top: 64px;
+
+            h2 {
+                font-size: 30px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .features {
+        .main_container {
+            padding-top: 64px;
+
+            h2 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 12px;
+            }
+
+            .features_wrapper {
+                padding-right: 10px;
+
+                .features_block {
+                    .features_card {
+                        p {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .products {
+        .products_in {
+            .main_container {
+                padding-top: 64px;
+                padding-right: 20px;
+
+                h2 {
+                    font-size: 30px;
+                }
+
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    .modal_wrapper {
+        .modal {
+            width: 80%;
+            padding: 30px;
+
+            h2 {
+                font-size: 30px;
+                width: 100%;
+                transform: none;
+            }
+
+            .modal_text {
+                font-size: 12px;
+                margin: 20px 0;
+            }
+
+            form {
+                input {
+                    height: 40px;
+                }
+
+                .form_btn {
+                    height: 40px;
+                    width: 100%;
+                }
+
+                p {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    .dealers {
+        .main_container {
+            padding-top: 64px;
+
+            .dealers_title {
+                font-size: 30px;
+            }
+
+            .dealers_wrapper {
+                .dealer_slider {
+                    .swiper-slide {
+                        .dealers_card {
+                            .card_img {
+                                height: auto;
+
+                                img {
+                                    height: auto;
+                                    width: 100%;
+                                }
+                            }
+
+                            h4 {
+                                font-size: 18px;
+                            }
+
+                            p {
+                                font-size: 12px;
+                            }
+
+                            button {
+                                height: 40px;
+                                padding: 0;
+                                width: 100%;
+                                font-size: 14px;
+                                margin: 20px 0;
+                            }
+                        }
                     }
                 }
             }

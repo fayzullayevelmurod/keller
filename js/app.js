@@ -144,7 +144,7 @@ if ($('.open_modal').length) {
         $('.modal_wrapper').addClass('active')
     })
 
-    $('.modal_wrapper .modal_bg').click(function () {
+    $('.modal_wrapper .modal_bg, .modal_wrapper .modal_close').click(function () {
         $('.modal_wrapper').removeClass('active')
         $('.modal_wrapper').addClass('noActive')
     })
