@@ -928,7 +928,9 @@ body.active {
     background-image: url('../images/logos_bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-
+    .partners_media{
+        display: none;
+    }
     .main_container {
         height: 100vh;
         padding-top: 128px;

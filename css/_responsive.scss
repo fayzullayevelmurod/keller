@@ -705,3 +705,239 @@
         }
     }
 }
+
+@media (max-width: 400px){
+    .home h2{
+        font-size: 28px;
+    }
+    .cards {
+        .card_slider{
+            .main_card {
+                img{
+                    height: 80%;
+                }
+            }
+        }
+    }
+    .about {
+        .main_container{
+            height: 90vh;
+        }
+        .about_wrapper {
+            padding-top: 64px;
+            position: relative;
+
+            .about_top {
+                position: static;
+                padding: 0;
+                // height: 100vh;
+                // align-items: center;
+                align-items: end;
+                flex-direction: column;
+                .about_top_left {
+                    // top: 20%;
+                    position: static;
+
+                    h3 {
+                        margin-bottom: 35px;
+                        max-width: 120px;
+                        font-size: 30px;
+                        padding-bottom: 0;
+                    }
+
+                    p {
+                        margin-bottom: 15px;
+                        font-size: 13px;
+                        padding-right: 10px;
+                    }
+                }
+
+                .about_top_right {
+                    position: absolute;
+                    width: 100px;
+                    top: 94%; 
+                    // top: 50%;
+                    right: 0;
+                    // bottom: 0;  
+                    opacity: 1; 
+                }
+            }
+        }
+
+        .about_wrapper_2 {
+            padding-top: 64px;
+
+            .about_bottom {
+                .about_logo {
+                    img {
+                        height: 32px;
+                    }
+                }
+
+                h3 {
+                    font-size: 14px;
+                    margin: 18px auto 28px;
+                }
+
+                .about_blocks {
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 10px;
+
+                    .about_block {
+                        width: 100%;
+
+                        span {
+                            font-size: 30px;
+                        }
+
+                        h4 {
+                            font-size: 11px;
+                        }
+                    }
+                }
+            }
+
+            .about_down {
+                left: calc(50% - 25px / 2);
+
+                a {
+                    img {
+                        width: 22px;
+                    }
+                }
+            }
+        }
+        button{
+            bottom: 7%;
+            img{
+                width: 20px;
+            }
+        }
+    }
+
+    .partners {
+        .main_container {
+            height: 90vh;
+            padding-top: 64px;
+
+            h2 {
+                font-size: 28px;
+            }
+
+            p {
+                margin-bottom: 50px;
+                font-size: 14px;
+            }
+            .partners_wrapper{
+                display: none;
+            }
+            .partners_media{
+                display: flex;
+                justify-content: space-around;
+                gap: 15px;
+                align-items: center;
+                flex-wrap: wrap;
+                .partnets_logo  {
+                    img{
+                        width: 70px;
+                        object-fit: contain;
+                        height: 30px;
+                    }
+                }
+            }
+        }
+        button{
+            bottom: 10%;
+            img{
+                width: 22px;
+            }
+        }
+    }
+    .features{
+        .main_container{
+            .features_wrapper{
+                .features_block{
+                    .features_card {
+                        .card_img{
+                            img{
+                                width: 30px;
+                            }
+                        }
+                        h3{
+                            font-size: 14px;
+                            margin-bottom: 3px;
+                        }
+                        p{
+                            font-size: 11px;
+                            height: 57px;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .products{
+        .products_in{
+            .main_container{
+                h2{
+                    font-size: 20px;
+                }
+                p{
+                    margin-bottom: 50px;
+                    font-size: 12px;
+                    opacity: .9;
+                }
+                button{
+                    font-size: 12px;
+                    padding: 10px 15px;
+                }
+            }
+        }
+    }
+    .dealers {
+        .main_container{
+            .dealers_title {
+                font-size: 22px;
+            }
+            .dealers_wrapper{
+                gap: 10px;
+                padding-right: 15px;
+                .dealer_slider{
+                    .swiper-slide{
+                        .dealers_card{
+                            text-align: center;
+                            padding: 9px 10px;
+                            h4{     
+                                font-weight: 600;
+                                font-size: 14px;
+                            }
+                            p{
+                                margin-bottom: 13px;
+                            }
+                            button{
+                                height: 35px;
+                                width: 80%;
+                                font-size: 13px;
+                            }
+                        }
+    
+                    }
+                }
+                .dealers_right,
+                .dealers_left{
+                    width: 10px;
+                }
+            }
+        }
+    }
+    footer{
+        .footer_text {
+            p{
+                font-size: 11px;
+            }
+        }
+    }
+}
