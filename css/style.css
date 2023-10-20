@@ -2426,6 +2426,9 @@ body {
   .cards .left_btn a img {
     height: 50px;
   }
+  .about .main_container {
+    height: 90vh;
+  }
   .about .about_wrapper {
     padding-top: 64px;
     position: relative;
@@ -2483,6 +2486,9 @@ body {
   }
   .about .about_wrapper_2 .about_down a img {
     width: 25px;
+  }
+  .about button {
+    bottom: 10%;
   }
   .partners .main_container {
     padding-top: 64px;

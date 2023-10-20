@@ -478,6 +478,9 @@
     }
 
     .about {
+        .main_container{
+            height: 90vh;
+        }
         .about_wrapper {
             padding-top: 64px;
             position: relative;
@@ -559,6 +562,9 @@
                     }
                 }
             }
+        }
+        button{
+            bottom: 10%;
         }
     }
 
