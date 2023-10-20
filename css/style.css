@@ -2491,6 +2491,7 @@ body {
     bottom: 10%;
   }
   .partners .main_container {
+    height: 90vh;
     padding-top: 64px;
   }
   .partners .main_container h2 {
@@ -2498,6 +2499,9 @@ body {
   }
   .partners .main_container p {
     font-size: 14px;
+  }
+  .partners button {
+    bottom: 10%;
   }
   .features .main_container {
     padding-top: 64px;

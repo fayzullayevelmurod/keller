@@ -570,6 +570,7 @@
 
     .partners {
         .main_container {
+            height: 90vh;
             padding-top: 64px;
 
             h2 {
@@ -579,6 +580,9 @@
             p {
                 font-size: 14px;
             }
+        }
+        button{
+            bottom: 10%;
         }
     }
 
