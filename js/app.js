@@ -30,9 +30,29 @@ if ($('.card_slider').length) {
 
 
 if ($('.dealer_slider').length) {
-    let dealer_slider = new Swiper(".dealer_slider", {
+    let dealer_slider = new Swiper(".dealer_slider_1", {
         slidesPerView: 1,
         spaceBetween: 10,
+        navigation: {
+            nextEl: ".dealers_right",
+            prevEl: ".dealers_left",
+        },
+        breakpoints: {
+            992: {
+                slidesPerView: 3,
+                spaceBetween: 20
+            },
+            650: {
+                slidesPerView: 2
+            }
+        }
+    });
+    let dealer_slider2 = new Swiper(".dealer_slider_2", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+            el: ".swiper-pagination",
+        },
         navigation: {
             nextEl: ".dealers_right",
             prevEl: ".dealers_left",
