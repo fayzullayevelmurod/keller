@@ -118,7 +118,11 @@ if ($('#fullpage').length) {
         }
 
         if (section_home.classList.contains('active') && firstEnter) {
-            fullPage.setScrollingSpeed(500)
+            if (window.innerWidth > 576) {
+                fullPage.setScrollingSpeed(500)
+            } else {
+                fullPage.setScrollingSpeed(1400)
+            }
             timeOutList.forEach(item => {
                 clearTimeout(item);
             })
