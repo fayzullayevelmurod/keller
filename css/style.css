@@ -2448,6 +2448,7 @@ body {
     }
   }
   .home h2.active {
+    max-width: 200px;
     opacity: 1;
     transform: translateX(0);
     animation: h2Active 0.7s linear 1;
@@ -2738,13 +2739,6 @@ body {
     font-size: 13px;
     padding-right: 10px;
   }
-  .about .about_wrapper .about_top .about_top_right {
-    position: absolute;
-    width: 100px;
-    top: 94%;
-    right: 0;
-    opacity: 1;
-  }
   .about .about_wrapper_2 {
     padding-top: 64px;
   }
@@ -2799,12 +2793,12 @@ body {
   .partners .main_container .partners_media {
     display: flex;
     justify-content: space-around;
-    gap: 20px;
+    gap: 35px 17px;
     align-items: center;
     flex-wrap: wrap;
   }
   .partners .main_container .partners_media .partnets_logo img {
-    width: 100px;
+    width: 95px;
     -o-object-fit: contain;
        object-fit: contain;
     height: 55px;
@@ -2816,7 +2810,7 @@ body {
     width: 22px;
   }
   .features .main_container .features_wrapper .features_block .features_card .card_img img {
-    width: 30px;
+    width: 40px;
   }
   .features .main_container .features_wrapper .features_block .features_card h3 {
     font-size: 14px;
@@ -2827,6 +2821,9 @@ body {
     height: 57px;
     overflow: hidden;
     text-overflow: ellipsis;
+  }
+  .products {
+    background-position: center;
   }
   .products .products_in .main_container h2 {
     font-size: 22px;
@@ -2843,6 +2840,7 @@ body {
     padding: 10px 15px;
   }
   .dealers .main_container .dealers_title {
+    margin-bottom: 40px;
     font-size: 22px;
   }
   .dealers .main_container .dealers_wrapper {
@@ -2854,11 +2852,18 @@ body {
     padding: 9px 10px;
   }
   .dealers .main_container .dealers_wrapper .dealer_slider .swiper-slide .dealers_card h4 {
-    font-weight: 600;
+    font-weight: 800;
     font-size: 14px;
+    margin-bottom: 15px;
+  }
+  .dealers .main_container .dealers_wrapper .dealer_slider .swiper-slide .dealers_card h4 b {
+    font-weight: 800;
   }
   .dealers .main_container .dealers_wrapper .dealer_slider .swiper-slide .dealers_card p {
-    margin-bottom: 13px;
+    margin-bottom: 15px;
+  }
+  .dealers .main_container .dealers_wrapper .dealer_slider .swiper-slide .dealers_card .phone {
+    margin-bottom: 0;
   }
   .dealers .main_container .dealers_wrapper .dealer_slider .swiper-slide .dealers_card button {
     height: 35px;

@@ -469,6 +469,7 @@
         }
     
         h2.active {
+            max-width: 200px;
             opacity: 1;
             transform: translateX(0);
             animation: h2Active .7s linear 1;
@@ -867,16 +868,6 @@
                         padding-right: 10px;
                     }
                 }
-
-                .about_top_right {
-                    position: absolute;
-                    width: 100px;
-                    top: 94%; 
-                    // top: 50%;
-                    right: 0;
-                    // bottom: 0;  
-                    opacity: 1; 
-                }
             }
         }
 
@@ -952,12 +943,12 @@
             .partners_media{
                 display: flex;
                 justify-content: space-around;
-                gap: 20px;
+                gap: 35px 17px;
                 align-items: center;
                 flex-wrap: wrap;
                 .partnets_logo  {
                     img{
-                        width: 100px;
+                        width: 95px;
                         object-fit: contain;
                         height: 55px;
                     }
@@ -978,7 +969,7 @@
                     .features_card {
                         .card_img{
                             img{
-                                width: 30px;
+                                width: 40px;
                             }
                         }
                         h3{
@@ -997,6 +988,7 @@
         }
     }
     .products{
+        background-position: center;
         .products_in{
             .main_container{
                 h2{
@@ -1019,6 +1011,7 @@
     .dealers {
         .main_container{
             .dealers_title {
+                margin-bottom: 40px;
                 font-size: 22px;
             }
             .dealers_wrapper{
@@ -1029,13 +1022,19 @@
                         .dealers_card{
                             text-align: center;
                             padding: 9px 10px;
-
                             h4{     
-                                font-weight: 600;
+                                b{
+                                    font-weight: 800;
+                                }
+                                font-weight: 800;
                                 font-size: 14px;
+                                margin-bottom: 15px;
                             }
                             p{
-                                margin-bottom: 13px;
+                                margin-bottom: 15px;
+                            }
+                            .phone{
+                                margin-bottom: 0;
                             }
                             button{
                                 height: 35px;
