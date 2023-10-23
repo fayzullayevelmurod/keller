@@ -2427,6 +2427,36 @@ body {
     width: 100%;
     letter-spacing: 2px;
   }
+  @keyframes h2Active {
+    0% {
+      opacity: 0;
+      transform: translateX(-10%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  .home h2.active {
+    opacity: 1;
+    transform: translateX(0);
+    animation: h2Active 0.7s linear 1;
+  }
+  @keyframes h2NoActive {
+    0% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(-10%);
+    }
+  }
+  .home h2.noActive {
+    opacity: 0;
+    transform: translateX(-10%);
+    animation: h2NoActive 0.7s linear 1;
+  }
   .cards .left_btn a img {
     height: 50px;
   }
@@ -2736,8 +2766,8 @@ body {
     width: 20px;
   }
   .partners .main_container {
-    height: 90vh;
-    padding-top: 64px;
+    height: 80vh;
+    padding-top: 50px;
   }
   .partners .main_container h2 {
     font-size: 24px;
@@ -2758,10 +2788,10 @@ body {
     flex-wrap: wrap;
   }
   .partners .main_container .partners_media .partnets_logo img {
-    width: 70px;
+    width: 100px;
     -o-object-fit: contain;
        object-fit: contain;
-    height: 40px;
+    height: 55px;
   }
   .partners button {
     bottom: 10%;
@@ -2783,9 +2813,11 @@ body {
     text-overflow: ellipsis;
   }
   .products .products_in .main_container h2 {
-    font-size: 20px;
+    font-size: 22px;
+    max-width: 400px;
   }
   .products .products_in .main_container p {
+    max-width: 300px;
     margin-bottom: 50px;
     font-size: 12px;
     opacity: 0.9;
@@ -2824,6 +2856,9 @@ body {
   .footer {
     height: 100vh;
     background-color: #1B1B1B;
+  }
+  .footer footer {
+    padding-bottom: 200px;
   }
   .footer footer .footer_links {
     flex-direction: column;

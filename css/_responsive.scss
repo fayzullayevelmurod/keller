@@ -457,6 +457,39 @@
             width: 100%;
             letter-spacing: 2px;
         }
+        @keyframes h2Active {
+            0% {
+                opacity: 0;
+                transform: translateX(-10%);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    
+        h2.active {
+            opacity: 1;
+            transform: translateX(0);
+            animation: h2Active .7s linear 1;
+        }
+    
+        @keyframes h2NoActive {
+            0% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+            100% {
+                opacity: 0;
+                transform: translateX(-10%);
+            }
+        }
+    
+        h2.noActive {
+            opacity: 0;
+            transform: translateX(-10%);
+            animation: h2NoActive .7s linear 1;
+        }
     }
 
     .cards {
@@ -895,8 +928,8 @@
 
     .partners {
         .main_container {
-            height: 90vh;
-            padding-top: 64px;
+            height: 80vh;
+            padding-top: 50px;
 
             h2 {
                 font-size: 24px;
@@ -918,9 +951,9 @@
                 flex-wrap: wrap;
                 .partnets_logo  {
                     img{
-                        width: 70px;
+                        width: 100px;
                         object-fit: contain;
-                        height: 40px;
+                        height: 55px;
                     }
                 }
             }
@@ -961,9 +994,11 @@
         .products_in{
             .main_container{
                 h2{
-                    font-size: 20px;
+                    font-size: 22px;
+                    max-width: 400px;
                 }
                 p{
+                    max-width: 300px;
                     margin-bottom: 50px;
                     font-size: 12px;
                     opacity: .9;
@@ -1017,6 +1052,7 @@
         height: 100vh;
         background-color: #1B1B1B;
         footer {
+            padding-bottom: 200px;
             .footer_links {
                 flex-direction: column;
                 gap: 30px;
