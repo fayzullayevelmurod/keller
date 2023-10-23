@@ -882,6 +882,16 @@ body.active .full_page_bg img {
   font-family: "Bahnschrift", sans-serif;
   color: #6a6a6a;
 }
+.features .features_text_media {
+  display: none;
+  font-size: 12px;
+  margin: 0 auto 20px auto;
+  max-width: 1200px;
+  text-align: center;
+  font-weight: 100;
+  font-family: "Bahnschrift", sans-serif;
+  color: #6a6a6a;
+}
 .features .features_wrapper {
   display: flex;
   justify-content: space-between;
@@ -2606,6 +2616,12 @@ body {
   }
   .features .main_container p {
     font-size: 12px;
+  }
+  .features .main_container .features_text {
+    display: none;
+  }
+  .features .main_container .features_text_media {
+    display: block;
   }
   .features .main_container .features_wrapper {
     padding-right: 10px;

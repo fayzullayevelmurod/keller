@@ -1042,6 +1042,16 @@ body.active {
         font-family: $Bahnschrift;
         color: #6a6a6a;
     }
+    .features_text_media{
+        display: none;
+        font-size: 12px;
+        margin: 0 auto 20px auto;
+        max-width: 1200px;
+        text-align: center;
+        font-weight: 100;
+        font-family: "Bahnschrift", sans-serif;
+        color: #6a6a6a;
+    }
 
     .features_wrapper {
         display: flex;
