@@ -2823,6 +2823,7 @@ body {
   }
   .footer {
     height: 100vh;
+    background-color: #1B1B1B;
   }
   .footer footer .footer_links {
     flex-direction: column;
