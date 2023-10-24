@@ -562,6 +562,24 @@ body.active .full_page_bg img {
   transform: translateX(-10%);
   animation: h2NoActive 0.4s linear 1;
 }
+.home .full_page_next_btn {
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+  left: calc(50% - 10px);
+  bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.home .full_page_next_btn img {
+  transform: rotateZ(-90deg);
+  width: 20px;
+}
+.home .full_page_next_btn .img_2 {
+  margin-top: -20px;
+}
 
 @media (min-width: 576px) {
   .cards {
@@ -967,6 +985,24 @@ body.active .full_page_bg img {
   border: none;
   background-color: #FB4D00;
   margin-bottom: 54px;
+}
+.products .products_in .full_page_next_btn {
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+  left: calc(50% - 50px);
+  bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.products .products_in .full_page_next_btn img {
+  transform: rotateZ(-90deg);
+  width: 20px;
+}
+.products .products_in .full_page_next_btn .img_2 {
+  margin-top: -20px;
 }
 
 .dealers {
@@ -2488,7 +2524,7 @@ body {
   .cards .main_card_in .main_card {
     position: relative;
     width: calc(50% - 7.5px);
-    height: calc(31.6666666667vh - 15px - 32px);
+    height: calc(31.6666666667vh - 15px - 22px);
   }
   .cards .main_card_in .main_card img {
     width: 100%;
@@ -2512,6 +2548,7 @@ body {
     line-height: 0px;
   }
   .cards .main_card_in .main_card .card_btn {
+    display: none;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -2631,7 +2668,7 @@ body {
     font-size: 12px;
   }
   .products .products_in .main_container {
-    padding-top: 64px;
+    padding-top: 0px;
     padding-right: 20px;
   }
   .products .products_in .main_container h2 {
@@ -2770,6 +2807,7 @@ body {
     width: 22px;
   }
   .about button {
+    left: calc(50% - 13.5px);
     bottom: 7%;
   }
   .about button img {
@@ -2777,7 +2815,7 @@ body {
   }
   .partners .main_container {
     height: 80vh;
-    padding-top: 50px;
+    padding-top: 100px;
   }
   .partners .main_container h2 {
     font-size: 24px;
@@ -2798,16 +2836,38 @@ body {
     flex-wrap: wrap;
   }
   .partners .main_container .partners_media .partnets_logo img {
-    width: 95px;
+    width: 100px;
     -o-object-fit: contain;
        object-fit: contain;
     height: 55px;
   }
+  .partners .main_container .partners_media .logo_media_top {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .partners .main_container .partners_media .logo_media_center {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .partners .main_container .partners_media .logo_media_bottom {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .partners button {
+    left: calc(50% - 13.5px);
     bottom: 10%;
   }
   .partners button img {
-    width: 22px;
+    width: 20px;
+  }
+  .features .main_container .features_wrapper {
+    gap: 15px;
   }
   .features .main_container .features_wrapper .features_block .features_card .card_img img {
     width: 40px;
@@ -2818,7 +2878,7 @@ body {
   }
   .features .main_container .features_wrapper .features_block .features_card p {
     font-size: 11px;
-    height: 57px;
+    height: 67px;
     overflow: hidden;
     text-overflow: ellipsis;
   }
@@ -2851,6 +2911,10 @@ body {
     text-align: center;
     padding: 9px 10px;
   }
+  .dealers .main_container .dealers_wrapper .dealer_slider .swiper-slide .dealers_card .card_img img {
+    width: 90%;
+    margin: 0 auto;
+  }
   .dealers .main_container .dealers_wrapper .dealer_slider .swiper-slide .dealers_card h4 {
     font-weight: 800;
     font-size: 14px;
@@ -2872,6 +2936,7 @@ body {
   }
   .dealers .main_container .dealers_wrapper .dealers_right,
   .dealers .main_container .dealers_wrapper .dealers_left {
+    display: none;
     width: 10px;
   }
   .footer {
@@ -2920,5 +2985,38 @@ body {
   .footer footer .footer_text p {
     font-weight: 100;
     font-size: 10px;
+  }
+}
+@media (max-width: 360px) {
+  .partners .main_container .partners_media .partnets_logo img {
+    max-width: 90px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    height: 55px;
+  }
+  .partners .main_container .partners_media .logo_media_top {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .partners .main_container .partners_media .logo_media_center {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .partners .main_container .partners_media .logo_media_bottom {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .partners button {
+    left: calc(50% - 13.5px);
+    bottom: 10%;
+  }
+  .partners button img {
+    width: 20px;
   }
 }/*# sourceMappingURL=style.css.map */

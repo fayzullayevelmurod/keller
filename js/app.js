@@ -121,7 +121,7 @@ if ($('#fullpage').length) {
             if (window.innerWidth > 576) {
                 fullPage.setScrollingSpeed(500)
             } else {
-                fullPage.setScrollingSpeed(1400)
+                fullPage.setScrollingSpeed(2500)
             }
             timeOutList.forEach(item => {
                 clearTimeout(item);
@@ -139,6 +139,9 @@ if ($('#fullpage').length) {
             firstEnter = false;
         } else {
             clearInterval(clear_interval_2);
+        }
+        if (window.innerWidth < 576) {
+            fullPage.setScrollingSpeed(2400)
         }
     }, 100);
 

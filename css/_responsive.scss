@@ -520,7 +520,7 @@
             .main_card {
                 position: relative;
                 width: calc(50% - (15px / 2));
-                height: calc(95vh / 3 - (30px / 2) - 32px);
+                height: calc(95vh / 3 - (30px / 2) - 22px);
 
                 img {
                     width: 100%;
@@ -546,6 +546,7 @@
                 }
 
                 .card_btn {
+                    display: none;
                     position: absolute;
                     top: 50%;
                     left: 50%;
@@ -717,7 +718,7 @@
     .products {
         .products_in {
             .main_container {
-                padding-top: 64px;
+                padding-top: 0px;
                 padding-right: 20px;
 
                 h2 {
@@ -916,6 +917,7 @@
             }
         }
         button{
+            left: calc(50% - 13.5px);
             bottom: 7%;
             img{
                 width: 20px;
@@ -926,7 +928,7 @@
     .partners {
         .main_container {
             height: 80vh;
-            padding-top: 50px;
+            padding-top: 100px;
 
             h2 {
                 font-size: 24px;
@@ -948,23 +950,43 @@
                 flex-wrap: wrap;
                 .partnets_logo  {
                     img{
-                        width: 95px;
+                        width: 100px;
                         object-fit: contain;
                         height: 55px;
                     }
                 }
+                .logo_media_top{
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                }
+                .logo_media_center{
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                }
+                .logo_media_bottom{
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
             }
         }
         button{
+            left: calc(50% - 13.5px);
             bottom: 10%;
             img{
-                width: 22px;
+                width: 20px;
             }
         }
     }
     .features{
         .main_container{
             .features_wrapper{
+                gap: 15px;
                 .features_block{
                     .features_card {
                         .card_img{
@@ -978,7 +1000,7 @@
                         }
                         p{
                             font-size: 11px;
-                            height: 57px;
+                            height: 67px;
                             overflow: hidden;
                             text-overflow: ellipsis;
                         }
@@ -1022,6 +1044,12 @@
                         .dealers_card{
                             text-align: center;
                             padding: 9px 10px;
+                            .card_img{
+                                img{
+                                    width: 90%;
+                                    margin: 0 auto;
+                                }
+                            }
                             h4{     
                                 b{
                                     font-weight: 800;
@@ -1047,6 +1075,7 @@
                 }
                 .dealers_right,
                 .dealers_left{
+                    display: none;
                     width: 10px;
                 }
             }
@@ -1104,6 +1133,46 @@
                     font-weight: 100;
                     font-size: 10px;
                 }
+            }
+        }
+    }
+}
+@media (max-width: 360px){
+    .partners {
+        .main_container {
+            .partners_media{
+                .partnets_logo  {
+                    img{
+                        max-width: 90px;
+                        object-fit: contain;
+                        height: 55px;
+                    }
+                }
+                .logo_media_top{
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+                .logo_media_center{
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+                .logo_media_bottom{
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+        button{
+            left: calc(50% - 13.5px);
+            bottom: 10%;
+            img{
+                width: 20px;
             }
         }
     }
