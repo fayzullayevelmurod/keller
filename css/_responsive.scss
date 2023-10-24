@@ -505,7 +505,7 @@
         .main_container {
             height: 98vh;
             overflow: hidden;
-            padding-top: 125px;
+            padding-top: 96px;
             padding-right: 25px;
 
             .card_slider {
@@ -520,7 +520,7 @@
             .main_card {
                 position: relative;
                 width: calc(50% - (15px / 2));
-                height: calc(95vh / 3 - (30px / 2) - 42px);
+                height: calc(95vh / 3 - (30px / 2) - 52px);
 
                 img {
                     width: 100%;

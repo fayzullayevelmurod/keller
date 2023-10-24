@@ -2528,7 +2528,7 @@ body {
   .cards .main_container {
     height: 98vh;
     overflow: hidden;
-    padding-top: 125px;
+    padding-top: 96px;
     padding-right: 25px;
   }
   .cards .main_container .card_slider {
@@ -2542,7 +2542,7 @@ body {
   .cards .main_card_in .main_card {
     position: relative;
     width: calc(50% - 7.5px);
-    height: calc(31.6666666667vh - 15px - 42px);
+    height: calc(31.6666666667vh - 15px - 52px);
   }
   .cards .main_card_in .main_card img {
     width: 100%;
