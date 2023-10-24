@@ -569,7 +569,7 @@ body.active .full_page_bg img {
   cursor: pointer;
   position: absolute;
   left: calc(50% - 10px);
-  bottom: 10px;
+  bottom: 15px;
   display: flex;
   flex-direction: column;
 }
@@ -2485,6 +2485,10 @@ body {
   #fp-nav.fp-right {
     right: 0px !important;
   }
+  .home {
+    height: 90vh;
+    position: relative;
+  }
   .home h2 {
     font-size: 34px;
     max-width: 100%;
@@ -2684,6 +2688,7 @@ body {
   }
   .features .main_container .features_wrapper .features_block .features_card p {
     font-size: 12px;
+    overflow: visible;
   }
   .products .products_in .main_container {
     padding-top: 0px;
@@ -2884,6 +2889,9 @@ body {
   .partners button img {
     width: 20px;
   }
+  .features .main_container {
+    height: 90vh;
+  }
   .features .main_container .features_wrapper {
     gap: 15px;
   }
@@ -2896,9 +2904,6 @@ body {
   }
   .features .main_container .features_wrapper .features_block .features_card p {
     font-size: 11px;
-    height: 67px;
-    overflow: hidden;
-    text-overflow: ellipsis;
   }
   .products {
     background-position: center;

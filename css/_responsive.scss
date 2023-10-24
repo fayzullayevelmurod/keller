@@ -451,6 +451,8 @@
     }
 
     .home {
+        height: 90vh;
+        position: relative;
         h2 {
             font-size: 34px;
             max-width: 100%;
@@ -708,6 +710,7 @@
                     .features_card {
                         p {
                             font-size: 12px;
+                            overflow: visible;
                         }
                     }
                 }
@@ -985,6 +988,7 @@
     }
     .features{
         .main_container{
+            height: 90vh;
             .features_wrapper{
                 gap: 15px;
                 .features_block{
@@ -1000,9 +1004,9 @@
                         }
                         p{
                             font-size: 11px;
-                            height: 67px;
-                            overflow: hidden;
-                            text-overflow: ellipsis;
+                            // height: 67px;
+                            // overflow: hidden;
+                            // text-overflow: ellipsis;
                         }
                     }
                 }

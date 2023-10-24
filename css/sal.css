@@ -353,17 +353,27 @@
 
 [data-sal|=fade] {
     opacity: 0;
-    transition-property: opacity
+    transition-property: opacity;
+    -moz-opacity: 0; /* Firefox and Mozilla browsers */
+    -webkit-opacity: 0; /* WebKit browser e.g. Safari */
+    filter: alpha(opacity=0); /* For IE8 and earlier */
 }
 
 [data-sal|=fade].sal-animate,
 body.sal-disabled [data-sal|=fade] {
-    opacity: 1
+    opacity: 1;
+    -moz-opacity: 1; /* Firefox and Mozilla browsers */
+    -webkit-opacity: 1; /* WebKit browser e.g. Safari */
+    filter: alpha(opacity=1); /* For IE8 and earlier */
 }
 
 [data-sal|=slide] {
     opacity: 0;
-    transition-property: opacity, transform
+    -moz-opacity: 0; /* Firefox and Mozilla browsers */
+    -webkit-opacity: 0; /* WebKit browser e.g. Safari */
+    filter: alpha(opacity=0); /* For IE8 and earlier */
+    transition-property: opacity, transform;
+
 }
 
 [data-sal=slide-up] {
