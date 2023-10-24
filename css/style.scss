@@ -1114,6 +1114,27 @@ body.active {
             }
         }
     }
+    .full_page_next_btn {
+        // display: none;
+        background: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        position: absolute;
+        left: calc(50% - (20px / 2));
+        bottom: 10px;
+        display: flex;
+        flex-direction: column;
+
+        img {
+            transform: rotateZ(-90deg);
+            width: 20px;
+        }
+
+        .img_2 {
+            margin-top: -20px;
+        }
+    }
 }
 
 .products {

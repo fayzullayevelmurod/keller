@@ -942,6 +942,24 @@ body.active .full_page_bg img {
   font-family: "Bahnschrift", sans-serif;
   color: #6a6a6a;
 }
+.features .full_page_next_btn {
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+  left: calc(50% - 10px);
+  bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.features .full_page_next_btn img {
+  transform: rotateZ(-90deg);
+  width: 20px;
+}
+.features .full_page_next_btn .img_2 {
+  margin-top: -20px;
+}
 
 .products {
   background-image: url("../images/products_new.jpg");
@@ -2510,7 +2528,7 @@ body {
   .cards .main_container {
     height: 98vh;
     overflow: hidden;
-    padding-top: 96px;
+    padding-top: 125px;
     padding-right: 25px;
   }
   .cards .main_container .card_slider {
@@ -2524,7 +2542,7 @@ body {
   .cards .main_card_in .main_card {
     position: relative;
     width: calc(50% - 7.5px);
-    height: calc(31.6666666667vh - 15px - 22px);
+    height: calc(31.6666666667vh - 15px - 42px);
   }
   .cards .main_card_in .main_card img {
     width: 100%;
